@@ -1,0 +1,160 @@
+
+meteorite.png
+size: 161,320
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire/4/fire_0000_1
+  rotate: true
+  xy: 39, 17
+  size: 32, 34
+  orig: 32, 35
+  offset: 0, 1
+  index: -1
+fire/4/fire_0001_2
+  rotate: true
+  xy: 40, 51
+  size: 32, 35
+  orig: 32, 35
+  offset: 0, 0
+  index: -1
+fire/4/fire_0002_3
+  rotate: false
+  xy: 128, 98
+  size: 31, 36
+  orig: 31, 36
+  offset: 0, 0
+  index: -1
+fire/4/fire_0003_4
+  rotate: false
+  xy: 129, 282
+  size: 30, 36
+  orig: 31, 37
+  offset: 1, 1
+  index: -1
+fire/4/fire_0004_5
+  rotate: false
+  xy: 128, 136
+  size: 31, 37
+  orig: 31, 37
+  offset: 0, 0
+  index: -1
+fire/4/fire_0005_6
+  rotate: false
+  xy: 129, 175
+  size: 29, 36
+  orig: 29, 37
+  offset: 0, 1
+  index: -1
+fire/4/fire_0006_7
+  rotate: false
+  xy: 129, 213
+  size: 29, 37
+  orig: 29, 37
+  offset: 0, 0
+  index: -1
+fire/4/fire_0007_8
+  rotate: true
+  xy: 2, 33
+  size: 28, 35
+  orig: 28, 36
+  offset: 0, 0
+  index: -1
+fire/4/fire_0008_9
+  rotate: true
+  xy: 2, 63
+  size: 27, 36
+  orig: 28, 37
+  offset: 1, 1
+  index: -1
+fire/4/fire_0009_10
+  rotate: false
+  xy: 99, 83
+  size: 27, 37
+  orig: 28, 37
+  offset: 0, 0
+  index: -1
+fire/4/fire_0010_11
+  rotate: true
+  xy: 113, 31
+  size: 29, 32
+  orig: 29, 33
+  offset: 0, 0
+  index: -1
+fire/4/fire_0011_12
+  rotate: true
+  xy: 75, 18
+  size: 29, 32
+  orig: 29, 33
+  offset: 0, 0
+  index: -1
+fire/4/fire_0012_13
+  rotate: true
+  xy: 129, 252
+  size: 28, 30
+  orig: 28, 32
+  offset: 0, 1
+  index: -1
+fire/4/fire_0013_14
+  rotate: true
+  xy: 2, 2
+  size: 29, 33
+  orig: 29, 33
+  offset: 0, 0
+  index: -1
+fire/4/fire_0014_15
+  rotate: false
+  xy: 128, 62
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+fire/4/fire_0015_16
+  rotate: true
+  xy: 77, 49
+  size: 32, 34
+  orig: 32, 34
+  offset: 0, 0
+  index: -1
+meteorite/meteorite-4
+  rotate: false
+  xy: 2, 133
+  size: 73, 64
+  orig: 90, 90
+  offset: 6, 12
+  index: -1
+rune-circle/rune-circle-4
+  rotate: false
+  xy: 2, 199
+  size: 125, 119
+  orig: 179, 179
+  offset: 24, 30
+  index: -1
+shexian/4/shexian_0000_1
+  rotate: false
+  xy: 51, 85
+  size: 46, 35
+  orig: 49, 37
+  offset: 1, 0
+  index: -1
+shexian/4/shexian_0001_2
+  rotate: false
+  xy: 2, 92
+  size: 47, 39
+  orig: 49, 42
+  offset: 1, 1
+  index: -1
+shexian/4/shexian_0002_3
+  rotate: false
+  xy: 77, 160
+  size: 49, 37
+  orig: 52, 40
+  offset: 1, 1
+  index: -1
+shexian/4/shexian_0003_4
+  rotate: false
+  xy: 77, 122
+  size: 49, 36
+  orig: 51, 38
+  offset: 1, 1
+  index: -1

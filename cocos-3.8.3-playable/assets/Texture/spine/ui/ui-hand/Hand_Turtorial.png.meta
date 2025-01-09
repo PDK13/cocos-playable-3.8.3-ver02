@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "3d100990-d90b-4827-b88d-7061cee15b27",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "3d100990-d90b-4827-b88d-7061cee15b27@6c48a",
+      "displayName": "Hand_Turtorial",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "3d100990-d90b-4827-b88d-7061cee15b27",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "3d100990-d90b-4827-b88d-7061cee15b27@f9941",
+      "displayName": "Hand_Turtorial",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0.5,
+        "offsetY": -1.5,
+        "trimX": 3,
+        "trimY": 5,
+        "width": 354,
+        "height": 156,
+        "rawWidth": 359,
+        "rawHeight": 163,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -177,
+            -78,
+            0,
+            177,
+            -78,
+            0,
+            -177,
+            78,
+            0,
+            177,
+            78,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            3,
+            158,
+            357,
+            158,
+            3,
+            2,
+            357,
+            2
+          ],
+          "nuv": [
+            0.008356545961002786,
+            0.012269938650306749,
+            0.9944289693593314,
+            0.012269938650306749,
+            0.008356545961002786,
+            0.9693251533742331,
+            0.9944289693593314,
+            0.9693251533742331
+          ],
+          "minPos": [
+            -177,
+            -78,
+            0
+          ],
+          "maxPos": [
+            177,
+            78,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "3d100990-d90b-4827-b88d-7061cee15b27@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "3d100990-d90b-4827-b88d-7061cee15b27@6c48a"
+  }
+}

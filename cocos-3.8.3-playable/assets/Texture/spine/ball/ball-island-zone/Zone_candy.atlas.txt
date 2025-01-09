@@ -1,0 +1,20 @@
+
+Zone_candy.png
+size: 635,710
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 121
+  size: 631, 587
+  orig: 633, 589
+  offset: 1, 1
+  index: -1
+2
+  rotate: false
+  xy: 2, 2
+  size: 182, 117
+  orig: 184, 119
+  offset: 1, 1
+  index: -1

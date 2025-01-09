@@ -1,0 +1,16 @@
+Cocos Dashboard 2.1.2 - All project version 3.6.3
+
+NOTE:
+- To open and edit Tile file in Cocos, use Tiled tool.
+https://www.mapeditor.org/
+https://thorbjorn.itch.io/tiled
+
+- Don't update version of Cocos Creator or Project Editor.
+(Support are limit on every version)
+
+- Playable ads for network size:
+Ironsource <= 5MB
+Mintegral <= 2.5MB
+Unity <= 5MB
+
+Amazon cần xuất sang Mintegral vì đang chạy trên kênh này

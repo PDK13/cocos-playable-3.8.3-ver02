@@ -1,0 +1,90 @@
+
+Campange.png
+size: 159,159
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Capadoll/big-head
+  rotate: true
+  xy: 101, 46
+  size: 56, 33
+  orig: 56, 33
+  offset: 0, 0
+  index: -1
+Capadoll/body
+  rotate: true
+  xy: 101, 104
+  size: 53, 47
+  orig: 53, 47
+  offset: 0, 0
+  index: -1
+Capadoll/neck-1
+  rotate: false
+  xy: 2, 16
+  size: 51, 30
+  orig: 51, 30
+  offset: 0, 0
+  index: -1
+Capadoll/neck-2
+  rotate: false
+  xy: 2, 3
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+Capadoll/neck-3
+  rotate: true
+  xy: 21, 3
+  size: 11, 17
+  orig: 11, 17
+  offset: 0, 0
+  index: -1
+arm-l
+  rotate: true
+  xy: 55, 15
+  size: 31, 20
+  orig: 97, 109
+  offset: 42, 31
+  index: -1
+arm-l-blur
+  rotate: false
+  xy: 2, 48
+  size: 97, 109
+  orig: 97, 109
+  offset: 0, 0
+  index: -1
+arm-r
+  rotate: false
+  xy: 40, 2
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+ear-l
+  rotate: true
+  xy: 129, 32
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+ear-r
+  rotate: false
+  xy: 129, 19
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+leg-l
+  rotate: false
+  xy: 77, 19
+  size: 21, 27
+  orig: 97, 109
+  offset: 58, 11
+  index: -1
+leg-r
+  rotate: true
+  xy: 100, 21
+  size: 23, 27
+  orig: 97, 109
+  offset: 32, 13
+  index: -1

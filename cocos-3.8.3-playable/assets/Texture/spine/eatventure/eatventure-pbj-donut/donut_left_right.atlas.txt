@@ -1,0 +1,41 @@
+
+donut_left_right.png
+size: 547, 126
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+lid_1_donut_S
+  rotate: false
+  xy: 476, 4
+  size: 69, 120
+  orig: 69, 120
+  offset: 0, 0
+  index: -1
+lid_2_donut_S
+  rotate: false
+  xy: 141, 6
+  size: 118, 118
+  orig: 118, 118
+  offset: 0, 0
+  index: -1
+lid_3_donut_S
+  rotate: false
+  xy: 2, 10
+  size: 137, 114
+  orig: 137, 114
+  offset: 0, 0
+  index: -1
+smoke
+  rotate: true
+  xy: 377, 3
+  size: 121, 97
+  orig: 131, 106
+  offset: 5, 5
+  index: -1
+sope_donut_S
+  rotate: true
+  xy: 261, 2
+  size: 122, 114
+  orig: 122, 114
+  offset: 0, 0
+  index: -1

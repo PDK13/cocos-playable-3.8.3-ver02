@@ -1,0 +1,20 @@
+
+Hand_Turtorial.png
+size: 359,163
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect
+  rotate: false
+  xy: 278, 82
+  size: 79, 79
+  orig: 79, 79
+  offset: 0, 0
+  index: -1
+hand
+  rotate: true
+  xy: 2, 2
+  size: 159, 274
+  orig: 159, 274
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,174 @@
+
+enemy_2.png
+size: 1047,516
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5/11
+  rotate: false
+  xy: 688, 288
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+5/11a
+  rotate: false
+  xy: 874, 17
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+5/12
+  rotate: false
+  xy: 469, 263
+  size: 62, 22
+  orig: 62, 22
+  offset: 0, 0
+  index: -1
+5/14
+  rotate: false
+  xy: 740, 10
+  size: 65, 67
+  orig: 65, 67
+  offset: 0, 0
+  index: -1
+5/23
+  rotate: false
+  xy: 2, 4
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+5/33
+  rotate: false
+  xy: 807, 10
+  size: 65, 67
+  orig: 65, 67
+  offset: 0, 0
+  index: -1
+5/43
+  rotate: true
+  xy: 472, 2
+  size: 44, 65
+  orig: 44, 65
+  offset: 0, 0
+  index: -1
+5/46
+  rotate: true
+  xy: 539, 2
+  size: 44, 65
+  orig: 44, 65
+  offset: 0, 0
+  index: -1
+5/5
+  rotate: true
+  xy: 726, 293
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+5/6
+  rotate: true
+  xy: 606, 14
+  size: 32, 65
+  orig: 32, 65
+  offset: 0, 0
+  index: -1
+5/7
+  rotate: true
+  xy: 769, 293
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+5/8
+  rotate: true
+  xy: 673, 14
+  size: 32, 65
+  orig: 32, 65
+  offset: 0, 0
+  index: -1
+5/9
+  rotate: false
+  xy: 887, 193
+  size: 126, 147
+  orig: 126, 147
+  offset: 0, 0
+  index: -1
+5/mat_hit
+  rotate: false
+  xy: 936, 24
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+sm1
+  rotate: true
+  xy: 887, 86
+  size: 105, 103
+  orig: 256, 241
+  offset: 77, 69
+  index: -1
+sm10
+  rotate: true
+  xy: 241, 14
+  size: 242, 229
+  orig: 256, 241
+  offset: 9, 4
+  index: -1
+sm11
+  rotate: true
+  xy: 2, 7
+  size: 249, 237
+  orig: 256, 241
+  offset: 5, 0
+  index: -1
+sm12
+  rotate: true
+  xy: 2, 258
+  size: 256, 241
+  orig: 256, 241
+  offset: 0, 0
+  index: -1
+sm2
+  rotate: true
+  xy: 876, 342
+  size: 172, 169
+  orig: 256, 241
+  offset: 44, 35
+  index: -1
+sm3
+  rotate: true
+  xy: 688, 326
+  size: 188, 186
+  orig: 256, 241
+  offset: 36, 23
+  index: -1
+sm5
+  rotate: true
+  xy: 684, 79
+  size: 206, 201
+  orig: 256, 241
+  offset: 27, 16
+  index: -1
+sm7
+  rotate: false
+  xy: 472, 48
+  size: 210, 213
+  orig: 256, 241
+  offset: 25, 9
+  index: -1
+sm8
+  rotate: true
+  xy: 469, 287
+  size: 227, 217
+  orig: 256, 241
+  offset: 16, 10
+  index: -1
+sm9
+  rotate: true
+  xy: 245, 276
+  size: 238, 222
+  orig: 256, 241
+  offset: 11, 10
+  index: -1

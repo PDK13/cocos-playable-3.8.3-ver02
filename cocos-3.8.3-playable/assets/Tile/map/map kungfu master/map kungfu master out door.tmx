@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="128" tileheight="128" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" name="Tile" tilewidth="128" tileheight="128" tilecount="4" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1">
+   <image width="128" height="128" source="../../tile/tile kungfu master/tile kungfu master out door/2a.png"/>
+  </tile>
+  <tile id="2">
+   <image width="128" height="128" source="../../tile/tile kungfu master/tile kungfu master out door/2b.png"/>
+  </tile>
+  <tile id="6">
+   <image width="128" height="128" source="../../tile/tile kungfu master/tile kungfu master out door/5c.png"/>
+  </tile>
+  <tile id="7">
+   <image width="128" height="128" source="../../tile/tile kungfu master/tile kungfu master out door/5d.png"/>
+  </tile>
+ </tileset>
+ <layer id="5" name="ground" width="20" height="10">
+  <data encoding="csv">
+2,3,2,2,2,3,2,3,2,2,3,2,2,3,2,2,3,2,3,3,
+8,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,
+7,8,7,7,7,7,7,7,8,7,7,7,7,8,7,7,8,7,7,7,
+7,7,7,7,7,8,7,7,7,7,7,8,7,7,7,7,7,7,7,7,
+7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,7,
+8,7,7,8,7,7,7,7,8,7,7,7,7,7,7,7,8,7,7,7,
+7,7,7,7,7,7,7,7,7,7,7,8,7,7,7,7,7,7,7,7,
+7,8,7,7,7,7,7,8,7,7,7,7,7,8,7,7,7,7,7,7,
+7,7,7,8,7,7,7,7,7,7,7,7,7,7,7,7,8,7,7,8,
+7,7,7,7,7,7,8,7,7,7,7,8,7,7,7,7,7,7,7,7
+</data>
+ </layer>
+</map>

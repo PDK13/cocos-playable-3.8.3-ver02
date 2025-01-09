@@ -1,0 +1,146 @@
+{
+"skeleton": {
+	"hash": "htp8Ohww9EA6NNnSmxknyxOwY0A",
+	"spine": "3.8.99",
+	"x": -123.2,
+	"y": -1.96,
+	"width": 256,
+	"height": 331,
+	"images": "D:/Work/Tricky_Castle/tricky-castle-door_key/tricky-castle-door_key",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "y": -24.89 },
+	{ "name": "Door Key/Door key-Black", "parent": "bone", "x": 4.52, "y": 193.83 },
+	{ "name": "Door Key/Door-Black", "parent": "root", "x": 4.8, "y": 163.54 }
+],
+"slots": [
+	{ "name": "Door Key/Door-Black", "bone": "Door Key/Door-Black", "attachment": "Door Key/Door-Black" },
+	{ "name": "Door Key/Door key-Black", "bone": "Door Key/Door key-Black", "attachment": "Door Key/Door key-Black" }
+],
+"skins": [
+	{
+		"name": "Black",
+		"attachments": {
+			"Door Key/Door-Black": {
+				"Door Key/Door-Black": { "width": 256, "height": 331 }
+			},
+			"Door Key/Door key-Black": {
+				"Door Key/Door key-Black": { "width": 96, "height": 96 }
+			}
+		}
+	},
+	{
+		"name": "Blue",
+		"attachments": {
+			"Door Key/Door-Black": {
+				"Door Key/Door-Black": { "name": "Door Key/Door-Blue", "width": 256, "height": 331 }
+			},
+			"Door Key/Door key-Black": {
+				"Door Key/Door key-Black": { "name": "Door Key/Door key-Blue", "width": 96, "height": 96 }
+			}
+		}
+	},
+	{
+		"name": "Green",
+		"attachments": {
+			"Door Key/Door-Black": {
+				"Door Key/Door-Black": { "name": "Door Key/Door-Green", "width": 256, "height": 331 }
+			},
+			"Door Key/Door key-Black": {
+				"Door Key/Door key-Black": { "name": "Door Key/Door key-Green", "width": 96, "height": 96 }
+			}
+		}
+	},
+	{
+		"name": "Grey",
+		"attachments": {
+			"Door Key/Door-Black": {
+				"Door Key/Door-Black": { "name": "Door Key/Door-Grey", "width": 256, "height": 331 }
+			},
+			"Door Key/Door key-Black": {
+				"Door Key/Door key-Black": { "name": "Door Key/Door key-Grey", "width": 96, "height": 96 }
+			}
+		}
+	},
+	{
+		"name": "Purple",
+		"attachments": {
+			"Door Key/Door-Black": {
+				"Door Key/Door-Black": { "name": "Door Key/Door-Purple", "width": 256, "height": 331 }
+			},
+			"Door Key/Door key-Black": {
+				"Door Key/Door key-Black": { "name": "Door Key/Door key-Purple", "width": 96, "height": 96 }
+			}
+		}
+	},
+	{
+		"name": "Red",
+		"attachments": {
+			"Door Key/Door-Black": {
+				"Door Key/Door-Black": { "name": "Door Key/Door-Red", "width": 256, "height": 331 }
+			},
+			"Door Key/Door key-Black": {
+				"Door Key/Door key-Black": { "name": "Door Key/Door key-Red", "width": 96, "height": 96 }
+			}
+		}
+	},
+	{
+		"name": "Yellow",
+		"attachments": {
+			"Door Key/Door-Black": {
+				"Door Key/Door-Black": { "name": "Door Key/Door-Yellow", "width": 256, "height": 331 }
+			},
+			"Door Key/Door key-Black": {
+				"Door Key/Door key-Black": { "name": "Door Key/Door key-Yellow", "width": 96, "height": 96 }
+			}
+		}
+	}
+],
+"animations": {
+	"close": {},
+	"open": {
+		"slots": {
+			"Door Key/Door-Black": {
+				"color": [
+					{ "time": 0.4, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"Door Key/Door key-Black": {
+				"color": [
+					{ "color": "ffffffff", "curve": 0.098, "c2": 0.31, "c3": 0.75 },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Door Key/Door-Black": {
+				"translate": [
+					{ "time": 0.1333 },
+					{ "time": 0.3, "y": -17.55 },
+					{ "time": 0.6333, "y": 507.43 }
+				]
+			},
+			"Door Key/Door key-Black": {
+				"rotate": [
+					{ "curve": 0.098, "c2": 0.31, "c3": 0.75 },
+					{ "time": 0.5, "angle": -56.15 }
+				],
+				"translate": [
+					{ "curve": 0.122, "c2": 0.26, "c3": 0.438 },
+					{ "time": 0.2, "y": 71.46, "curve": 0.25, "c3": 0.872, "c4": 0.5 },
+					{ "time": 0.5, "y": -182.78 }
+				]
+			},
+			"bone": {
+				"translate": [
+					{ "curve": 0.098, "c2": 0.31, "c3": 0.75 },
+					{ "time": 0.5, "x": 117.44 }
+				]
+			}
+		}
+	}
+}
+}

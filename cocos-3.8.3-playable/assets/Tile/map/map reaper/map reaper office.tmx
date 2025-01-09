@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="128" tileheight="128" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" name="tile" tilewidth="128" tileheight="128" tilecount="13" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/2.png"/>
+  </tile>
+  <tile id="1">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/2a.png"/>
+  </tile>
+  <tile id="2">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/2b.png"/>
+  </tile>
+  <tile id="3">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/2c.png"/>
+  </tile>
+  <tile id="4">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/2d.png"/>
+  </tile>
+  <tile id="5">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/2e.png"/>
+  </tile>
+  <tile id="6">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/2f.png"/>
+  </tile>
+  <tile id="7">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/2g.png"/>
+  </tile>
+  <tile id="8">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/5a.png"/>
+  </tile>
+  <tile id="9">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/5b.png"/>
+  </tile>
+  <tile id="10">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/5c.png"/>
+  </tile>
+  <tile id="11">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/5d.png"/>
+  </tile>
+  <tile id="12">
+   <image width="128" height="128" source="../../tile/tile reaper/tile reaper office/5e.png"/>
+  </tile>
+ </tileset>
+ <layer id="5" name="ground" width="20" height="10">
+  <data encoding="csv">
+1,2,3,4,5,6,7,8,4,5,6,7,8,8,3,4,5,6,7,8,
+9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,
+9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,
+9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,
+9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,
+9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,
+9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,
+9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,
+9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,
+9,10,11,12,13,9,10,11,12,13,9,10,11,12,13,9,10,11,12,13
+</data>
+ </layer>
+</map>

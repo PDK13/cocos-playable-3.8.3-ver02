@@ -1,0 +1,27 @@
+
+lazer.png
+size: 437,255
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ellipse 1
+  rotate: false
+  xy: 2, 2
+  size: 251, 251
+  orig: 251, 251
+  offset: 0, 0
+  index: -1
+Ellipse 1 copy
+  rotate: false
+  xy: 255, 97
+  size: 180, 156
+  orig: 180, 156
+  offset: 0, 0
+  index: -1
+Ellipse 2
+  rotate: true
+  xy: 255, 4
+  size: 91, 104
+  orig: 91, 104
+  offset: 0, 0
+  index: -1

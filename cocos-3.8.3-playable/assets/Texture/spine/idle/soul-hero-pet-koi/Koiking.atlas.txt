@@ -1,0 +1,90 @@
+
+Koiking.png
+size: 106,106
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ARM_L
+  rotate: false
+  xy: 37, 49
+  size: 18, 20
+  orig: 66, 54
+  offset: 32, 0
+  index: -1
+ARM_R
+  rotate: true
+  xy: 71, 8
+  size: 16, 21
+  orig: 16, 21
+  offset: 0, 0
+  index: -1
+BODY
+  rotate: true
+  xy: 57, 58
+  size: 46, 34
+  orig: 46, 34
+  offset: 0, 0
+  index: -1
+EAR_L
+  rotate: false
+  xy: 2, 2
+  size: 25, 28
+  orig: 64, 54
+  offset: 35, 24
+  index: -1
+EAR_R
+  rotate: false
+  xy: 29, 2
+  size: 21, 28
+  orig: 64, 54
+  offset: 0, 19
+  index: -1
+EYE_R
+  rotate: true
+  xy: 37, 38
+  size: 9, 16
+  orig: 9, 16
+  offset: 0, 0
+  index: -1
+EYR_L
+  rotate: false
+  xy: 52, 7
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+HEAD
+  rotate: true
+  xy: 2, 32
+  size: 37, 33
+  orig: 37, 33
+  offset: 0, 0
+  index: -1
+hat
+  rotate: false
+  xy: 2, 71
+  size: 53, 33
+  orig: 53, 33
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 37, 33
+  size: 9, 3
+  orig: 9, 3
+  offset: 0, 0
+  index: -1
+mouth2
+  rotate: false
+  xy: 86, 48
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+towel
+  rotate: true
+  xy: 57, 26
+  size: 30, 27
+  orig: 30, 27
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,160 @@
+
+Cyber_3.png
+size: 349,72
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BODY
+  rotate: true
+  xy: 2, 3
+  size: 67, 74
+  orig: 85, 74
+  offset: 0, 0
+  index: -1
+CHAN_PHAI
+  rotate: true
+  xy: 240, 22
+  size: 12, 20
+  orig: 12, 20
+  offset: 0, 0
+  index: -1
+CHAN_TRAI
+  rotate: false
+  xy: 324, 15
+  size: 12, 19
+  orig: 12, 19
+  offset: 0, 0
+  index: -1
+DAU
+  rotate: true
+  xy: 78, 3
+  size: 67, 42
+  orig: 67, 42
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: true
+  xy: 122, 7
+  size: 63, 38
+  orig: 63, 38
+  offset: 0, 0
+  index: -1
+Layer 2
+  rotate: true
+  xy: 223, 2
+  size: 18, 20
+  orig: 18, 20
+  offset: 0, 0
+  index: -1
+Layer 3
+  rotate: true
+  xy: 329, 55
+  size: 15, 13
+  orig: 15, 13
+  offset: 0, 0
+  index: -1
+Layer 4
+  rotate: false
+  xy: 329, 40
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+MAT
+  rotate: true
+  xy: 291, 3
+  size: 31, 19
+  orig: 31, 19
+  offset: 0, 0
+  index: -1
+MAT_NHAM
+  rotate: false
+  xy: 303, 36
+  size: 24, 6
+  orig: 24, 6
+  offset: 0, 0
+  index: -1
+MUI
+  rotate: true
+  xy: 200, 2
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: -1
+TAI_PHAI
+  rotate: true
+  xy: 328, 3
+  size: 10, 19
+  orig: 10, 19
+  offset: 0, 0
+  index: -1
+TAI_TRAI
+  rotate: false
+  xy: 312, 13
+  size: 10, 21
+  orig: 10, 21
+  offset: 0, 0
+  index: -1
+TAY_PHAI1
+  rotate: false
+  xy: 275, 36
+  size: 26, 34
+  orig: 26, 34
+  offset: 0, 0
+  index: -1
+TAY_PHAI2
+  rotate: false
+  xy: 303, 44
+  size: 24, 26
+  orig: 24, 26
+  offset: 0, 0
+  index: -1
+TAY_PHAI3
+  rotate: true
+  xy: 162, 22
+  size: 48, 37
+  orig: 48, 37
+  offset: 0, 0
+  index: -1
+TAY_TRAI1
+  rotate: true
+  xy: 240, 36
+  size: 34, 33
+  orig: 408, 150
+  offset: 140, 66
+  index: -1
+TAY_TRAI2
+  rotate: false
+  xy: 262, 3
+  size: 27, 31
+  orig: 27, 31
+  offset: 0, 0
+  index: -1
+TAY_TRAI3
+  rotate: true
+  xy: 201, 22
+  size: 48, 37
+  orig: 48, 37
+  offset: 0, 0
+  index: -1
+VAY1
+  rotate: true
+  xy: 245, 2
+  size: 18, 15
+  orig: 18, 15
+  offset: 0, 0
+  index: -1
+VAY2
+  rotate: false
+  xy: 162, 2
+  size: 36, 18
+  orig: 36, 19
+  offset: 0, 1
+  index: -1
+VAY3
+  rotate: true
+  xy: 312, 4
+  size: 7, 14
+  orig: 7, 14
+  offset: 0, 0
+  index: -1

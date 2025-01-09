@@ -1,0 +1,69 @@
+
+enemy_mushroom_prefix.png
+size: 221,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cp
+  rotate: true
+  xy: 180, 2
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+ct
+  rotate: true
+  xy: 200, 2
+  size: 30, 18
+  orig: 30, 18
+  offset: 0, 0
+  index: -1
+lmp
+  rotate: false
+  xy: 131, 3
+  size: 15, 10
+  orig: 15, 10
+  offset: 0, 0
+  index: -1
+lmt
+  rotate: false
+  xy: 148, 3
+  size: 15, 10
+  orig: 15, 10
+  offset: 0, 0
+  index: -1
+mp
+  rotate: true
+  xy: 113, 5
+  size: 8, 16
+  orig: 8, 16
+  offset: 0, 0
+  index: -1
+mt
+  rotate: false
+  xy: 212, 60
+  size: 7, 16
+  orig: 7, 16
+  offset: 0, 0
+  index: -1
+mu_1
+  rotate: false
+  xy: 2, 9
+  size: 109, 67
+  orig: 109, 67
+  offset: 0, 0
+  index: -1
+mu_2
+  rotate: true
+  xy: 180, 34
+  size: 42, 30
+  orig: 42, 30
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 113, 15
+  size: 65, 61
+  orig: 65, 61
+  offset: 0, 0
+  index: -1

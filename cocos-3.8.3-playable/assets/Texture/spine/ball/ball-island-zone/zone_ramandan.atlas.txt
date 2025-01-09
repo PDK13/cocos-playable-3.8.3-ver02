@@ -1,0 +1,146 @@
+
+zone_ramandan.png
+size: 311,2403
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0
+  rotate: true
+  xy: 2, 615
+  size: 490, 198
+  orig: 495, 200
+  offset: 1, 1
+  index: -1
+00
+  rotate: true
+  xy: 202, 558
+  size: 178, 97
+  orig: 181, 99
+  offset: 1, 1
+  index: -1
+1
+  rotate: false
+  xy: 2, 1107
+  size: 205, 110
+  orig: 205, 110
+  offset: 0, 0
+  index: -1
+11
+  rotate: true
+  xy: 214, 1141
+  size: 161, 81
+  orig: 163, 83
+  offset: 1, 1
+  index: -1
+2
+  rotate: true
+  xy: 209, 984
+  size: 155, 99
+  orig: 157, 101
+  offset: 1, 1
+  index: -1
+22
+  rotate: true
+  xy: 249, 1469
+  size: 218, 58
+  orig: 221, 60
+  offset: 1, 1
+  index: -1
+3
+  rotate: true
+  xy: 249, 1304
+  size: 163, 57
+  orig: 165, 59
+  offset: 1, 1
+  index: -1
+33
+  rotate: false
+  xy: 158, 570
+  size: 38, 43
+  orig: 40, 45
+  offset: 1, 1
+  index: -1
+4
+  rotate: true
+  xy: 202, 818
+  size: 164, 103
+  orig: 166, 105
+  offset: 1, 1
+  index: -1
+44
+  rotate: false
+  xy: 145, 36
+  size: 78, 77
+  orig: 80, 79
+  offset: 1, 1
+  index: -1
+5
+  rotate: true
+  xy: 2, 2
+  size: 477, 141
+  orig: 484, 143
+  offset: 1, 1
+  index: -1
+55
+  rotate: true
+  xy: 2, 1219
+  size: 164, 210
+  orig: 167, 212
+  offset: 1, 1
+  index: -1
+6
+  rotate: true
+  xy: 202, 738
+  size: 78, 101
+  orig: 80, 103
+  offset: 1, 1
+  index: -1
+66
+  rotate: true
+  xy: 225, 67
+  size: 46, 74
+  orig: 48, 76
+  offset: 1, 1
+  index: -1
+7
+  rotate: false
+  xy: 2, 481
+  size: 154, 132
+  orig: 156, 134
+  offset: 1, 1
+  index: -1
+77
+  rotate: true
+  xy: 2, 1753
+  size: 648, 300
+  orig: 650, 303
+  offset: 1, 2
+  index: -1
+8
+  rotate: true
+  xy: 2, 1385
+  size: 366, 245
+  orig: 366, 245
+  offset: 0, 0
+  index: -1
+88
+  rotate: false
+  xy: 158, 478
+  size: 146, 78
+  orig: 146, 78
+  offset: 0, 0
+  index: -1
+9
+  rotate: true
+  xy: 145, 115
+  size: 361, 134
+  orig: 364, 136
+  offset: 1, 1
+  index: -1
+99
+  rotate: true
+  xy: 249, 1689
+  size: 62, 60
+  orig: 65, 62
+  offset: 1, 1
+  index: -1

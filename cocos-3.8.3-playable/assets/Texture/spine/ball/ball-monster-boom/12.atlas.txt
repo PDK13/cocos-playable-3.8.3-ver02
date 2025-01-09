@@ -1,0 +1,27 @@
+
+12.png
+size: 480,318
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2/body
+  rotate: false
+  xy: 2, 2
+  size: 335, 314
+  orig: 338, 315
+  offset: 2, 1
+  index: -1
+2/eyes
+  rotate: false
+  xy: 339, 33
+  size: 139, 47
+  orig: 141, 49
+  offset: 1, 1
+  index: -1
+2/eyes_hit
+  rotate: true
+  xy: 339, 82
+  size: 234, 107
+  orig: 234, 107
+  offset: 0, 0
+  index: -1

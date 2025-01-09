@@ -1,0 +1,55 @@
+
+11.png
+size: 358, 152
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+4/black_eyes
+  rotate: true
+  xy: 245, 63
+  size: 87, 54
+  orig: 87, 54
+  offset: 0, 0
+  index: -1
+4/eye_hit
+  rotate: false
+  xy: 245, 7
+  size: 87, 54
+  orig: 87, 54
+  offset: 0, 0
+  index: -1
+4/eyebrow
+  rotate: true
+  xy: 301, 71
+  size: 79, 29
+  orig: 79, 29
+  offset: 0, 0
+  index: -1
+4/eyes
+  rotate: true
+  xy: 332, 80
+  size: 70, 24
+  orig: 70, 24
+  offset: 0, 0
+  index: -1
+4/mask_3
+  rotate: false
+  xy: 2, 2
+  size: 188, 148
+  orig: 188, 148
+  offset: 0, 0
+  index: -1
+4/mieng
+  rotate: true
+  xy: 192, 16
+  size: 134, 51
+  orig: 134, 51
+  offset: 0, 0
+  index: -1
+nm
+  rotate: true
+  xy: 334, 57
+  size: 21, 17
+  orig: 21, 20
+  offset: 0, 0
+  index: -1

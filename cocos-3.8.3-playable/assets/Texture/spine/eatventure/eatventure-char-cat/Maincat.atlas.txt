@@ -1,0 +1,2008 @@
+
+Maincat.png
+size: 3286,136
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Back/Char/body_back
+  rotate: false
+  xy: 988, 2
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Royal Robe/body_back
+  rotate: false
+  xy: 988, 2
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Char/hand_back
+  rotate: false
+  xy: 3168, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Box/hand_back
+  rotate: false
+  xy: 3168, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Char/hand_front
+  rotate: false
+  xy: 3168, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Box/hand_front
+  rotate: false
+  xy: 3168, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Char/leg 1
+  rotate: false
+  xy: 2689, 71
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Char/leg 2
+  rotate: true
+  xy: 3207, 118
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Common/Blue Beanie/hat_f
+  rotate: false
+  xy: 3012, 101
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Common/Blue Cap/hat_f
+  rotate: false
+  xy: 2781, 2
+  size: 32, 21
+  orig: 32, 21
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Common/Green Cap/hat_f
+  rotate: false
+  xy: 3009, 77
+  size: 32, 21
+  orig: 32, 21
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Common/Red Cap/hat_f
+  rotate: true
+  xy: 3047, 8
+  size: 32, 21
+  orig: 32, 21
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Epic/Hood/hat_f
+  rotate: true
+  xy: 363, 4
+  size: 58, 29
+  orig: 58, 40
+  offset: 0, 11
+  index: -1
+Back/HAT HEAD/Epic/Mafia Hat/hat_f
+  rotate: true
+  xy: 442, 2
+  size: 61, 28
+  orig: 61, 28
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Epic/Tall Hat/hat_f
+  rotate: false
+  xy: 718, 10
+  size: 65, 53
+  orig: 65, 53
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Legendary/Dog Head/hat_ f
+  rotate: true
+  xy: 1104, 2
+  size: 63, 44
+  orig: 63, 44
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Legendary/Irish Hat/hat_f
+  rotate: true
+  xy: 221, 2
+  size: 60, 33
+  orig: 60, 33
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Legendary/Purple Cap/hat_f
+  rotate: true
+  xy: 331, 4
+  size: 58, 30
+  orig: 58, 30
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Legendary/Sushi Master/hat_f
+  rotate: true
+  xy: 2735, 88
+  size: 46, 38
+  orig: 46, 38
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Legendary/Tall Black Hat/hat_f
+  rotate: false
+  xy: 785, 10
+  size: 65, 53
+  orig: 65, 53
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Rare/Bowler Hat/hat_f
+  rotate: true
+  xy: 533, 5
+  size: 58, 25
+  orig: 58, 25
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Rare/Bowler Hat/hat
+  rotate: true
+  xy: 533, 5
+  size: 58, 25
+  orig: 58, 25
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Rare/Cone/hat_f
+  rotate: true
+  xy: 2775, 90
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Rare/Cool Cap/hat_f
+  rotate: false
+  xy: 3043, 77
+  size: 32, 22
+  orig: 32, 22
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Rare/Crown/hat_f
+  rotate: false
+  xy: 3077, 77
+  size: 31, 23
+  orig: 31, 23
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Rare/Fireman Hat/hat_f
+  rotate: true
+  xy: 560, 6
+  size: 57, 42
+  orig: 57, 42
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Rare/Safety Hat/hat_f
+  rotate: true
+  xy: 141, 2
+  size: 56, 38
+  orig: 56, 38
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Rare/Sushi Hat/hat_f
+  rotate: true
+  xy: 2978, 5
+  size: 34, 26
+  orig: 44, 26
+  offset: 10, 0
+  index: -1
+Back/HAT HEAD/Rare/White Hat/hat_f
+  rotate: true
+  xy: 1977, 69
+  size: 65, 27
+  orig: 65, 27
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Ultimate/Robot Head/hat_f
+  rotate: true
+  xy: 1150, 2
+  size: 63, 42
+  orig: 63, 42
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Ultimate/Royal Crown/hat_f
+  rotate: true
+  xy: 95, 3
+  size: 49, 44
+  orig: 49, 44
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Ultimate/Safety Hat/hat_f
+  rotate: true
+  xy: 181, 2
+  size: 56, 38
+  orig: 56, 38
+  offset: 0, 0
+  index: -1
+Back/HAT HEAD/Ultimate/Shark/hat_f
+  rotate: true
+  xy: 2686, 7
+  size: 62, 45
+  orig: 62, 45
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Hammer/tools_back
+  rotate: true
+  xy: 3153, 27
+  size: 21, 13
+  orig: 21, 13
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Ladle/tools_back
+  rotate: true
+  xy: 3159, 79
+  size: 26, 14
+  orig: 26, 14
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Legendary/Chopsticks/tools_back
+  rotate: false
+  xy: 2820, 71
+  size: 26, 20
+  orig: 26, 20
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Legendary/Chopsticks/tools_front
+  rotate: false
+  xy: 2820, 71
+  size: 26, 20
+  orig: 26, 20
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Legendary/Mixer/tools_back
+  rotate: true
+  xy: 3006, 5
+  size: 34, 23
+  orig: 34, 23
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Legendary/Wrench/tools_back
+  rotate: false
+  xy: 2778, 71
+  size: 40, 17
+  orig: 40, 17
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Legendary/carrot/tools_back
+  rotate: true
+  xy: 3031, 6
+  size: 33, 14
+  orig: 33, 14
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Legendary/pepper mill/tools_back
+  rotate: true
+  xy: 3070, 10
+  size: 31, 17
+  orig: 31, 17
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Mug/tools_back
+  rotate: false
+  xy: 2759, 2
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Pizza cutter/tools_back
+  rotate: true
+  xy: 3049, 43
+  size: 32, 17
+  orig: 32, 17
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Rare/Cheese Grater/tools_back
+  rotate: true
+  xy: 2848, 71
+  size: 20, 24
+  orig: 20, 24
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Rare/Dumbbell/tools_back
+  rotate: false
+  xy: 2937, 75
+  size: 34, 18
+  orig: 34, 18
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Rare/Fork/tools_back
+  rotate: true
+  xy: 3135, 21
+  size: 26, 16
+  orig: 26, 16
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Rare/Ketchup/tools_back
+  rotate: true
+  xy: 3142, 78
+  size: 27, 15
+  orig: 27, 15
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Rare/Spoon/tools_back
+  rotate: false
+  xy: 2746, 71
+  size: 30, 15
+  orig: 30, 15
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Rolling pin/tools_back
+  rotate: true
+  xy: 2930, 34
+  size: 37, 16
+  orig: 37, 16
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Spatula/tools_back
+  rotate: true
+  xy: 3110, 78
+  size: 23, 14
+  orig: 23, 14
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Ultimate/Anchor/tools_back
+  rotate: false
+  xy: 2979, 100
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Ultimate/Laser gun/tools_back
+  rotate: false
+  xy: 2905, 2
+  size: 35, 25
+  orig: 35, 25
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Ultimate/Pickaxe/tools_back
+  rotate: false
+  xy: 3047, 102
+  size: 27, 32
+  orig: 27, 32
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Ultimate/Royal Sceptre/tools_back
+  rotate: true
+  xy: 2898, 94
+  size: 40, 17
+  orig: 40, 17
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Whisk/tools_back
+  rotate: true
+  xy: 3129, 49
+  size: 27, 16
+  orig: 27, 16
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Wok/tools_back
+  rotate: false
+  xy: 2864, 3
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
+Back/Hand Tools Back/Wooden Spoon/tools_back
+  rotate: true
+  xy: 2844, 2
+  size: 24, 8
+  orig: 24, 8
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Black Buckle Belt/body_back
+  rotate: false
+  xy: 852, 2
+  size: 67, 62
+  orig: 67, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Black Buckle Belt/hand_back
+  rotate: false
+  xy: 3181, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Santa/hand_back
+  rotate: false
+  xy: 3181, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Common/Black Buckle Belt/hand_front
+  rotate: false
+  xy: 3181, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Santa/hand_front
+  rotate: false
+  xy: 3181, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Black Buckle Belt/leg 1
+  rotate: false
+  xy: 2708, 71
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Black Buckle Belt/leg 2
+  rotate: true
+  xy: 3207, 100
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Blue T-Shirt/body_back
+  rotate: false
+  xy: 921, 2
+  size: 65, 62
+  orig: 65, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Blue T-Shirt/hand_back
+  rotate: false
+  xy: 3194, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Common/Blue T-Shirt/hand_front
+  rotate: false
+  xy: 3194, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Blue T-Shirt/leg 1
+  rotate: false
+  xy: 2727, 71
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Sushi Chef/leg 1
+  rotate: false
+  xy: 2727, 71
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Sushi Master/leg 1
+  rotate: false
+  xy: 2727, 71
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Blue T-Shirt/leg 2
+  rotate: true
+  xy: 3211, 82
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Sushi Master/leg 2
+  rotate: true
+  xy: 3211, 82
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Green Shirt/body_back
+  rotate: true
+  xy: 2006, 70
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Green Shirt/hand_back
+  rotate: false
+  xy: 3260, 55
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Common/Green Shirt/hand_front
+  rotate: false
+  xy: 3260, 55
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Green Shirt/leg 1
+  rotate: true
+  xy: 3136, 2
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Green Shirt/leg 2
+  rotate: true
+  xy: 3221, 118
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Orange T-Shirt/body_back
+  rotate: true
+  xy: 2025, 4
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Orange T-Shirt/hand_back
+  rotate: false
+  xy: 3273, 55
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Common/Orange T-Shirt/hand_front
+  rotate: false
+  xy: 3273, 55
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Orange T-Shirt/leg 1
+  rotate: true
+  xy: 3150, 2
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Common/Orange T-Shirt/leg 2
+  rotate: true
+  xy: 3221, 100
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Blue Dress - Red Cape/body_back
+  rotate: false
+  xy: 1874, 2
+  size: 65, 64
+  orig: 69, 66
+  offset: 0, 2
+  index: -1
+Back/Shirt_Suit_Body/Epic/Blue Dress - Red Cape/cape_back
+  rotate: false
+  xy: 25, 3
+  size: 68, 49
+  orig: 68, 49
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Blue Dress - Red Cape/hand_back
+  rotate: false
+  xy: 3224, 53
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Blue Dress - Red Cape/hand_front
+  rotate: false
+  xy: 3224, 53
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Box/body_back
+  rotate: true
+  xy: 70, 54
+  size: 80, 65
+  orig: 80, 65
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Mafia Vest/body_back
+  rotate: true
+  xy: 2070, 70
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Mafia Vest/hand_back
+  rotate: false
+  xy: 3237, 53
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Vest/hand_back
+  rotate: false
+  xy: 3237, 53
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Mafia Vest/hand_front
+  rotate: false
+  xy: 3237, 53
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Vest/hand_front
+  rotate: false
+  xy: 3237, 53
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Mafia Vest/leg 2
+  rotate: false
+  xy: 3235, 122
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Mafia Vest/leg1
+  rotate: true
+  xy: 3179, 117
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Mafia Vest/vest_back
+  rotate: true
+  xy: 817, 66
+  size: 68, 34
+  orig: 68, 34
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Sushi Chef/body_back
+  rotate: true
+  xy: 2089, 4
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Sushi Chef/dress_back
+  rotate: true
+  xy: 2636, 5
+  size: 63, 23
+  orig: 63, 23
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Sushi Chef/hand_back
+  rotate: false
+  xy: 3250, 42
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Sushi Chef/hand_front
+  rotate: false
+  xy: 3250, 42
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Sushi Chef/leg 2
+  rotate: false
+  xy: 3253, 122
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/White Tux/body_back
+  rotate: true
+  xy: 2134, 70
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/White Tux/hand_back
+  rotate: false
+  xy: 3263, 42
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/White Tux/hand_front
+  rotate: false
+  xy: 3263, 42
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/White Tux/leg 1
+  rotate: true
+  xy: 3168, 40
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Irish Vest/leg 1
+  rotate: true
+  xy: 3168, 40
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Vest/leg 1
+  rotate: true
+  xy: 3168, 40
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Robot Suit/leg 1
+  rotate: true
+  xy: 3168, 40
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/White Tux/leg 2
+  rotate: true
+  xy: 3271, 118
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Vest/leg 2
+  rotate: true
+  xy: 3271, 118
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Tux/leg 2
+  rotate: true
+  xy: 3271, 118
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Robot Suit/leg 2
+  rotate: true
+  xy: 3271, 118
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Yellow Sweater/body_back
+  rotate: true
+  xy: 2153, 4
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Yellow Sweater/hand_back
+  rotate: false
+  xy: 3221, 40
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Yellow Sweater/hand_front
+  rotate: false
+  xy: 3221, 40
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Yellow Sweater/leg 1
+  rotate: true
+  xy: 3179, 8
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Epic/Yellow Sweater/leg 2
+  rotate: false
+  xy: 3235, 108
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Dog Suit/body_back
+  rotate: true
+  xy: 2198, 70
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Dog Suit/hand_back
+  rotate: false
+  xy: 3234, 40
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Dog Suit/hand_front
+  rotate: false
+  xy: 3234, 40
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Dog Suit/leg 1
+  rotate: true
+  xy: 3182, 40
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Dog Suit/leg 2
+  rotate: false
+  xy: 3253, 108
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Irish Vest/body_back
+  rotate: true
+  xy: 2217, 4
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Irish Vest/hand_back
+  rotate: false
+  xy: 3221, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Irish Vest/hand_front
+  rotate: false
+  xy: 3221, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Irish Vest/leg 2
+  rotate: true
+  xy: 3271, 100
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Irish Vest/vest_back
+  rotate: true
+  xy: 853, 66
+  size: 68, 34
+  orig: 68, 34
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Maid/body_back
+  rotate: true
+  xy: 219, 64
+  size: 70, 66
+  orig: 70, 66
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Maid/hand_back
+  rotate: false
+  xy: 3221, 14
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Maid/hand_front
+  rotate: false
+  xy: 3221, 14
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Purple Hoodie/body_back
+  rotate: true
+  xy: 579, 65
+  size: 69, 62
+  orig: 69, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Purple Hoodie/hand_back
+  rotate: false
+  xy: 3234, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Purple Hoodie/hand_front
+  rotate: false
+  xy: 3234, 27
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Purple Hoodie/leg 1
+  rotate: true
+  xy: 3193, 8
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Purple Hoodie/leg 2
+  rotate: false
+  xy: 3235, 94
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Santa/belt_back
+  rotate: true
+  xy: 1101, 67
+  size: 67, 23
+  orig: 67, 23
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Santa/body_back
+  rotate: true
+  xy: 2262, 70
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Santa/leg 1
+  rotate: true
+  xy: 3183, 69
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Santa/leg 2
+  rotate: false
+  xy: 3253, 94
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Sushi Master/body_back
+  rotate: true
+  xy: 2281, 4
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Sushi Master/dress_back
+  rotate: true
+  xy: 2639, 71
+  size: 63, 23
+  orig: 63, 23
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Sushi Master/hand_back
+  rotate: false
+  xy: 3234, 14
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Sushi Master/hand_front
+  rotate: false
+  xy: 3234, 14
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Vest/body_back
+  rotate: true
+  xy: 2326, 70
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Legendary/Vest/vest_back
+  rotate: true
+  xy: 889, 66
+  size: 68, 34
+  orig: 68, 34
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Apron/body_back
+  rotate: true
+  xy: 2345, 4
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Apron/dress_back
+  rotate: true
+  xy: 2610, 4
+  size: 64, 24
+  orig: 64, 24
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Apron/hand_back
+  rotate: false
+  xy: 3247, 29
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Apron/hand_front
+  rotate: false
+  xy: 3247, 29
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Apron/leg 1
+  rotate: true
+  xy: 3196, 50
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Apron/leg 2
+  rotate: true
+  xy: 3271, 82
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Cool Hoodie/body_back
+  rotate: true
+  xy: 643, 65
+  size: 69, 62
+  orig: 69, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Cool Hoodie/hand_back
+  rotate: false
+  xy: 3260, 29
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Cool Hoodie/hand_front
+  rotate: false
+  xy: 3260, 29
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Cool Hoodie/leg 1
+  rotate: true
+  xy: 3207, 31
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Cool Hoodie/leg 2
+  rotate: false
+  xy: 3225, 80
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Prince/body_back
+  rotate: true
+  xy: 2390, 70
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Prince/hand_back
+  rotate: false
+  xy: 3273, 29
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Prince/hand_front
+  rotate: false
+  xy: 3273, 29
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Prince/leg 1
+  rotate: true
+  xy: 3207, 12
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Prince/leg 2
+  rotate: false
+  xy: 3243, 80
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Tux/body_back
+  rotate: true
+  xy: 2409, 4
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Tux/hand_back
+  rotate: false
+  xy: 3247, 16
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Tux/hand_front
+  rotate: false
+  xy: 3247, 16
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Tux/leg 1
+  rotate: true
+  xy: 3193, 117
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Yellow Hoodie/body_back
+  rotate: true
+  xy: 707, 65
+  size: 69, 62
+  orig: 69, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Yellow Hoodie/hand_back
+  rotate: false
+  xy: 3247, 3
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Yellow Hoodie/hand_front
+  rotate: false
+  xy: 3247, 3
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Yellow Hoodie/leg 1
+  rotate: true
+  xy: 3193, 98
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Rare/Yellow Hoodie/leg 2
+  rotate: false
+  xy: 3261, 68
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Apron Belt/body_back
+  rotate: true
+  xy: 2454, 70
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Apron Belt/dress
+  rotate: true
+  xy: 2613, 70
+  size: 64, 24
+  orig: 64, 24
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Apron Belt/hand
+  rotate: false
+  xy: 3260, 16
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Apron Belt/hand_front
+  rotate: false
+  xy: 3260, 16
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Apron Belt/leg 1
+  rotate: true
+  xy: 3197, 79
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Apron Belt/leg 2
+  rotate: false
+  xy: 3224, 66
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Robot Suit/body_back
+  rotate: true
+  xy: 2473, 4
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Robot Suit/hand
+  rotate: false
+  xy: 3273, 16
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Robot Suit/hand_front
+  rotate: false
+  xy: 3273, 16
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Royal Robe/hand
+  rotate: false
+  xy: 3260, 3
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Royal Robe/hand_front
+  rotate: false
+  xy: 3260, 3
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Royal Robe/rope
+  rotate: true
+  xy: 137, 60
+  size: 74, 43
+  orig: 74, 43
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Royal Robe/rope2
+  rotate: true
+  xy: 355, 64
+  size: 70, 18
+  orig: 70, 18
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Shark/body_back
+  rotate: true
+  xy: 2518, 70
+  size: 64, 62
+  orig: 64, 62
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Shark/hand
+  rotate: false
+  xy: 3165, 59
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Shark/leg 1
+  rotate: true
+  xy: 3210, 60
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+Back/Shirt_Suit_Body/Ultimate/Shark/leg 2
+  rotate: false
+  xy: 3242, 66
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+Back/tail_back
+  rotate: false
+  xy: 2843, 93
+  size: 26, 41
+  orig: 26, 41
+  offset: 0, 0
+  index: -1
+Front/Char/blush
+  rotate: false
+  xy: 757, 3
+  size: 24, 5
+  orig: 24, 5
+  offset: 0, 0
+  index: -1
+Front/Char/body_front
+  rotate: true
+  xy: 1194, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Char/eye1
+  rotate: false
+  xy: 743, 2
+  size: 5, 6
+  orig: 5, 6
+  offset: 0, 0
+  index: -1
+Front/Char/eye2
+  rotate: false
+  xy: 750, 2
+  size: 5, 6
+  orig: 5, 6
+  offset: 0, 0
+  index: -1
+Front/Char/eye_sleep
+  rotate: true
+  xy: 137, 54
+  size: 4, 2
+  orig: 4, 2
+  offset: 0, 0
+  index: -1
+Front/Char/mouth
+  rotate: false
+  xy: 718, 2
+  size: 13, 6
+  orig: 13, 6
+  offset: 0, 0
+  index: -1
+Front/Char/mouth_sleep
+  rotate: false
+  xy: 604, 2
+  size: 3, 3
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+Front/Char/shadow
+  rotate: true
+  xy: 2, 2
+  size: 50, 21
+  orig: 50, 21
+  offset: 0, 0
+  index: -1
+Front/Char/sleepz
+  rotate: false
+  xy: 733, 2
+  size: 8, 6
+  orig: 8, 6
+  offset: 0, 0
+  index: -1
+Front/Char/tail_front
+  rotate: false
+  xy: 2810, 93
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Common/Blue Beanie/hat
+  rotate: true
+  xy: 2891, 29
+  size: 40, 37
+  orig: 40, 37
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Common/Blue Cap/hat
+  rotate: true
+  xy: 2837, 28
+  size: 41, 25
+  orig: 41, 25
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Common/Green Cap/hat
+  rotate: true
+  xy: 2871, 93
+  size: 41, 25
+  orig: 41, 25
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Common/Red Cap/hat
+  rotate: true
+  xy: 2864, 28
+  size: 41, 25
+  orig: 41, 25
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Epic/Hood/hat
+  rotate: true
+  xy: 290, 4
+  size: 58, 39
+  orig: 58, 40
+  offset: 0, 1
+  index: -1
+Front/HAT HEAD/Epic/Mafia Hat/hat
+  rotate: true
+  xy: 472, 2
+  size: 61, 28
+  orig: 61, 28
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Epic/Red Glasses/hat
+  rotate: true
+  xy: 3106, 45
+  size: 30, 10
+  orig: 30, 10
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Epic/Tall Hat/hat
+  rotate: true
+  xy: 1922, 69
+  size: 65, 53
+  orig: 65, 53
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Legendary/Dog Head/hat
+  rotate: true
+  xy: 1054, 2
+  size: 63, 48
+  orig: 63, 48
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Legendary/Elder Beard/hat
+  rotate: false
+  xy: 2815, 2
+  size: 27, 24
+  orig: 27, 24
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Legendary/Irish Hat/hat
+  rotate: true
+  xy: 256, 2
+  size: 60, 32
+  orig: 60, 32
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Legendary/Purple Cap/hat
+  rotate: true
+  xy: 502, 5
+  size: 58, 29
+  orig: 58, 29
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Legendary/Sushi Master/hat
+  rotate: true
+  xy: 2733, 23
+  size: 46, 38
+  orig: 46, 38
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Legendary/Tall Black Hat/hat
+  rotate: true
+  xy: 1941, 2
+  size: 65, 53
+  orig: 65, 53
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Rare/Cone/hat
+  rotate: true
+  xy: 2773, 25
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Rare/Cool Cap/hat
+  rotate: true
+  xy: 2808, 28
+  size: 41, 27
+  orig: 41, 27
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Rare/Crown/hat
+  rotate: true
+  xy: 3105, 103
+  size: 31, 21
+  orig: 31, 21
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Rare/Fireman Hat/hat
+  rotate: true
+  xy: 604, 7
+  size: 56, 36
+  orig: 56, 36
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Rare/Safety Hat/hat
+  rotate: true
+  xy: 642, 7
+  size: 56, 36
+  orig: 56, 36
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Rare/Sushi Hat/hat
+  rotate: false
+  xy: 2942, 2
+  size: 34, 30
+  orig: 34, 30
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Rare/White Hat/hat
+  rotate: true
+  xy: 1996, 2
+  size: 65, 27
+  orig: 65, 27
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Ultimate/Robot Head/hat
+  rotate: true
+  xy: 1878, 68
+  size: 66, 42
+  orig: 66, 42
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Ultimate/Royal Crown/hat
+  rotate: true
+  xy: 2689, 85
+  size: 49, 44
+  orig: 49, 44
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Ultimate/Shark/hat
+  rotate: true
+  xy: 394, 2
+  size: 61, 46
+  orig: 61, 46
+  offset: 0, 0
+  index: -1
+Front/HAT HEAD/Ultimate/Torch Helmet/hat
+  rotate: true
+  xy: 680, 7
+  size: 56, 36
+  orig: 56, 36
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Common/Hammer/tools_front
+  rotate: true
+  xy: 3164, 4
+  size: 21, 13
+  orig: 21, 13
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Common/Ladle/tools_front
+  rotate: true
+  xy: 3163, 108
+  size: 26, 14
+  orig: 26, 14
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Common/Spatula/tools_front
+  rotate: true
+  xy: 3126, 78
+  size: 23, 14
+  orig: 23, 14
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Common/Wooden Spoon/tools_front
+  rotate: true
+  xy: 2854, 2
+  size: 24, 8
+  orig: 24, 8
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Epic/Mug/tools_front
+  rotate: true
+  xy: 2874, 71
+  size: 20, 19
+  orig: 20, 19
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Epic/Pizza cutter/tools_front
+  rotate: true
+  xy: 3068, 43
+  size: 32, 17
+  orig: 32, 17
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Epic/Rolling pin/tools_front
+  rotate: true
+  xy: 2961, 97
+  size: 37, 16
+  orig: 37, 16
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Epic/Whisk/tools_front
+  rotate: true
+  xy: 3128, 107
+  size: 27, 16
+  orig: 27, 16
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Epic/Wok/tools_front
+  rotate: true
+  xy: 2936, 95
+  size: 39, 23
+  orig: 39, 23
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Legendary/Mixer/tools_front
+  rotate: true
+  xy: 3008, 41
+  size: 34, 23
+  orig: 34, 23
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Legendary/Wrench/tools_front
+  rotate: true
+  xy: 2917, 94
+  size: 40, 17
+  orig: 40, 17
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Legendary/carrot/tools_front
+  rotate: true
+  xy: 3033, 42
+  size: 33, 14
+  orig: 33, 14
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Legendary/pepper mill/tools_front
+  rotate: true
+  xy: 3087, 44
+  size: 31, 17
+  orig: 31, 17
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Rare/Cheese Grater/tools_front
+  rotate: true
+  xy: 2733, 2
+  size: 19, 24
+  orig: 19, 24
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Rare/Dumbbell/tools_front
+  rotate: false
+  xy: 2973, 77
+  size: 34, 18
+  orig: 34, 18
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Rare/Fork/tools_front
+  rotate: true
+  xy: 3147, 50
+  size: 26, 16
+  orig: 26, 16
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Rare/Ketchup/tools_front
+  rotate: true
+  xy: 3146, 107
+  size: 27, 15
+  orig: 27, 15
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Rare/spoon/tools_front
+  rotate: true
+  xy: 3089, 12
+  size: 30, 15
+  orig: 30, 15
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Ultimate/Anchor/tools_front
+  rotate: false
+  xy: 2975, 41
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Ultimate/Laser gun/tools_front
+  rotate: true
+  xy: 2948, 38
+  size: 35, 25
+  orig: 35, 25
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Ultimate/Pickaxe/tools_front
+  rotate: false
+  xy: 3076, 102
+  size: 27, 32
+  orig: 27, 32
+  offset: 0, 0
+  index: -1
+Front/Hand Tools Front/Ultimate/Royal Sceptre/tools_front
+  rotate: false
+  xy: 2895, 73
+  size: 40, 18
+  orig: 40, 18
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Common/Black Buckle Belt/body_front
+  rotate: true
+  xy: 1033, 67
+  size: 67, 66
+  orig: 67, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Common/Blue T-Shirt/body_front
+  rotate: false
+  xy: 1218, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Common/Green Shirt/body_front
+  rotate: true
+  xy: 1262, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Common/Orange T-Shirt/body_front
+  rotate: false
+  xy: 1284, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Blue Dress - Red Cape/Cape_front
+  rotate: false
+  xy: 3106, 14
+  size: 27, 29
+  orig: 69, 44
+  offset: 0, 4
+  index: -1
+Front/Shirt_Suit_Body/Epic/Blue Dress - Red Cape/Dress_front
+  rotate: true
+  xy: 2537, 4
+  size: 64, 40
+  orig: 64, 40
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Blue Dress - Red Cape/Dress_front2
+  rotate: true
+  xy: 771, 65
+  size: 69, 44
+  orig: 69, 44
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Box/body_front
+  rotate: true
+  xy: 2, 54
+  size: 80, 66
+  orig: 80, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Mafia Vest/body_front
+  rotate: true
+  xy: 1330, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Mafia Vest/vest_front
+  rotate: true
+  xy: 925, 66
+  size: 68, 34
+  orig: 68, 34
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Sushi Chef/body_front
+  rotate: false
+  xy: 1350, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Sushi Chef/dress_front
+  rotate: true
+  xy: 2661, 6
+  size: 63, 23
+  orig: 63, 23
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/White Tux/body_front
+  rotate: true
+  xy: 1398, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Epic/Yellow Sweater/body_front
+  rotate: false
+  xy: 1416, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Dog Suit/body_front
+  rotate: true
+  xy: 1466, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Irish Vest/body_front
+  rotate: false
+  xy: 1482, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Irish Vest/vest_front
+  rotate: true
+  xy: 961, 66
+  size: 68, 34
+  orig: 68, 34
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Maid/body_front
+  rotate: true
+  xy: 1534, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Maid/dress_front
+  rotate: true
+  xy: 287, 64
+  size: 70, 43
+  orig: 70, 43
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Purple Hoodie/body_front
+  rotate: true
+  xy: 375, 65
+  size: 69, 66
+  orig: 69, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Santa/belt_front
+  rotate: true
+  xy: 1126, 67
+  size: 67, 23
+  orig: 67, 23
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Santa/body_front
+  rotate: false
+  xy: 1548, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Sushi Master/apron_front
+  rotate: true
+  xy: 2664, 71
+  size: 63, 23
+  orig: 63, 23
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Sushi Master/body_front
+  rotate: true
+  xy: 1602, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Vest/body_front
+  rotate: false
+  xy: 1151, 68
+  size: 65, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Legendary/Vest/vest_front
+  rotate: true
+  xy: 997, 66
+  size: 68, 34
+  orig: 68, 34
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Apron/Apron_front
+  rotate: true
+  xy: 2579, 4
+  size: 64, 29
+  orig: 64, 29
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Apron/Belt_front
+  rotate: false
+  xy: 3106, 3
+  size: 28, 9
+  orig: 28, 9
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Apron/body_front
+  rotate: false
+  xy: 1614, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Cool Hoodie/body_front
+  rotate: true
+  xy: 443, 65
+  size: 69, 66
+  orig: 69, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Prince/body_front
+  rotate: true
+  xy: 1670, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Tux/body_front
+  rotate: false
+  xy: 1680, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Rare/Yellow Hoodie/body_front
+  rotate: true
+  xy: 511, 65
+  size: 69, 66
+  orig: 69, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Apron Belt/apron_front
+  rotate: true
+  xy: 2582, 70
+  size: 64, 29
+  orig: 64, 29
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Apron Belt/belt_front
+  rotate: true
+  xy: 3118, 48
+  size: 28, 9
+  orig: 28, 9
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Apron Belt/body_front
+  rotate: true
+  xy: 1738, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Robot Suit/body_merge
+  rotate: false
+  xy: 1746, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Royal Robe/body_front
+  rotate: true
+  xy: 1806, 2
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Royal Robe/rope2_front
+  rotate: true
+  xy: 332, 64
+  size: 70, 21
+  orig: 70, 21
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Royal Robe/rope_front
+  rotate: true
+  xy: 182, 60
+  size: 74, 35
+  orig: 74, 35
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Shark/body_front
+  rotate: false
+  xy: 1812, 68
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1
+Front/Shirt_Suit_Body/Ultimate/Shark/hand_front
+  rotate: false
+  xy: 3175, 88
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1

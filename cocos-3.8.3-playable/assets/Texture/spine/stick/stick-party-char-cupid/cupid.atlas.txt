@@ -1,0 +1,118 @@
+
+cupid.png
+size: 205,46
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 143, 22
+  size: 30, 19
+  orig: 30, 19
+  offset: 0, 0
+  index: -1
+CUNG2
+  rotate: false
+  xy: 81, 36
+  size: 57, 8
+  orig: 57, 8
+  offset: 0, 0
+  index: -1
+DAY
+  rotate: false
+  xy: 140, 43
+  size: 46, 1
+  orig: 46, 1
+  offset: 0, 0
+  index: -1
+Ellipse 2
+  rotate: false
+  xy: 37, 3
+  size: 34, 11
+  orig: 34, 12
+  offset: 0, 1
+  index: -1
+Flag-L
+  rotate: false
+  xy: 37, 16
+  size: 38, 25
+  orig: 38, 25
+  offset: 0, 0
+  index: -1
+Flag-R
+  rotate: false
+  xy: 77, 9
+  size: 38, 25
+  orig: 38, 25
+  offset: 0, 0
+  index: -1
+canh-p
+  rotate: false
+  xy: 162, 5
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+canh-t
+  rotate: true
+  xy: 188, 28
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+chan-
+  rotate: false
+  xy: 190, 19
+  size: 13, 7
+  orig: 13, 7
+  offset: 0, 0
+  index: -1
+chan-t
+  rotate: false
+  xy: 190, 10
+  size: 13, 7
+  orig: 13, 7
+  offset: 0, 0
+  index: -1
+cung-sau-lung
+  rotate: true
+  xy: 117, 7
+  size: 27, 24
+  orig: 27, 24
+  offset: 0, 0
+  index: -1
+daybancung
+  rotate: false
+  xy: 2, 43
+  size: 77, 1
+  orig: 77, 1
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 6
+  size: 33, 35
+  orig: 33, 35
+  offset: 0, 0
+  index: -1
+muiten
+  rotate: true
+  xy: 143, 2
+  size: 18, 17
+  orig: 21, 20
+  offset: 2, 0
+  index: -1
+tay-p
+  rotate: true
+  xy: 175, 25
+  size: 16, 9
+  orig: 16, 9
+  offset: 0, 0
+  index: -1
+tay-t
+  rotate: true
+  xy: 179, 7
+  size: 16, 9
+  orig: 16, 9
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,209 @@
+
+boss_kratos.png
+size: 1089,177
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BODY
+  rotate: true
+  xy: 286, 51
+  size: 124, 126
+  orig: 124, 126
+  offset: 0, 0
+  index: -1
+CHAN_PHAI_DUOI
+  rotate: false
+  xy: 583, 41
+  size: 34, 38
+  orig: 34, 38
+  offset: 0, 0
+  index: -1
+CHAN_PHAI_TREN
+  rotate: false
+  xy: 135, 2
+  size: 53, 47
+  orig: 53, 47
+  offset: 0, 0
+  index: -1
+CHAN_TRAI
+  rotate: true
+  xy: 526, 35
+  size: 44, 55
+  orig: 44, 55
+  offset: 0, 0
+  index: -1
+DAO
+  rotate: false
+  xy: 414, 56
+  size: 110, 119
+  orig: 116, 138
+  offset: 0, 0
+  index: -1
+DAU
+  rotate: true
+  xy: 930, 104
+  size: 71, 104
+  orig: 140, 149
+  offset: 44, 16
+  index: -1
+LONG_PHAI
+  rotate: false
+  xy: 848, 6
+  size: 94, 72
+  orig: 94, 72
+  offset: 0, 0
+  index: -1
+LONG_PHAI1
+  rotate: false
+  xy: 1036, 67
+  size: 51, 108
+  orig: 51, 108
+  offset: 0, 0
+  index: -1
+LONG_TRAI
+  rotate: true
+  xy: 1035, 18
+  size: 47, 52
+  orig: 47, 52
+  offset: 0, 0
+  index: -1
+LONG_TRAI1
+  rotate: false
+  xy: 1004, 22
+  size: 29, 80
+  orig: 29, 80
+  offset: 0, 0
+  index: -1
+Layer 23
+  rotate: false
+  xy: 619, 44
+  size: 35, 35
+  orig: 36, 35
+  offset: 0, 0
+  index: -1
+Layer 26
+  rotate: true
+  xy: 414, 2
+  size: 52, 104
+  orig: 52, 104
+  offset: 0, 0
+  index: -1
+MAT_DONG
+  rotate: false
+  xy: 520, 13
+  size: 51, 20
+  orig: 51, 20
+  offset: 0, 0
+  index: -1
+MAT_MO
+  rotate: false
+  xy: 573, 6
+  size: 41, 27
+  orig: 51, 34
+  offset: 7, 6
+  index: -1
+MIENG
+  rotate: false
+  xy: 619, 32
+  size: 37, 10
+  orig: 37, 10
+  offset: 0, 0
+  index: -1
+TAY_PHAI1
+  rotate: false
+  xy: 944, 17
+  size: 58, 85
+  orig: 58, 85
+  offset: 0, 0
+  index: -1
+TAY_PHAI2
+  rotate: false
+  xy: 190, 5
+  size: 59, 54
+  orig: 59, 54
+  offset: 0, 0
+  index: -1
+TAY_PHAI3
+  rotate: false
+  xy: 251, 2
+  size: 43, 47
+  orig: 45, 49
+  offset: 0, 1
+  index: -1
+TAY_PHAI3_VUKHI
+  rotate: true
+  xy: 156, 61
+  size: 106, 128
+  orig: 112, 135
+  offset: 6, 0
+  index: -1
+TAY_TRAI1
+  rotate: true
+  xy: 658, 2
+  size: 93, 102
+  orig: 93, 102
+  offset: 0, 0
+  index: -1
+TAY_TRAI2
+  rotate: true
+  xy: 762, 2
+  size: 76, 84
+  orig: 76, 84
+  offset: 0, 0
+  index: -1
+TAY_TRAI3
+  rotate: false
+  xy: 360, 4
+  size: 50, 45
+  orig: 52, 52
+  offset: 1, 0
+  index: -1
+TAY_TRAI3_VUKHI
+  rotate: false
+  xy: 526, 81
+  size: 130, 94
+  orig: 130, 122
+  offset: 0, 9
+  index: -1
+VAY
+  rotate: false
+  xy: 296, 7
+  size: 62, 42
+  orig: 62, 53
+  offset: 0, 9
+  index: -1
+XICH1
+  rotate: false
+  xy: 2, 169
+  size: 281, 6
+  orig: 281, 6
+  offset: 0, 0
+  index: -1
+fx/1/attack1_1
+  rotate: false
+  xy: 2, 6
+  size: 131, 60
+  orig: 158, 113
+  offset: 3, 51
+  index: -1
+fx/1/attack1_2
+  rotate: false
+  xy: 806, 80
+  size: 122, 95
+  orig: 158, 113
+  offset: 35, 16
+  index: -1
+fx/1/attack1_3
+  rotate: false
+  xy: 658, 97
+  size: 146, 78
+  orig: 158, 113
+  offset: 11, 2
+  index: -1
+fx/1/attack1_4
+  rotate: false
+  xy: 2, 68
+  size: 152, 99
+  orig: 158, 113
+  offset: 4, 2
+  index: -1

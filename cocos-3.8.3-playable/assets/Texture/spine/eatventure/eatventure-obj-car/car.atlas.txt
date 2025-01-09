@@ -1,0 +1,83 @@
+
+car.png
+size: 272,2058
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Horizontal/Car-blue/car 1
+  rotate: true
+  xy: 2, 1620
+  size: 436, 268
+  orig: 436, 269
+  offset: 0, 0
+  index: -1
+Horizontal/Car-grey/car 1
+  rotate: true
+  xy: 2, 1182
+  size: 436, 268
+  orig: 436, 269
+  offset: 0, 0
+  index: -1
+Horizontal/Car-red/car 1
+  rotate: true
+  xy: 2, 744
+  size: 436, 268
+  orig: 440, 273
+  offset: 2, 2
+  index: -1
+Horizontal/Car-yellow/car 1
+  rotate: true
+  xy: 2, 306
+  size: 436, 268
+  orig: 440, 273
+  offset: 2, 2
+  index: -1
+Horizontal/Car-yellow/flash 1
+  rotate: false
+  xy: 139, 30
+  size: 73, 71
+  orig: 77, 75
+  offset: 2, 2
+  index: -1
+Horizontal/Car-yellow/flash 2
+  rotate: false
+  xy: 214, 15
+  size: 43, 86
+  orig: 47, 90
+  offset: 2, 2
+  index: -1
+Horizontal/Car-yellow/spinning
+  rotate: false
+  xy: 2, 2
+  size: 84, 41
+  orig: 88, 45
+  offset: 2, 2
+  index: -1
+Horizontal/Car-yellow/wheel 1
+  rotate: true
+  xy: 178, 103
+  size: 99, 80
+  orig: 99, 80
+  offset: 0, 0
+  index: -1
+smoke 1
+  rotate: true
+  xy: 2, 45
+  size: 131, 135
+  orig: 185, 165
+  offset: 26, 15
+  index: -1
+smoke 2
+  rotate: true
+  xy: 178, 204
+  size: 100, 90
+  orig: 135, 129
+  offset: 17, 21
+  index: -1
+smoke 3
+  rotate: false
+  xy: 2, 178
+  size: 174, 126
+  orig: 174, 126
+  offset: 0, 0
+  index: -1

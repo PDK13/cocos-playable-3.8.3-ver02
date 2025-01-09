@@ -1,0 +1,76 @@
+
+pet1.png
+size: 87,87
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+pet2/TAIL
+  rotate: false
+  xy: 39, 4
+  size: 26, 11
+  orig: 26, 11
+  offset: 0, 0
+  index: -1
+pet3/MOUTH
+  rotate: true
+  xy: 82, 45
+  size: 12, 3
+  orig: 12, 3
+  offset: 0, 0
+  index: -1
+pet3/RING
+  rotate: true
+  xy: 2, 3
+  size: 37, 13
+  orig: 37, 13
+  offset: 0, 0
+  index: -1
+pet4/CLOACK_L
+  rotate: false
+  xy: 53, 59
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+pet4/CLOACK_L3
+  rotate: true
+  xy: 67, 6
+  size: 25, 18
+  orig: 25, 18
+  offset: 0, 0
+  index: -1
+pet4/CLOACK_R
+  rotate: true
+  xy: 17, 3
+  size: 15, 20
+  orig: 15, 20
+  offset: 0, 0
+  index: -1
+pet4/CLOACK_R1
+  rotate: false
+  xy: 53, 33
+  size: 27, 24
+  orig: 27, 24
+  offset: 0, 0
+  index: -1
+pet4/body
+  rotate: false
+  xy: 2, 42
+  size: 49, 43
+  orig: 49, 43
+  offset: 0, 0
+  index: -1
+pet4/crown
+  rotate: true
+  xy: 17, 20
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
+pet4/eye
+  rotate: true
+  xy: 42, 17
+  size: 23, 7
+  orig: 24, 7
+  offset: 1, 0
+  index: -1

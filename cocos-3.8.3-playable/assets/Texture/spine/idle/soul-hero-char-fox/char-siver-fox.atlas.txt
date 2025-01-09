@@ -1,0 +1,314 @@
+
+char-siver-fox.png
+size: 900,219
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+EYEBROW
+  rotate: false
+  xy: 566, 8
+  size: 44, 10
+  orig: 44, 10
+  offset: 0, 0
+  index: -1
+EYE_CLOSE
+  rotate: false
+  xy: 222, 2
+  size: 48, 9
+  orig: 48, 9
+  offset: 0, 0
+  index: -1
+L_HAND1
+  rotate: false
+  xy: 845, 200
+  size: 18, 17
+  orig: 18, 17
+  offset: 0, 0
+  index: -1
+NECK
+  rotate: false
+  xy: 380, 2
+  size: 15, 16
+  orig: 15, 16
+  offset: 0, 0
+  index: -1
+R_HAND1
+  rotate: true
+  xy: 397, 2
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+R_HAND2
+  rotate: false
+  xy: 869, 28
+  size: 19, 18
+  orig: 19, 18
+  offset: 0, 0
+  index: -1
+R_HAND2_1
+  rotate: true
+  xy: 845, 181
+  size: 17, 18
+  orig: 17, 18
+  offset: 0, 0
+  index: -1
+R_HAND3
+  rotate: false
+  xy: 845, 162
+  size: 18, 17
+  orig: 18, 17
+  offset: 0, 0
+  index: -1
+fx_skin15/fx_attack_1
+  rotate: true
+  xy: 748, 85
+  size: 132, 75
+  orig: 223, 123
+  offset: 2, 46
+  index: -1
+fx_skin15/fx_attack_2
+  rotate: true
+  xy: 632, 68
+  size: 149, 114
+  orig: 223, 123
+  offset: 4, 2
+  index: -1
+fx_skin15/fx_attack_3
+  rotate: true
+  xy: 632, 68
+  size: 149, 114
+  orig: 223, 123
+  offset: 4, 2
+  index: -1
+fx_skin15/fx_attack_4
+  rotate: true
+  xy: 112, 8
+  size: 209, 108
+  orig: 223, 123
+  offset: 4, 7
+  index: -1
+fx_skin15/fx_attack_5
+  rotate: true
+  xy: 2, 7
+  size: 210, 108
+  orig: 223, 123
+  offset: 9, 5
+  index: -1
+fx_skin15/fx_attack_6
+  rotate: true
+  xy: 2, 7
+  size: 210, 108
+  orig: 223, 123
+  offset: 9, 5
+  index: -1
+fx_skin15/fx_attack_7
+  rotate: true
+  xy: 222, 13
+  size: 204, 113
+  orig: 223, 123
+  offset: 14, 5
+  index: -1
+fx_skin15/fx_attack_8
+  rotate: true
+  xy: 337, 20
+  size: 197, 116
+  orig: 223, 123
+  offset: 23, 4
+  index: -1
+fx_skin15/fx_attack_9
+  rotate: true
+  xy: 455, 20
+  size: 197, 116
+  orig: 223, 123
+  offset: 25, 5
+  index: -1
+nose
+  rotate: false
+  xy: 2, 2
+  size: 2, 3
+  orig: 2, 3
+  offset: 0, 0
+  index: -1
+skin_17/BODY_1
+  rotate: true
+  xy: 869, 182
+  size: 35, 29
+  orig: 35, 29
+  offset: 0, 0
+  index: -1
+skin_17/BODY_6
+  rotate: true
+  xy: 869, 7
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+skin_17/BODY_7
+  rotate: false
+  xy: 438, 3
+  size: 20, 15
+  orig: 20, 15
+  offset: 0, 0
+  index: -1
+skin_17/EYE_OPEN
+  rotate: true
+  xy: 825, 172
+  size: 45, 18
+  orig: 45, 20
+  offset: 0, 0
+  index: -1
+skin_17/HAIR_BACK
+  rotate: true
+  xy: 776, 3
+  size: 80, 91
+  orig: 80, 91
+  offset: 0, 0
+  index: -1
+skin_17/HAIR_BANG
+  rotate: false
+  xy: 612, 7
+  size: 93, 55
+  orig: 93, 55
+  offset: 0, 0
+  index: -1
+skin_17/HEAD
+  rotate: false
+  xy: 707, 4
+  size: 67, 62
+  orig: 67, 62
+  offset: 0, 0
+  index: -1
+skin_17/HORN_1
+  rotate: false
+  xy: 573, 24
+  size: 26, 38
+  orig: 26, 38
+  offset: 0, 0
+  index: -1
+skin_17/HORN_2
+  rotate: false
+  xy: 869, 48
+  size: 25, 35
+  orig: 25, 35
+  offset: 0, 0
+  index: -1
+skin_17/L_LEG
+  rotate: true
+  xy: 537, 6
+  size: 12, 27
+  orig: 12, 27
+  offset: 0, 0
+  index: -1
+skin_17/L_LOW_ARM
+  rotate: true
+  xy: 337, 2
+  size: 16, 20
+  orig: 123, 128
+  offset: 81, 20
+  index: -1
+skin_17/L_LOW_ARM_BRACELET
+  rotate: false
+  xy: 748, 73
+  size: 20, 10
+  orig: 20, 10
+  offset: 0, 0
+  index: -1
+skin_17/L_SHOES
+  rotate: true
+  xy: 493, 5
+  size: 13, 12
+  orig: 13, 12
+  offset: 0, 0
+  index: -1
+skin_17/L_UP_ARM
+  rotate: true
+  xy: 359, 2
+  size: 16, 19
+  orig: 16, 19
+  offset: 0, 0
+  index: -1
+skin_17/L_UP_ARM_ARMOR
+  rotate: false
+  xy: 869, 158
+  size: 28, 22
+  orig: 28, 22
+  offset: 0, 0
+  index: -1
+skin_17/MALE_BODY
+  rotate: false
+  xy: 869, 122
+  size: 26, 34
+  orig: 26, 34
+  offset: 0, 0
+  index: -1
+skin_17/MOUNTH_1
+  rotate: false
+  xy: 112, 2
+  size: 11, 4
+  orig: 11, 4
+  offset: 0, 0
+  index: -1
+skin_17/MOUNTH_3
+  rotate: false
+  xy: 112, 2
+  size: 11, 4
+  orig: 11, 4
+  offset: 0, 0
+  index: -1
+skin_17/MOUNTH_2
+  rotate: false
+  xy: 125, 2
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+skin_17/MOUNTH_4
+  rotate: false
+  xy: 272, 2
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+skin_17/R_LEG
+  rotate: true
+  xy: 507, 6
+  size: 12, 28
+  orig: 12, 28
+  offset: 0, 0
+  index: -1
+skin_17/R_LOW_ARM
+  rotate: true
+  xy: 414, 3
+  size: 15, 22
+  orig: 15, 22
+  offset: 0, 0
+  index: -1
+skin_17/R_SHOES
+  rotate: true
+  xy: 479, 4
+  size: 14, 12
+  orig: 14, 12
+  offset: 0, 0
+  index: -1
+skin_17/R_UP_ARM
+  rotate: true
+  xy: 460, 3
+  size: 15, 17
+  orig: 15, 17
+  offset: 0, 0
+  index: -1
+skin_17/TAIL
+  rotate: false
+  xy: 825, 85
+  size: 65, 35
+  orig: 65, 35
+  offset: 0, 0
+  index: -1
+skin_17/WEAPON
+  rotate: false
+  xy: 573, 64
+  size: 57, 153
+  orig: 57, 153
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,188 @@
+
+Giant_Golem_than.png
+size: 1878, 1043
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+0
+  rotate: false
+  xy: 607, 522
+  size: 562, 519
+  orig: 562, 519
+  offset: 0, 0
+  index: -1
+0mm
+  rotate: false
+  xy: 352, 2
+  size: 284, 74
+  orig: 284, 74
+  offset: 0, 0
+  index: -1
+11
+  rotate: false
+  xy: 638, 2
+  size: 281, 74
+  orig: 281, 74
+  offset: 0, 0
+  index: -1
+12
+  rotate: false
+  xy: 352, 92
+  size: 212, 44
+  orig: 212, 44
+  offset: 0, 0
+  index: -1
+22s
+  rotate: false
+  xy: 2, 36
+  size: 348, 330
+  orig: 349, 330
+  offset: 1, 0
+  index: -1
+33
+  rotate: false
+  xy: 1166, 33
+  size: 345, 156
+  orig: 345, 156
+  offset: 0, 0
+  index: -1
+8
+  rotate: false
+  xy: 607, 78
+  size: 396, 442
+  orig: 396, 442
+  offset: 0, 0
+  index: -1
+8_2
+  rotate: false
+  xy: 1171, 191
+  size: 403, 456
+  orig: 404, 456
+  offset: 1, 0
+  index: -1
+l0
+  rotate: false
+  xy: 352, 138
+  size: 190, 228
+  orig: 190, 229
+  offset: 0, 1
+  index: -1
+l1
+  rotate: false
+  xy: 1095, 12
+  size: 48, 51
+  orig: 48, 51
+  offset: 0, 0
+  index: -1
+l2
+  rotate: false
+  xy: 921, 33
+  size: 27, 43
+  orig: 27, 43
+  offset: 0, 0
+  index: -1
+l5
+  rotate: false
+  xy: 1117, 127
+  size: 35, 37
+  orig: 35, 38
+  offset: 0, 0
+  index: -1
+l6
+  rotate: false
+  xy: 1095, 65
+  size: 56, 35
+  orig: 56, 35
+  offset: 0, 0
+  index: -1
+l7
+  rotate: false
+  xy: 1576, 196
+  size: 81, 77
+  orig: 81, 77
+  offset: 0, 0
+  index: -1
+l8
+  rotate: false
+  xy: 921, 3
+  size: 35, 28
+  orig: 36, 28
+  offset: 1, 0
+  index: -1
+l9
+  rotate: false
+  xy: 1778, 604
+  size: 96, 108
+  orig: 97, 108
+  offset: 1, 0
+  index: -1
+lz
+  rotate: false
+  xy: 2, 368
+  size: 603, 673
+  orig: 603, 673
+  offset: 0, 0
+  index: -1
+t1
+  rotate: false
+  xy: 1005, 102
+  size: 110, 62
+  orig: 110, 63
+  offset: 0, 0
+  index: -1
+t2
+  rotate: false
+  xy: 1513, 12
+  size: 181, 177
+  orig: 181, 177
+  offset: 0, 0
+  index: -1
+t3
+  rotate: false
+  xy: 1696, 9
+  size: 180, 264
+  orig: 180, 269
+  offset: 0, 2
+  index: -1
+t4
+  rotate: false
+  xy: 1005, 166
+  size: 159, 354
+  orig: 161, 371
+  offset: 2, 16
+  index: -1
+t5
+  rotate: false
+  xy: 1676, 882
+  size: 184, 159
+  orig: 184, 160
+  offset: 0, 0
+  index: -1
+t6
+  rotate: false
+  xy: 1576, 275
+  size: 200, 372
+  orig: 201, 373
+  offset: 0, 0
+  index: -1
+t7
+  rotate: false
+  xy: 1005, 12
+  size: 88, 88
+  orig: 89, 89
+  offset: 1, 0
+  index: -1
+t8
+  rotate: false
+  xy: 1171, 649
+  size: 503, 392
+  orig: 503, 392
+  offset: 0, 0
+  index: -1
+t9
+  rotate: false
+  xy: 1676, 714
+  size: 173, 166
+  orig: 174, 166
+  offset: 1, 0
+  index: -1

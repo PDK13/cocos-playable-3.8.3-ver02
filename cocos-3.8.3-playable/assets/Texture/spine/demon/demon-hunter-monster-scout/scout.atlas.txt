@@ -1,0 +1,41 @@
+
+scout.png
+size: 149,103
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blink_1
+  rotate: false
+  xy: 93, 2
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1
+blink_2
+  rotate: false
+  xy: 135, 17
+  size: 12, 14
+  orig: 12, 14
+  offset: 0, 0
+  index: -1
+m_den
+  rotate: false
+  xy: 119, 2
+  size: 14, 29
+  orig: 14, 29
+  offset: 0, 0
+  index: -1
+m_trang
+  rotate: false
+  xy: 2, 12
+  size: 89, 89
+  orig: 89, 89
+  offset: 0, 0
+  index: -1
+m_xanh
+  rotate: false
+  xy: 93, 33
+  size: 53, 68
+  orig: 53, 68
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,76 @@
+
+zone_winter.png
+size: 1019,620
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cay_1
+  rotate: false
+  xy: 634, 33
+  size: 83, 122
+  orig: 86, 125
+  offset: 1, 2
+  index: -1
+cay_2
+  rotate: false
+  xy: 632, 211
+  size: 385, 407
+  orig: 385, 407
+  offset: 0, 0
+  index: -1
+cay_3
+  rotate: true
+  xy: 333, 128
+  size: 185, 264
+  orig: 185, 264
+  offset: 0, 0
+  index: -1
+cay_4
+  rotate: true
+  xy: 2, 2
+  size: 311, 329
+  orig: 311, 329
+  offset: 0, 0
+  index: -1
+da
+  rotate: false
+  xy: 333, 13
+  size: 155, 113
+  orig: 158, 115
+  offset: 1, 1
+  index: -1
+dao_1
+  rotate: false
+  xy: 2, 315
+  size: 628, 303
+  orig: 631, 305
+  offset: 1, 1
+  index: -1
+ngtuyet_1
+  rotate: true
+  xy: 490, 19
+  size: 107, 142
+  orig: 123, 144
+  offset: 1, 1
+  index: -1
+ngtuyet_2
+  rotate: false
+  xy: 706, 160
+  size: 45, 49
+  orig: 48, 52
+  offset: 1, 1
+  index: -1
+ngtuyet_3
+  rotate: true
+  xy: 719, 95
+  size: 63, 56
+  orig: 66, 58
+  offset: 1, 1
+  index: -1
+tuyet
+  rotate: false
+  xy: 599, 157
+  size: 105, 52
+  orig: 108, 54
+  offset: 1, 1
+  index: -1

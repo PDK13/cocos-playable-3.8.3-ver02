@@ -1,0 +1,139 @@
+
+dinosaur.png
+size: 489,157
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+co
+  rotate: false
+  xy: 414, 91
+  size: 73, 64
+  orig: 85, 64
+  offset: 12, 0
+  index: -1
+cp_1
+  rotate: false
+  xy: 188, 2
+  size: 53, 47
+  orig: 53, 47
+  offset: 0, 0
+  index: -1
+cp_2
+  rotate: true
+  xy: 399, 36
+  size: 53, 44
+  orig: 53, 44
+  offset: 0, 0
+  index: -1
+ct_1
+  rotate: false
+  xy: 344, 51
+  size: 53, 47
+  orig: 53, 47
+  offset: 0, 0
+  index: -1
+ct_2
+  rotate: false
+  xy: 344, 4
+  size: 53, 45
+  orig: 53, 45
+  offset: 0, 0
+  index: -1
+dau_1
+  rotate: true
+  xy: 2, 18
+  size: 137, 117
+  orig: 137, 117
+  offset: 0, 0
+  index: -1
+dau_2
+  rotate: false
+  xy: 243, 22
+  size: 99, 58
+  orig: 99, 58
+  offset: 0, 0
+  index: -1
+dau_3
+  rotate: true
+  xy: 121, 51
+  size: 104, 84
+  orig: 104, 84
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: true
+  xy: 325, 100
+  size: 55, 87
+  orig: 55, 87
+  offset: 0, 0
+  index: -1
+lm_1
+  rotate: true
+  xy: 445, 36
+  size: 25, 23
+  orig: 25, 23
+  offset: 0, 0
+  index: -1
+lm_2
+  rotate: true
+  xy: 465, 14
+  size: 20, 21
+  orig: 20, 21
+  offset: 0, 0
+  index: -1
+mat_1
+  rotate: true
+  xy: 243, 4
+  size: 16, 36
+  orig: 16, 36
+  offset: 0, 0
+  index: -1
+mat_2
+  rotate: true
+  xy: 281, 4
+  size: 16, 35
+  orig: 16, 35
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 207, 82
+  size: 116, 73
+  orig: 116, 73
+  offset: 0, 0
+  index: -1
+than_2
+  rotate: false
+  xy: 121, 9
+  size: 65, 40
+  orig: 65, 40
+  offset: 0, 0
+  index: -1
+tp_1
+  rotate: false
+  xy: 436, 7
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+tp_2
+  rotate: true
+  xy: 207, 56
+  size: 24, 34
+  orig: 24, 34
+  offset: 0, 0
+  index: -1
+tt_1
+  rotate: true
+  xy: 445, 63
+  size: 26, 27
+  orig: 26, 27
+  offset: 0, 0
+  index: -1
+tt_2
+  rotate: true
+  xy: 399, 3
+  size: 31, 35
+  orig: 31, 35
+  offset: 0, 0
+  index: -1

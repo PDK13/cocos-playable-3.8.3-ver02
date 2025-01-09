@@ -1,0 +1,146 @@
+
+door.png
+size: 418,136
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 18
+  rotate: false
+  xy: 307, 80
+  size: 28, 54
+  orig: 28, 54
+  offset: 0, 0
+  index: -1
+Layer 21
+  rotate: false
+  xy: 357, 41
+  size: 39, 40
+  orig: 39, 40
+  offset: 0, 0
+  index: -1
+Layer 22
+  rotate: false
+  xy: 259, 6
+  size: 28, 31
+  orig: 28, 31
+  offset: 0, 0
+  index: -1
+Layer 23
+  rotate: true
+  xy: 288, 41
+  size: 93, 17
+  orig: 93, 17
+  offset: 0, 0
+  index: -1
+Layer 24
+  rotate: false
+  xy: 155, 34
+  size: 97, 100
+  orig: 117, 101
+  offset: 11, 1
+  index: -1
+Layer 25
+  rotate: false
+  xy: 94, 30
+  size: 59, 104
+  orig: 59, 104
+  offset: 0, 0
+  index: -1
+Layer 26
+  rotate: true
+  xy: 307, 49
+  size: 29, 48
+  orig: 29, 48
+  offset: 0, 0
+  index: -1
+Layer 27
+  rotate: false
+  xy: 125, 5
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+Layer 28
+  rotate: true
+  xy: 372, 12
+  size: 27, 42
+  orig: 27, 42
+  offset: 0, 0
+  index: -1
+Layer 28 copy
+  rotate: false
+  xy: 377, 91
+  size: 28, 43
+  orig: 28, 43
+  offset: 0, 0
+  index: -1
+Layer 29
+  rotate: true
+  xy: 398, 68
+  size: 21, 16
+  orig: 21, 17
+  offset: 0, 1
+  index: -1
+Layer 30
+  rotate: false
+  xy: 398, 48
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+Layer 31
+  rotate: true
+  xy: 94, 2
+  size: 26, 29
+  orig: 26, 29
+  offset: 0, 0
+  index: -1
+Layer 32
+  rotate: false
+  xy: 337, 83
+  size: 38, 51
+  orig: 38, 51
+  offset: 0, 0
+  index: -1
+Layer 33
+  rotate: true
+  xy: 289, 10
+  size: 29, 81
+  orig: 29, 81
+  offset: 0, 0
+  index: -1
+Layer 35
+  rotate: true
+  xy: 150, 5
+  size: 23, 11
+  orig: 23, 11
+  offset: 0, 0
+  index: -1
+door_l
+  rotate: false
+  xy: 254, 39
+  size: 32, 95
+  orig: 32, 95
+  offset: 0, 0
+  index: -1
+door_r
+  rotate: true
+  xy: 163, 2
+  size: 30, 94
+  orig: 30, 94
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 289, 3
+  size: 12, 5
+  orig: 12, 5
+  offset: 0, 0
+  index: -1
+gate
+  rotate: false
+  xy: 2, 6
+  size: 90, 128
+  orig: 90, 129
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "fb37a488-6b1a-40df-8d10-81dc2b1ede40",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "fb37a488-6b1a-40df-8d10-81dc2b1ede40@6c48a",
+      "displayName": "tile_dog",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "fb37a488-6b1a-40df-8d10-81dc2b1ede40",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "fb37a488-6b1a-40df-8d10-81dc2b1ede40@f9941",
+      "displayName": "tile_dog",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": -18,
+        "trimX": 2,
+        "trimY": 38,
+        "width": 129,
+        "height": 93,
+        "rawWidth": 133,
+        "rawHeight": 133,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -64.5,
+            -46.5,
+            0,
+            64.5,
+            -46.5,
+            0,
+            -64.5,
+            46.5,
+            0,
+            64.5,
+            46.5,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            2,
+            95,
+            131,
+            95,
+            2,
+            2,
+            131,
+            2
+          ],
+          "nuv": [
+            0.015037593984962405,
+            0.015037593984962405,
+            0.9849624060150376,
+            0.015037593984962405,
+            0.015037593984962405,
+            0.7142857142857143,
+            0.9849624060150376,
+            0.7142857142857143
+          ],
+          "minPos": [
+            -64.5,
+            -46.5,
+            0
+          ],
+          "maxPos": [
+            64.5,
+            46.5,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "fb37a488-6b1a-40df-8d10-81dc2b1ede40@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "fb37a488-6b1a-40df-8d10-81dc2b1ede40@6c48a"
+  }
+}

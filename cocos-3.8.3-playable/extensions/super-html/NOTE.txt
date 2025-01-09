@@ -1,0 +1,2 @@
+- With Unity, file *.html playable need to add link store at the end of file
+Ex: <!-- https://play.google.com/store/apps/details?id=com.mgif.ball.v -->

@@ -1,0 +1,153 @@
+
+tornadol.png
+size: 282,282
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shexian/3/shexian_0000_1
+  rotate: false
+  xy: 186, 6
+  size: 14, 10
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+shexian/3/shexian_0001_2
+  rotate: false
+  xy: 171, 5
+  size: 13, 11
+  orig: 13, 11
+  offset: 0, 0
+  index: -1
+shexian/3/shexian_0002_3
+  rotate: false
+  xy: 139, 5
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
+shexian/3/shexian_0003_4
+  rotate: false
+  xy: 155, 5
+  size: 14, 11
+  orig: 14, 11
+  offset: 0, 0
+  index: -1
+snow-flake/snow-flake-cyan-s
+  rotate: true
+  xy: 62, 4
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0001_01
+  rotate: false
+  xy: 139, 149
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0002_02
+  rotate: false
+  xy: 206, 150
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0003_03
+  rotate: false
+  xy: 209, 218
+  size: 63, 62
+  orig: 63, 62
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0004_04
+  rotate: false
+  xy: 143, 18
+  size: 62, 62
+  orig: 62, 62
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0005_05
+  rotate: false
+  xy: 69, 15
+  size: 68, 58
+  orig: 68, 58
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0006_06
+  rotate: true
+  xy: 2, 2
+  size: 68, 58
+  orig: 68, 58
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0007_07
+  rotate: true
+  xy: 207, 14
+  size: 66, 60
+  orig: 66, 60
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0008_08
+  rotate: true
+  xy: 210, 90
+  size: 58, 64
+  orig: 58, 64
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0009_09
+  rotate: false
+  xy: 2, 72
+  size: 65, 66
+  orig: 65, 66
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0010_10
+  rotate: false
+  xy: 72, 142
+  size: 65, 69
+  orig: 65, 69
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0011_11
+  rotate: false
+  xy: 2, 210
+  size: 64, 70
+  orig: 64, 70
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0012_12
+  rotate: true
+  xy: 139, 216
+  size: 64, 68
+  orig: 64, 68
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0013_13
+  rotate: true
+  xy: 72, 75
+  size: 65, 69
+  orig: 65, 69
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0014_14
+  rotate: true
+  xy: 68, 213
+  size: 67, 69
+  orig: 67, 69
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0015_15
+  rotate: false
+  xy: 2, 140
+  size: 68, 68
+  orig: 68, 68
+  offset: 0, 0
+  index: -1
+tornadol/3/tornado_0016_16
+  rotate: false
+  xy: 143, 82
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1

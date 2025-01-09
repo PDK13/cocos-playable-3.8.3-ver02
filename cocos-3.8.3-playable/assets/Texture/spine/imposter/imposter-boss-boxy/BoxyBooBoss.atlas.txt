@@ -1,0 +1,90 @@
+
+BoxyBooBoss.png
+size: 256,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 41, 7
+  size: 69, 61
+  orig: 69, 61
+  offset: 0, 0
+  index: -1
+Calf2
+  rotate: false
+  xy: 131, 2
+  size: 36, 16
+  orig: 36, 16
+  offset: 0, 0
+  index: -1
+Eye
+  rotate: true
+  xy: 235, 36
+  size: 15, 10
+  orig: 15, 10
+  offset: 0, 0
+  index: -1
+Foot1
+  rotate: false
+  xy: 169, 4
+  size: 36, 16
+  orig: 36, 16
+  offset: 0, 0
+  index: -1
+Hand1
+  rotate: true
+  xy: 2, 6
+  size: 70, 37
+  orig: 70, 37
+  offset: 0, 0
+  index: -1
+Hand2
+  rotate: true
+  xy: 104, 8
+  size: 68, 25
+  orig: 68, 25
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 157, 22
+  size: 54, 27
+  orig: 54, 27
+  offset: 0, 0
+  index: -1
+Layer 46
+  rotate: true
+  xy: 235, 53
+  size: 23, 19
+  orig: 23, 19
+  offset: 0, 0
+  index: -1
+MOuth
+  rotate: true
+  xy: 186, 28
+  size: 48, 31
+  orig: 48, 32
+  offset: 0, 0
+  index: -1
+NapHop
+  rotate: true
+  xy: 207, 2
+  size: 24, 38
+  orig: 24, 38
+  offset: 0, 0
+  index: -1
+Thigh1
+  rotate: false
+  xy: 131, 20
+  size: 24, 56
+  orig: 24, 58
+  offset: 0, 2
+  index: -1
+Thigh2
+  rotate: false
+  xy: 219, 28
+  size: 14, 48
+  orig: 14, 48
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,188 @@
+
+char.png
+size: 539,234
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+6/body
+  rotate: false
+  xy: 506, 89
+  size: 28, 50
+  orig: 28, 50
+  offset: 0, 0
+  index: -1
+6/cn_P
+  rotate: true
+  xy: 127, 7
+  size: 11, 20
+  orig: 11, 20
+  offset: 0, 0
+  index: -1
+6/cn_T
+  rotate: true
+  xy: 316, 2
+  size: 14, 22
+  orig: 14, 22
+  offset: 0, 0
+  index: -1
+6/co_ao
+  rotate: false
+  xy: 292, 8
+  size: 22, 23
+  orig: 22, 23
+  offset: 0, 0
+  index: -1
+6/duoi
+  rotate: false
+  xy: 238, 33
+  size: 74, 52
+  orig: 74, 52
+  offset: 0, 0
+  index: -1
+6/hand_L_1
+  rotate: false
+  xy: 408, 10
+  size: 25, 27
+  orig: 25, 27
+  offset: 0, 0
+  index: -1
+6/hand_L_2
+  rotate: false
+  xy: 238, 2
+  size: 22, 29
+  orig: 22, 29
+  offset: 0, 0
+  index: -1
+6/hand_R_1
+  rotate: true
+  xy: 435, 20
+  size: 17, 32
+  orig: 17, 32
+  offset: 0, 0
+  index: -1
+6/hand_R_2
+  rotate: false
+  xy: 469, 18
+  size: 30, 19
+  orig: 30, 19
+  offset: 0, 0
+  index: -1
+6/head
+  rotate: false
+  xy: 404, 39
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+6/kinh
+  rotate: false
+  xy: 2, 9
+  size: 123, 76
+  orig: 123, 76
+  offset: 0, 0
+  index: -1
+6/leg_L_1
+  rotate: false
+  xy: 278, 2
+  size: 12, 29
+  orig: 12, 29
+  offset: 0, 0
+  index: -1
+6/leg_L_2
+  rotate: false
+  xy: 522, 60
+  size: 13, 27
+  orig: 13, 27
+  offset: 0, 0
+  index: -1
+6/leg_L_3
+  rotate: false
+  xy: 435, 10
+  size: 17, 8
+  orig: 17, 8
+  offset: 0, 0
+  index: -1
+6/leg_R_3
+  rotate: false
+  xy: 435, 10
+  size: 17, 8
+  orig: 17, 8
+  offset: 0, 0
+  index: -1
+6/leg_R_1
+  rotate: false
+  xy: 262, 2
+  size: 14, 29
+  orig: 14, 29
+  offset: 0, 0
+  index: -1
+6/leg_R_2
+  rotate: true
+  xy: 316, 18
+  size: 14, 27
+  orig: 14, 27
+  offset: 0, 0
+  index: -1
+6/toc
+  rotate: false
+  xy: 127, 20
+  size: 109, 65
+  orig: 109, 65
+  offset: 0, 0
+  index: -1
+ChainL
+  rotate: false
+  xy: 314, 34
+  size: 41, 51
+  orig: 41, 51
+  offset: 0, 0
+  index: -1
+ChainR
+  rotate: true
+  xy: 357, 36
+  size: 49, 43
+  orig: 49, 43
+  offset: 0, 0
+  index: -1
+Chain_line1
+  rotate: false
+  xy: 357, 2
+  size: 49, 32
+  orig: 49, 32
+  offset: 0, 0
+  index: -1
+Chain_line2
+  rotate: true
+  xy: 506, 41
+  size: 46, 14
+  orig: 46, 14
+  offset: 0, 0
+  index: -1
+llong_back
+  rotate: true
+  xy: 2, 87
+  size: 25, 399
+  orig: 25, 399
+  offset: 0, 0
+  index: -1
+llong_down
+  rotate: false
+  xy: 2, 141
+  size: 535, 32
+  orig: 535, 32
+  offset: 0, 0
+  index: -1
+llong_front
+  rotate: true
+  xy: 2, 114
+  size: 25, 400
+  orig: 25, 400
+  offset: 0, 0
+  index: -1
+llong_up
+  rotate: false
+  xy: 2, 175
+  size: 535, 57
+  orig: 535, 57
+  offset: 0, 0
+  index: -1

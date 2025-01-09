@@ -1,0 +1,83 @@
+
+blender.png
+size: 160,361
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+glass_grape
+  rotate: false
+  xy: 2, 36
+  size: 82, 70
+  orig: 82, 70
+  offset: 0, 0
+  index: -1
+glass_orange
+  rotate: false
+  xy: 2, 108
+  size: 82, 71
+  orig: 82, 71
+  offset: 0, 0
+  index: -1
+grape_rope
+  rotate: false
+  xy: 99, 181
+  size: 39, 44
+  orig: 57, 62
+  offset: 0, 0
+  index: -1
+juice_grape
+  rotate: false
+  xy: 100, 294
+  size: 58, 65
+  orig: 58, 65
+  offset: 0, 0
+  index: -1
+juice_orange
+  rotate: false
+  xy: 100, 227
+  size: 58, 65
+  orig: 58, 65
+  offset: 0, 0
+  index: -1
+lid_grape
+  rotate: false
+  xy: 2, 181
+  size: 95, 88
+  orig: 112, 88
+  offset: 17, 0
+  index: -1
+lid_orange
+  rotate: false
+  xy: 2, 271
+  size: 96, 88
+  orig: 113, 88
+  offset: 17, 0
+  index: -1
+light_grape
+  rotate: true
+  xy: 2, 9
+  size: 25, 41
+  orig: 25, 41
+  offset: 0, 0
+  index: -1
+orange_rope
+  rotate: false
+  xy: 86, 2
+  size: 36, 39
+  orig: 57, 62
+  offset: 0, 0
+  index: -1
+sope_grape
+  rotate: true
+  xy: 86, 112
+  size: 67, 66
+  orig: 67, 66
+  offset: 0, 0
+  index: -1
+sope_orange
+  rotate: true
+  xy: 86, 43
+  size: 67, 66
+  orig: 67, 66
+  offset: 0, 0
+  index: -1

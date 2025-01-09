@@ -1,0 +1,223 @@
+
+Flying_Bluey.png
+size: 252,252
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cp0
+  rotate: true
+  xy: 2, 51
+  size: 53, 65
+  orig: 53, 65
+  offset: 0, 0
+  index: -1
+cp1
+  rotate: false
+  xy: 133, 169
+  size: 46, 81
+  orig: 46, 81
+  offset: 0, 0
+  index: -1
+cp2
+  rotate: false
+  xy: 2, 161
+  size: 48, 89
+  orig: 48, 89
+  offset: 0, 0
+  index: -1
+cp3
+  rotate: true
+  xy: 133, 123
+  size: 44, 72
+  orig: 44, 72
+  offset: 0, 0
+  index: -1
+cp4
+  rotate: true
+  xy: 215, 127
+  size: 51, 35
+  orig: 51, 35
+  offset: 0, 0
+  index: -1
+cp5
+  rotate: false
+  xy: 83, 106
+  size: 48, 89
+  orig: 48, 89
+  offset: 0, 0
+  index: -1
+cp6
+  rotate: true
+  xy: 2, 11
+  size: 38, 48
+  orig: 38, 48
+  offset: 0, 0
+  index: -1
+cp7
+  rotate: true
+  xy: 143, 10
+  size: 43, 48
+  orig: 43, 48
+  offset: 0, 0
+  index: -1
+cp_1
+  rotate: true
+  xy: 133, 109
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: -1
+cp_2
+  rotate: false
+  xy: 62, 161
+  size: 6, 4
+  orig: 6, 4
+  offset: 0, 0
+  index: -1
+cp_3
+  rotate: true
+  xy: 203, 170
+  size: 8, 10
+  orig: 8, 10
+  offset: 0, 0
+  index: -1
+ct0
+  rotate: false
+  xy: 152, 55
+  size: 39, 66
+  orig: 39, 66
+  offset: 0, 0
+  index: -1
+ct1
+  rotate: true
+  xy: 69, 52
+  size: 52, 72
+  orig: 52, 72
+  offset: 0, 0
+  index: -1
+ct2
+  rotate: true
+  xy: 2, 106
+  size: 53, 79
+  orig: 53, 79
+  offset: 0, 0
+  index: -1
+ct3
+  rotate: false
+  xy: 181, 180
+  size: 38, 70
+  orig: 38, 70
+  offset: 0, 0
+  index: -1
+ct4
+  rotate: true
+  xy: 193, 29
+  size: 45, 30
+  orig: 45, 30
+  offset: 0, 0
+  index: -1
+ct5
+  rotate: true
+  xy: 52, 197
+  size: 53, 79
+  orig: 53, 79
+  offset: 0, 0
+  index: -1
+ct6
+  rotate: false
+  xy: 193, 76
+  size: 37, 45
+  orig: 37, 45
+  offset: 0, 0
+  index: -1
+ct7
+  rotate: true
+  xy: 69, 8
+  size: 42, 44
+  orig: 42, 44
+  offset: 0, 0
+  index: -1
+ct_1
+  rotate: false
+  xy: 52, 34
+  size: 11, 15
+  orig: 11, 15
+  offset: 0, 0
+  index: -1
+ct_2
+  rotate: false
+  xy: 52, 161
+  size: 8, 4
+  orig: 8, 4
+  offset: 0, 0
+  index: -1
+ct_3
+  rotate: false
+  xy: 52, 9
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1
+dau_1
+  rotate: false
+  xy: 52, 167
+  size: 24, 28
+  orig: 24, 28
+  offset: 0, 0
+  index: -1
+dau_2
+  rotate: true
+  xy: 115, 3
+  size: 20, 25
+  orig: 20, 25
+  offset: 0, 0
+  index: -1
+duoi
+  rotate: true
+  xy: 221, 189
+  size: 18, 24
+  orig: 18, 24
+  offset: 0, 0
+  index: -1
+mat
+  rotate: false
+  xy: 181, 169
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+mat_1
+  rotate: false
+  xy: 192, 169
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+mo
+  rotate: true
+  xy: 52, 19
+  size: 13, 11
+  orig: 13, 11
+  offset: 0, 0
+  index: -1
+than_1
+  rotate: false
+  xy: 221, 209
+  size: 28, 41
+  orig: 28, 41
+  offset: 0, 0
+  index: -1
+than_2
+  rotate: false
+  xy: 115, 25
+  size: 22, 25
+  orig: 22, 25
+  offset: 0, 0
+  index: -1
+than_3
+  rotate: false
+  xy: 143, 100
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
+  index: -1

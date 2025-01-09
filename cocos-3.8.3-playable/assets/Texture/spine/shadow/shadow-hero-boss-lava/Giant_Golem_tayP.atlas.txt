@@ -1,0 +1,41 @@
+
+Giant_Golem_tayP.png
+size: 880, 505
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+tay1
+  rotate: false
+  xy: 593, 82
+  size: 285, 199
+  orig: 286, 200
+  offset: 0, 1
+  index: -1
+tay2
+  rotate: false
+  xy: 561, 283
+  size: 311, 220
+  orig: 312, 220
+  offset: 0, 0
+  index: -1
+tay3
+  rotate: false
+  xy: 354, 2
+  size: 237, 163
+  orig: 237, 164
+  offset: 0, 1
+  index: -1
+tay4
+  rotate: false
+  xy: 354, 167
+  size: 205, 336
+  orig: 207, 336
+  offset: 2, 0
+  index: -1
+tay5
+  rotate: false
+  xy: 2, 71
+  size: 350, 432
+  orig: 350, 432
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "34dbfc2d-511c-40b5-93ce-806114404416",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "34dbfc2d-511c-40b5-93ce-806114404416@6c48a",
+      "displayName": "ball laze beam",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "34dbfc2d-511c-40b5-93ce-806114404416",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "34dbfc2d-511c-40b5-93ce-806114404416@f9941",
+      "displayName": "ball laze beam",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 122,
+        "width": 667,
+        "height": 423,
+        "rawWidth": 667,
+        "rawHeight": 667,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 50,
+        "borderRight": 50,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -333.5,
+            -211.5,
+            0,
+            333.5,
+            -211.5,
+            0,
+            -333.5,
+            211.5,
+            0,
+            333.5,
+            211.5,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            0,
+            545,
+            667,
+            545,
+            0,
+            122,
+            667,
+            122
+          ],
+          "nuv": [
+            0,
+            0.18290854572713644,
+            1,
+            0.18290854572713644,
+            0,
+            0.8170914542728636,
+            1,
+            0.8170914542728636
+          ],
+          "minPos": [
+            -333.5,
+            -211.5,
+            0
+          ],
+          "maxPos": [
+            333.5,
+            211.5,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "34dbfc2d-511c-40b5-93ce-806114404416@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "34dbfc2d-511c-40b5-93ce-806114404416@6c48a"
+  }
+}

@@ -1,0 +1,69 @@
+
+door5.png
+size: 1293,543
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2a
+  rotate: true
+  xy: 2, 2
+  size: 539, 568
+  orig: 541, 570
+  offset: 1, 1
+  index: -1
+2a1
+  rotate: false
+  xy: 857, 147
+  size: 64, 64
+  orig: 66, 66
+  offset: 1, 1
+  index: -1
+2b
+  rotate: false
+  xy: 857, 213
+  size: 299, 328
+  orig: 301, 331
+  offset: 1, 1
+  index: -1
+2c
+  rotate: false
+  xy: 572, 124
+  size: 283, 417
+  orig: 285, 419
+  offset: 1, 1
+  index: -1
+2d1
+  rotate: false
+  xy: 1256, 97
+  size: 18, 45
+  orig: 20, 47
+  offset: 1, 1
+  index: -1
+2d2
+  rotate: false
+  xy: 572, 14
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+2d3
+  rotate: false
+  xy: 572, 62
+  size: 70, 60
+  orig: 70, 60
+  offset: 0, 0
+  index: -1
+2e
+  rotate: false
+  xy: 1158, 144
+  size: 133, 397
+  orig: 135, 399
+  offset: 1, 1
+  index: -1
+2f
+  rotate: true
+  xy: 857, 9
+  size: 133, 397
+  orig: 135, 399
+  offset: 1, 1
+  index: -1

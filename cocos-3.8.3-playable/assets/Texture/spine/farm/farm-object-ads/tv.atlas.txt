@@ -1,0 +1,55 @@
+
+tv.png
+size: 654, 224
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+body
+  rotate: false
+  xy: 223, 3
+  size: 165, 219
+  orig: 165, 219
+  offset: 0, 0
+  index: -1
+bubble/body
+  rotate: false
+  xy: 2, 3
+  size: 219, 219
+  orig: 219, 219
+  offset: 0, 0
+  index: -1
+collect
+  rotate: false
+  xy: 390, 41
+  size: 193, 35
+  orig: 193, 35
+  offset: 0, 0
+  index: -1
+free_text
+  rotate: false
+  xy: 390, 2
+  size: 139, 37
+  orig: 139, 37
+  offset: 0, 0
+  index: -1
+reward_light
+  rotate: false
+  xy: 390, 78
+  size: 142, 144
+  orig: 144, 144
+  offset: 1, 0
+  index: -1
+try_text
+  rotate: false
+  xy: 531, 2
+  size: 120, 37
+  orig: 120, 37
+  offset: 0, 0
+  index: -1
+wing_l
+  rotate: false
+  xy: 534, 80
+  size: 118, 142
+  orig: 118, 142
+  offset: 0, 0
+  index: -1

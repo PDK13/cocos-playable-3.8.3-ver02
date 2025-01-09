@@ -1,0 +1,104 @@
+
+object_doorkey.png
+size: 850,136
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Door Key/Door key-Black
+  rotate: false
+  xy: 730, 96
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+Door Key/Door key-Blue
+  rotate: false
+  xy: 730, 56
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+Door Key/Door key-Green
+  rotate: false
+  xy: 770, 96
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+Door Key/Door key-Grey
+  rotate: false
+  xy: 730, 16
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+Door Key/Door key-Purple
+  rotate: false
+  xy: 770, 56
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+Door Key/Door key-Red
+  rotate: false
+  xy: 810, 96
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+Door Key/Door key-Yellow
+  rotate: false
+  xy: 770, 16
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+Door Key/Door-Black
+  rotate: false
+  xy: 2, 2
+  size: 102, 132
+  orig: 102, 132
+  offset: 0, 0
+  index: -1
+Door Key/Door-Blue
+  rotate: false
+  xy: 106, 2
+  size: 102, 132
+  orig: 102, 132
+  offset: 0, 0
+  index: -1
+Door Key/Door-Green
+  rotate: false
+  xy: 210, 2
+  size: 102, 132
+  orig: 102, 132
+  offset: 0, 0
+  index: -1
+Door Key/Door-Grey
+  rotate: false
+  xy: 314, 2
+  size: 102, 132
+  orig: 102, 132
+  offset: 0, 0
+  index: -1
+Door Key/Door-Purple
+  rotate: false
+  xy: 418, 2
+  size: 102, 132
+  orig: 102, 132
+  offset: 0, 0
+  index: -1
+Door Key/Door-Red
+  rotate: false
+  xy: 522, 2
+  size: 102, 132
+  orig: 102, 132
+  offset: 0, 0
+  index: -1
+Door Key/Door-Yellow
+  rotate: false
+  xy: 626, 2
+  size: 102, 132
+  orig: 102, 132
+  offset: 0, 0
+  index: -1

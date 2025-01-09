@@ -1,0 +1,174 @@
+
+Cyber_3.png
+size: 448,120
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2/fx_atk3_1
+  rotate: true
+  xy: 292, 48
+  size: 70, 48
+  orig: 86, 65
+  offset: 7, 10
+  index: -1
+2/fx_atk3_2
+  rotate: true
+  xy: 342, 49
+  size: 69, 48
+  orig: 86, 65
+  offset: 8, 10
+  index: -1
+2/fx_atk3_3
+  rotate: true
+  xy: 140, 4
+  size: 27, 45
+  orig: 86, 65
+  offset: 50, 10
+  index: -1
+2/fx_atk3_4
+  rotate: false
+  xy: 278, 6
+  size: 25, 39
+  orig: 86, 65
+  offset: 52, 10
+  index: -1
+2/fx_atk3_5
+  rotate: true
+  xy: 50, 4
+  size: 20, 32
+  orig: 86, 65
+  offset: 57, 10
+  index: -1
+2/fx_atk3_6
+  rotate: false
+  xy: 84, 6
+  size: 15, 18
+  orig: 86, 65
+  offset: 61, 11
+  index: -1
+BODY
+  rotate: true
+  xy: 89, 33
+  size: 85, 56
+  orig: 85, 56
+  offset: 0, 0
+  index: -1
+CANH TAY_PHAI
+  rotate: false
+  xy: 101, 2
+  size: 37, 29
+  orig: 37, 29
+  offset: 0, 0
+  index: -1
+CANH TAY_PHAIa
+  rotate: true
+  xy: 193, 4
+  size: 40, 36
+  orig: 40, 36
+  offset: 0, 0
+  index: -1
+CHAN_PHAI
+  rotate: true
+  xy: 25, 3
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+CHAN_PHAIa
+  rotate: true
+  xy: 25, 3
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+DAO_PHAI
+  rotate: true
+  xy: 147, 46
+  size: 72, 70
+  orig: 72, 70
+  offset: 0, 0
+  index: -1
+DAO_TRAI
+  rotate: false
+  xy: 219, 47
+  size: 71, 71
+  orig: 71, 71
+  offset: 0, 0
+  index: -1
+DAU
+  rotate: true
+  xy: 2, 26
+  size: 92, 85
+  orig: 92, 85
+  offset: 0, 0
+  index: -1
+HONG
+  rotate: false
+  xy: 392, 87
+  size: 54, 31
+  orig: 54, 31
+  offset: 0, 0
+  index: -1
+Layer 37
+  rotate: false
+  xy: 317, 9
+  size: 36, 37
+  orig: 36, 37
+  offset: 0, 0
+  index: -1
+Layer 37a
+  rotate: true
+  xy: 392, 49
+  size: 36, 37
+  orig: 36, 37
+  offset: 0, 0
+  index: -1
+MAT
+  rotate: false
+  xy: 147, 34
+  size: 44, 10
+  orig: 44, 10
+  offset: 0, 0
+  index: -1
+MAT_NHAM
+  rotate: true
+  xy: 305, 2
+  size: 44, 10
+  orig: 44, 10
+  offset: 0, 0
+  index: -1
+SUNG
+  rotate: true
+  xy: 2, 2
+  size: 22, 21
+  orig: 22, 21
+  offset: 0, 0
+  index: -1
+TAI_PHAI
+  rotate: false
+  xy: 405, 20
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+TAI_TRAI
+  rotate: false
+  xy: 431, 61
+  size: 14, 24
+  orig: 14, 24
+  offset: 0, 0
+  index: -1
+VAI _TRAI
+  rotate: true
+  xy: 231, 2
+  size: 43, 45
+  orig: 43, 45
+  offset: 0, 0
+  index: -1
+VAI_PHAI
+  rotate: true
+  xy: 355, 2
+  size: 45, 48
+  orig: 45, 48
+  offset: 0, 0
+  index: -1

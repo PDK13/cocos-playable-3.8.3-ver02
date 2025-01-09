@@ -1,0 +1,97 @@
+
+JungleBoyMKT1.png
+size: 1598,220
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+0
+  rotate: true
+  xy: 1242, 139
+  size: 79, 40
+  orig: 79, 40
+  offset: 0, 0
+  index: -1
+1
+  rotate: true
+  xy: 1252, 65
+  size: 72, 26
+  orig: 72, 26
+  offset: 0, 0
+  index: -1
+11
+  rotate: true
+  xy: 914, 113
+  size: 105, 220
+  orig: 105, 220
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 1451, 50
+  size: 145, 168
+  orig: 145, 168
+  offset: 0, 0
+  index: -1
+22
+  rotate: true
+  xy: 1189, 130
+  size: 88, 51
+  orig: 88, 51
+  offset: 0, 0
+  index: -1
+3
+  rotate: true
+  xy: 1284, 50
+  size: 168, 165
+  orig: 168, 165
+  offset: 0, 0
+  index: -1
+33
+  rotate: true
+  xy: 650, 4
+  size: 103, 242
+  orig: 103, 242
+  offset: 0, 0
+  index: -1
+44
+  rotate: true
+  xy: 1122, 6
+  size: 105, 128
+  orig: 105, 129
+  offset: 0, 0
+  index: -1
+5
+  rotate: true
+  xy: 894, 2
+  size: 105, 226
+  orig: 105, 226
+  offset: 0, 0
+  index: -1
+6
+  rotate: true
+  xy: 1136, 125
+  size: 93, 51
+  orig: 93, 51
+  offset: 0, 0
+  index: -1
+7
+  rotate: true
+  xy: 650, 109
+  size: 109, 262
+  orig: 109, 262
+  offset: 0, 0
+  index: -1
+8
+  rotate: false
+  xy: 2, 3
+  size: 393, 215
+  orig: 393, 215
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 397, 16
+  size: 251, 202
+  orig: 251, 202
+  offset: 0, 0
+  index: -1

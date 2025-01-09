@@ -1,0 +1,160 @@
+
+monster8.png
+size: 279,279
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CLOTH
+  rotate: false
+  xy: 97, 2
+  size: 50, 31
+  orig: 50, 31
+  offset: 0, 0
+  index: -1
+Eye
+  rotate: true
+  xy: 87, 35
+  size: 25, 28
+  orig: 29, 31
+  offset: 2, 3
+  index: -1
+HEAD_3
+  rotate: false
+  xy: 222, 117
+  size: 44, 40
+  orig: 44, 40
+  offset: 0, 0
+  index: -1
+SKIN23/ARCHERY
+  rotate: false
+  xy: 2, 154
+  size: 104, 123
+  orig: 104, 123
+  offset: 0, 0
+  index: -1
+SKIN23/ARROW1
+  rotate: true
+  xy: 181, 211
+  size: 66, 83
+  orig: 66, 83
+  offset: 0, 0
+  index: -1
+SKIN23/ARROW2
+  rotate: true
+  xy: 108, 198
+  size: 79, 71
+  orig: 79, 71
+  offset: 0, 0
+  index: -1
+SKIN23/ARROW3
+  rotate: false
+  xy: 48, 12
+  size: 47, 20
+  orig: 47, 20
+  offset: 0, 0
+  index: -1
+SKIN23/Ellipse 3
+  rotate: false
+  xy: 170, 106
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+SKIN23/HEAD
+  rotate: true
+  xy: 87, 62
+  size: 90, 81
+  orig: 90, 81
+  offset: 0, 0
+  index: -1
+SKIN23/Rectangle 1
+  rotate: false
+  xy: 108, 158
+  size: 97, 38
+  orig: 97, 38
+  offset: 0, 0
+  index: -1
+SKIN23/clothes3
+  rotate: true
+  xy: 222, 76
+  size: 39, 40
+  orig: 39, 40
+  offset: 0, 0
+  index: -1
+SKIN23/rope
+  rotate: false
+  xy: 2, 34
+  size: 83, 118
+  orig: 83, 118
+  offset: 0, 0
+  index: -1
+SKINPRULE/ARM_L_LOW1
+  rotate: true
+  xy: 149, 2
+  size: 35, 37
+  orig: 35, 37
+  offset: 0, 0
+  index: -1
+SKINPRULE/ARM_L_UP
+  rotate: false
+  xy: 182, 42
+  size: 30, 20
+  orig: 30, 20
+  offset: 0, 0
+  index: -1
+SKINPRULE/ARM_R_LOW
+  rotate: false
+  xy: 2, 9
+  size: 44, 23
+  orig: 44, 23
+  offset: 0, 0
+  index: -1
+SKINPRULE/ARM_R_UP
+  rotate: true
+  xy: 117, 35
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
+  index: -1
+SKINPRULE/BODY
+  rotate: true
+  xy: 170, 64
+  size: 40, 50
+  orig: 40, 50
+  offset: 0, 0
+  index: -1
+SKINPRULE/FOOT_L
+  rotate: true
+  xy: 147, 39
+  size: 21, 33
+  orig: 21, 33
+  offset: 0, 0
+  index: -1
+SKINPRULE/FOOT_R
+  rotate: false
+  xy: 222, 45
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+SKINPRULE/HAND_L
+  rotate: true
+  xy: 188, 4
+  size: 36, 43
+  orig: 36, 43
+  offset: 0, 0
+  index: -1
+SKINPRULE/HAND_R
+  rotate: false
+  xy: 233, 9
+  size: 33, 34
+  orig: 33, 34
+  offset: 0, 0
+  index: -1
+SKINPRULE/MOUTH
+  rotate: true
+  xy: 207, 159
+  size: 50, 41
+  orig: 50, 41
+  offset: 0, 0
+  index: -1

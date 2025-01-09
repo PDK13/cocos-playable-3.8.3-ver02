@@ -1,0 +1,55 @@
+
+enemy_carnivorous_plant.png
+size: 206, 268
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Skin1/la_1
+  rotate: false
+  xy: 137, 87
+  size: 67, 62
+  orig: 67, 62
+  offset: 0, 0
+  index: -1
+Skin1/la_2
+  rotate: false
+  xy: 134, 15
+  size: 70, 48
+  orig: 70, 48
+  offset: 0, 0
+  index: -1
+Skin1/la_3
+  rotate: false
+  xy: 137, 65
+  size: 57, 20
+  orig: 57, 20
+  offset: 0, 0
+  index: -1
+Skin1/mom_1_1
+  rotate: true
+  xy: 2, 181
+  size: 85, 139
+  orig: 85, 139
+  offset: 0, 0
+  index: -1
+Skin1/mom_1_2
+  rotate: true
+  xy: 2, 2
+  size: 73, 130
+  orig: 73, 131
+  offset: 0, 0
+  index: -1
+Skin1/mom_2
+  rotate: true
+  xy: 2, 77
+  size: 102, 133
+  orig: 102, 133
+  offset: 0, 0
+  index: -1
+Skin1/than
+  rotate: false
+  xy: 143, 151
+  size: 60, 115
+  orig: 60, 115
+  offset: 0, 0
+  index: -1

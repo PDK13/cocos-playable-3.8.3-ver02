@@ -1,0 +1,118 @@
+
+zone_spring.png
+size: 1979,323
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cay
+  rotate: false
+  xy: 1660, 136
+  size: 223, 185
+  orig: 223, 185
+  offset: 0, 0
+  index: -1
+co_1
+  rotate: false
+  xy: 1187, 43
+  size: 54, 60
+  orig: 54, 60
+  offset: 0, 0
+  index: -1
+co_2
+  rotate: false
+  xy: 1867, 15
+  size: 101, 53
+  orig: 101, 53
+  offset: 0, 0
+  index: -1
+da
+  rotate: true
+  xy: 1885, 182
+  size: 139, 76
+  orig: 142, 78
+  offset: 1, 1
+  index: -1
+dao_1
+  rotate: false
+  xy: 454, 93
+  size: 582, 228
+  orig: 584, 230
+  offset: 1, 1
+  index: -1
+dao_2
+  rotate: false
+  xy: 1038, 177
+  size: 620, 144
+  orig: 622, 146
+  offset: 1, 1
+  index: -1
+dao_3
+  rotate: false
+  xy: 454, 8
+  size: 646, 83
+  orig: 648, 85
+  offset: 1, 1
+  index: -1
+dao_4
+  rotate: false
+  xy: 1038, 105
+  size: 299, 70
+  orig: 301, 72
+  offset: 1, 1
+  index: -1
+dao_5
+  rotate: false
+  xy: 1526, 2
+  size: 125, 75
+  orig: 127, 77
+  offset: 1, 1
+  index: -1
+go
+  rotate: false
+  xy: 1526, 79
+  size: 131, 96
+  orig: 133, 98
+  offset: 1, 1
+  index: -1
+hoa
+  rotate: false
+  xy: 1885, 70
+  size: 92, 110
+  orig: 94, 111
+  offset: 1, 0
+  index: -1
+nam
+  rotate: false
+  xy: 1102, 14
+  size: 83, 89
+  orig: 85, 91
+  offset: 1, 1
+  index: -1
+tan_1
+  rotate: false
+  xy: 1339, 26
+  size: 185, 149
+  orig: 187, 151
+  offset: 1, 1
+  index: -1
+tan_2
+  rotate: false
+  xy: 1243, 55
+  size: 60, 48
+  orig: 62, 50
+  offset: 1, 1
+  index: -1
+tan_3
+  rotate: false
+  xy: 1659, 13
+  size: 206, 121
+  orig: 208, 123
+  offset: 1, 1
+  index: -1
+tan_4
+  rotate: false
+  xy: 2, 2
+  size: 450, 319
+  orig: 450, 320
+  offset: 0, 1
+  index: -1

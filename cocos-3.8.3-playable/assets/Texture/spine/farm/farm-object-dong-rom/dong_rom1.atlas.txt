@@ -1,0 +1,104 @@
+
+dong_rom1.png
+size: 2177, 1395
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+0
+  rotate: false
+  xy: 1385, 58
+  size: 190, 507
+  orig: 192, 509
+  offset: 1, 1
+  index: -1
+11
+  rotate: true
+  xy: 1728, 175
+  size: 264, 447
+  orig: 266, 449
+  offset: 1, 1
+  index: -1
+2
+  rotate: false
+  xy: 812, 2
+  size: 571, 484
+  orig: 573, 486
+  offset: 1, 1
+  index: -1
+22
+  rotate: true
+  xy: 1385, 1138
+  size: 255, 739
+  orig: 257, 741
+  offset: 1, 1
+  index: -1
+3
+  rotate: false
+  xy: 1301, 567
+  size: 441, 569
+  orig: 443, 571
+  offset: 1, 1
+  index: -1
+33
+  rotate: true
+  xy: 1577, 257
+  size: 308, 149
+  orig: 311, 152
+  offset: 2, 2
+  index: -1
+4
+  rotate: false
+  xy: 1744, 657
+  size: 362, 479
+  orig: 365, 482
+  offset: 1, 2
+  index: -1
+5
+  rotate: true
+  xy: 1744, 441
+  size: 214, 323
+  orig: 216, 326
+  offset: 1, 2
+  index: -1
+6
+  rotate: true
+  xy: 2, 5
+  size: 417, 537
+  orig: 420, 540
+  offset: 2, 2
+  index: -1
+7
+  rotate: false
+  xy: 541, 15
+  size: 269, 407
+  orig: 271, 409
+  offset: 1, 1
+  index: -1
+8
+  rotate: false
+  xy: 1577, 45
+  size: 115, 210
+  orig: 117, 212
+  offset: 1, 1
+  index: -1
+9
+  rotate: true
+  xy: 1694, 59
+  size: 114, 281
+  orig: 116, 283
+  offset: 1, 1
+  index: -1
+xz
+  rotate: true
+  xy: 564, 488
+  size: 905, 735
+  orig: 907, 737
+  offset: 1, 1
+  index: -1
+zx
+  rotate: true
+  xy: 2, 424
+  size: 969, 560
+  orig: 973, 562
+  offset: 2, 2
+  index: -1

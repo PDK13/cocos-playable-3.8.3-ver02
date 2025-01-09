@@ -1,0 +1,202 @@
+
+Boss-knight-hammer.png
+size: 142,371
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BOSS_BELT
+  rotate: false
+  xy: 113, 34
+  size: 27, 26
+  orig: 28, 26
+  offset: 0, 0
+  index: -1
+BOSS_BODY
+  rotate: true
+  xy: 89, 136
+  size: 41, 47
+  orig: 41, 61
+  offset: 0, 0
+  index: -1
+BOSS_BOT_TOWEL
+  rotate: false
+  xy: 95, 245
+  size: 26, 75
+  orig: 26, 75
+  offset: 0, 0
+  index: -1
+BOSS_CAPE
+  rotate: false
+  xy: 2, 115
+  size: 85, 104
+  orig: 85, 104
+  offset: 0, 0
+  index: -1
+BOSS_HEAD
+  rotate: true
+  xy: 81, 75
+  size: 20, 37
+  orig: 23, 37
+  offset: 1, 0
+  index: -1
+BOSS_L_FOOT
+  rotate: true
+  xy: 2, 3
+  size: 24, 18
+  orig: 24, 21
+  offset: 0, 3
+  index: -1
+BOSS_L_HAND
+  rotate: false
+  xy: 36, 3
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+BOSS_L_LEGPLATE
+  rotate: false
+  xy: 120, 62
+  size: 20, 33
+  orig: 20, 35
+  offset: 0, 0
+  index: -1
+BOSS_L_LOWARM
+  rotate: true
+  xy: 2, 52
+  size: 23, 35
+  orig: 24, 35
+  offset: 1, 0
+  index: -1
+BOSS_L_LOWLEG
+  rotate: true
+  xy: 70, 29
+  size: 18, 34
+  orig: 20, 34
+  offset: 0, 0
+  index: -1
+BOSS_L_LOWLEG2
+  rotate: false
+  xy: 120, 179
+  size: 20, 49
+  orig: 20, 49
+  offset: 0, 0
+  index: -1
+BOSS_L_SHOULDERPLATE
+  rotate: false
+  xy: 95, 322
+  size: 42, 47
+  orig: 42, 47
+  offset: 0, 0
+  index: -1
+BOSS_L_SHOULDERPLATE_34
+  rotate: true
+  xy: 89, 97
+  size: 37, 48
+  orig: 37, 48
+  offset: 0, 0
+  index: -1
+BOSS_L_SHOULDERPLATE_MID
+  rotate: true
+  xy: 2, 77
+  size: 36, 47
+  orig: 36, 47
+  offset: 0, 0
+  index: -1
+BOSS_L_UPARM
+  rotate: false
+  xy: 123, 255
+  size: 16, 30
+  orig: 18, 30
+  offset: 0, 0
+  index: -1
+BOSS_L_UPLEG
+  rotate: false
+  xy: 95, 179
+  size: 23, 64
+  orig: 23, 79
+  offset: 0, 0
+  index: -1
+BOSS_R_FOOT
+  rotate: false
+  xy: 36, 23
+  size: 28, 18
+  orig: 28, 18
+  offset: 0, 0
+  index: -1
+BOSS_R_HAND
+  rotate: false
+  xy: 66, 7
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+BOSS_R_KNEEPLATE
+  rotate: false
+  xy: 87, 7
+  size: 12, 20
+  orig: 12, 20
+  offset: 0, 0
+  index: -1
+BOSS_R_LOWHAND
+  rotate: true
+  xy: 2, 29
+  size: 21, 32
+  orig: 21, 32
+  offset: 0, 0
+  index: -1
+BOSS_R_LOWLEG
+  rotate: false
+  xy: 123, 287
+  size: 16, 33
+  orig: 17, 35
+  offset: 1, 0
+  index: -1
+BOSS_R_SHOULDERPLATE
+  rotate: false
+  xy: 51, 69
+  size: 28, 44
+  orig: 28, 46
+  offset: 0, 2
+  index: -1
+BOSS_R_SHOULDERPLATE2
+  rotate: false
+  xy: 22, 2
+  size: 12, 25
+  orig: 12, 25
+  offset: 0, 0
+  index: -1
+BOSS_R_UPHAND
+  rotate: true
+  xy: 39, 43
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1
+BOSS_R_UPLEG
+  rotate: true
+  xy: 81, 49
+  size: 24, 30
+  orig: 24, 30
+  offset: 0, 0
+  index: -1
+BOSS_WEAPON
+  rotate: true
+  xy: 2, 221
+  size: 148, 91
+  orig: 148, 91
+  offset: 0, 0
+  index: -1
+Layer 11
+  rotate: false
+  xy: 123, 230
+  size: 14, 23
+  orig: 14, 23
+  offset: 0, 0
+  index: -1
+low
+  rotate: true
+  xy: 106, 6
+  size: 26, 22
+  orig: 26, 22
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,286 @@
+
+ARITO.png
+size: 101,517
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BODY
+  rotate: false
+  xy: 2, 243
+  size: 66, 44
+  orig: 66, 44
+  offset: 0, 0
+  index: -1
+EYE_R
+  rotate: false
+  xy: 57, 71
+  size: 6, 11
+  orig: 6, 11
+  offset: 0, 0
+  index: -1
+Eye_L
+  rotate: true
+  xy: 35, 5
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+FOOT_L_LOW
+  rotate: false
+  xy: 75, 385
+  size: 22, 31
+  orig: 152, 151
+  offset: 68, 50
+  index: -1
+FOOT_L_UP
+  rotate: false
+  xy: 75, 289
+  size: 20, 27
+  orig: 152, 151
+  offset: 92, 52
+  index: -1
+FOOT_R_LOW
+  rotate: false
+  xy: 38, 51
+  size: 17, 31
+  orig: 17, 31
+  offset: 0, 0
+  index: -1
+FOOT_R_UP
+  rotate: false
+  xy: 38, 51
+  size: 17, 31
+  orig: 17, 31
+  offset: 0, 0
+  index: -1
+Goatava/BODY
+  rotate: false
+  xy: 2, 197
+  size: 66, 44
+  orig: 66, 44
+  offset: 0, 0
+  index: -1
+Goatava/EYE_R
+  rotate: false
+  xy: 57, 58
+  size: 6, 11
+  orig: 6, 11
+  offset: 0, 0
+  index: -1
+Goatava/Eye_L
+  rotate: true
+  xy: 74, 8
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+Goatava/FOOT_L_LOW
+  rotate: false
+  xy: 75, 318
+  size: 21, 31
+  orig: 21, 32
+  offset: 0, 0
+  index: -1
+Goatava/FOOT_L_UP
+  rotate: true
+  xy: 70, 108
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+Goatava/FOOT_R_LOW
+  rotate: false
+  xy: 36, 18
+  size: 17, 31
+  orig: 17, 31
+  offset: 0, 0
+  index: -1
+Goatava/FOOT_R_UP
+  rotate: true
+  xy: 2, 26
+  size: 17, 31
+  orig: 17, 31
+  offset: 0, 0
+  index: -1
+Goatava/HEAD
+  rotate: false
+  xy: 2, 403
+  size: 71, 55
+  orig: 71, 55
+  offset: 0, 0
+  index: -1
+Goatava/TAIL
+  rotate: false
+  xy: 66, 54
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1
+Goatava/neck
+  rotate: true
+  xy: 70, 229
+  size: 58, 29
+  orig: 58, 29
+  offset: 0, 0
+  index: -1
+Goatice/BODY
+  rotate: false
+  xy: 2, 151
+  size: 66, 44
+  orig: 66, 44
+  offset: 0, 0
+  index: -1
+Goatice/FOOT_L_LOW
+  rotate: false
+  xy: 75, 351
+  size: 21, 32
+  orig: 21, 32
+  offset: 0, 0
+  index: -1
+Goatice/FOOT_L_UP
+  rotate: true
+  xy: 70, 87
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+Goatice/FOOT_R_UP
+  rotate: true
+  xy: 2, 7
+  size: 17, 31
+  orig: 17, 31
+  offset: 0, 0
+  index: -1
+Goatice/HEAD
+  rotate: false
+  xy: 2, 346
+  size: 71, 55
+  orig: 71, 55
+  offset: 0, 0
+  index: -1
+Goatice/NOSE
+  rotate: false
+  xy: 55, 38
+  size: 8, 5
+  orig: 8, 5
+  offset: 0, 0
+  index: -1
+Goatice/bell
+  rotate: false
+  xy: 55, 2
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+Goatice/neck
+  rotate: true
+  xy: 70, 179
+  size: 48, 29
+  orig: 48, 29
+  offset: 0, 0
+  index: -1
+Goatory/BODY
+  rotate: false
+  xy: 2, 105
+  size: 66, 44
+  orig: 66, 44
+  offset: 0, 0
+  index: -1
+Goatory/EYE_R
+  rotate: false
+  xy: 57, 45
+  size: 6, 11
+  orig: 6, 11
+  offset: 0, 0
+  index: -1
+Goatory/Eye_L
+  rotate: false
+  xy: 88, 7
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+Goatory/FOOT_L_LOW
+  rotate: false
+  xy: 75, 418
+  size: 23, 31
+  orig: 23, 32
+  offset: 0, 0
+  index: -1
+Goatory/FOOT_L_UP
+  rotate: true
+  xy: 38, 84
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+Goatory/FOOT_R_LOW
+  rotate: false
+  xy: 81, 484
+  size: 18, 31
+  orig: 18, 31
+  offset: 0, 0
+  index: -1
+Goatory/FOOT_R_UP
+  rotate: false
+  xy: 81, 451
+  size: 18, 31
+  orig: 18, 31
+  offset: 0, 0
+  index: -1
+Goatory/HEAD
+  rotate: false
+  xy: 2, 460
+  size: 77, 55
+  orig: 77, 55
+  offset: 0, 0
+  index: -1
+Goatory/TAIL
+  rotate: false
+  xy: 65, 21
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1
+Goatory/crown
+  rotate: false
+  xy: 2, 78
+  size: 34, 25
+  orig: 34, 25
+  offset: 0, 0
+  index: -1
+Goatory/neck
+  rotate: true
+  xy: 70, 129
+  size: 48, 29
+  orig: 48, 29
+  offset: 0, 0
+  index: -1
+Goatory/nose
+  rotate: false
+  xy: 55, 31
+  size: 8, 5
+  orig: 8, 5
+  offset: 0, 0
+  index: -1
+HEAD
+  rotate: false
+  xy: 2, 289
+  size: 71, 55
+  orig: 71, 55
+  offset: 0, 0
+  index: -1
+NOSE
+  rotate: false
+  xy: 55, 24
+  size: 8, 5
+  orig: 8, 5
+  offset: 0, 0
+  index: -1
+TAIL
+  rotate: false
+  xy: 2, 45
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1

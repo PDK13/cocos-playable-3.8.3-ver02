@@ -1,0 +1,125 @@
+
+monster4.png
+size: 226,226
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BODY
+  rotate: true
+  xy: 145, 82
+  size: 40, 50
+  orig: 40, 50
+  offset: 0, 0
+  index: -1
+Eye
+  rotate: true
+  xy: 193, 199
+  size: 25, 28
+  orig: 29, 31
+  offset: 2, 3
+  index: -1
+HEAD_1
+  rotate: true
+  xy: 150, 174
+  size: 50, 41
+  orig: 50, 41
+  offset: 0, 0
+  index: -1
+HEAD_2
+  rotate: true
+  xy: 2, 16
+  size: 90, 81
+  orig: 90, 81
+  offset: 0, 0
+  index: -1
+HEAD_3
+  rotate: true
+  xy: 145, 36
+  size: 44, 40
+  orig: 44, 40
+  offset: 0, 0
+  index: -1
+L_FOOT
+  rotate: false
+  xy: 197, 90
+  size: 21, 33
+  orig: 21, 33
+  offset: 0, 0
+  index: -1
+L_LOW_ARM
+  rotate: false
+  xy: 187, 42
+  size: 34, 38
+  orig: 34, 38
+  offset: 0, 0
+  index: -1
+L_UP_ARM
+  rotate: false
+  xy: 193, 175
+  size: 29, 22
+  orig: 29, 22
+  offset: 0, 0
+  index: -1
+R_FOOT
+  rotate: false
+  xy: 121, 3
+  size: 29, 29
+  orig: 29, 29
+  offset: 0, 0
+  index: -1
+R_LOW_ARM
+  rotate: false
+  xy: 85, 4
+  size: 34, 28
+  orig: 34, 28
+  offset: 0, 0
+  index: -1
+R_UP_ARM
+  rotate: false
+  xy: 152, 6
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
+  index: -1
+skin4/BALO_BOOM
+  rotate: false
+  xy: 2, 108
+  size: 91, 116
+  orig: 91, 116
+  offset: 0, 0
+  index: -1
+skin4/CLOTHES
+  rotate: false
+  xy: 95, 164
+  size: 53, 60
+  orig: 53, 60
+  offset: 0, 0
+  index: -1
+skin4/GLASS
+  rotate: false
+  xy: 95, 124
+  size: 68, 38
+  orig: 68, 38
+  offset: 0, 0
+  index: -1
+skin4/L_HAND
+  rotate: false
+  xy: 165, 125
+  size: 39, 47
+  orig: 39, 47
+  offset: 0, 0
+  index: -1
+skin4/R__HAND
+  rotate: true
+  xy: 187, 2
+  size: 38, 34
+  orig: 38, 34
+  offset: 0, 0
+  index: -1
+skin4/WEPON
+  rotate: false
+  xy: 85, 34
+  size: 58, 72
+  orig: 58, 72
+  offset: 0, 0
+  index: -1

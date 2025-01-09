@@ -1,0 +1,48 @@
+
+prison_1.png
+size: 221,342
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+l1
+  rotate: true
+  xy: 81, 112
+  size: 228, 62
+  orig: 228, 62
+  offset: 0, 0
+  index: -1
+l2
+  rotate: true
+  xy: 81, 14
+  size: 96, 65
+  orig: 96, 65
+  offset: 0, 0
+  index: -1
+l3
+  rotate: false
+  xy: 2, 13
+  size: 77, 327
+  orig: 77, 327
+  offset: 0, 0
+  index: -1
+l4
+  rotate: false
+  xy: 148, 25
+  size: 60, 315
+  orig: 60, 315
+  offset: 0, 0
+  index: -1
+v1
+  rotate: true
+  xy: 210, 113
+  size: 227, 9
+  orig: 227, 9
+  offset: 0, 0
+  index: -1
+v3
+  rotate: false
+  xy: 2, 2
+  size: 144, 9
+  orig: 144, 9
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,125 @@
+
+zone_autumn.png
+size: 554,968
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+carot_1
+  rotate: true
+  xy: 93, 15
+  size: 49, 68
+  orig: 51, 70
+  offset: 1, 1
+  index: -1
+carot_2
+  rotate: true
+  xy: 181, 6
+  size: 84, 117
+  orig: 86, 119
+  offset: 1, 1
+  index: -1
+co_1
+  rotate: true
+  xy: 445, 718
+  size: 248, 101
+  orig: 251, 103
+  offset: 2, 1
+  index: -1
+co_2
+  rotate: false
+  xy: 445, 335
+  size: 105, 64
+  orig: 107, 66
+  offset: 1, 1
+  index: -1
+da
+  rotate: false
+  xy: 343, 28
+  size: 173, 114
+  orig: 175, 116
+  offset: 1, 1
+  index: -1
+dao_1
+  rotate: true
+  xy: 2, 373
+  size: 593, 259
+  orig: 595, 261
+  offset: 1, 1
+  index: -1
+dao_2
+  rotate: true
+  xy: 263, 359
+  size: 607, 105
+  orig: 609, 107
+  offset: 1, 1
+  index: -1
+dao_3
+  rotate: true
+  xy: 370, 320
+  size: 646, 73
+  orig: 648, 75
+  offset: 1, 1
+  index: -1
+dao_4
+  rotate: true
+  xy: 445, 540
+  size: 176, 87
+  orig: 178, 89
+  offset: 1, 1
+  index: -1
+hoa_1
+  rotate: true
+  xy: 2, 2
+  size: 62, 89
+  orig: 62, 89
+  offset: 0, 0
+  index: -1
+hoa_2
+  rotate: true
+  xy: 481, 175
+  size: 56, 51
+  orig: 56, 51
+  offset: 0, 0
+  index: -1
+hoa_3
+  rotate: true
+  xy: 300, 27
+  size: 63, 40
+  orig: 63, 40
+  offset: 0, 0
+  index: -1
+tan_1
+  rotate: true
+  xy: 2, 66
+  size: 305, 177
+  orig: 307, 179
+  offset: 1, 1
+  index: -1
+tan_2
+  rotate: true
+  xy: 445, 401
+  size: 137, 107
+  orig: 139, 109
+  offset: 1, 1
+  index: -1
+tan_3
+  rotate: true
+  xy: 343, 144
+  size: 174, 136
+  orig: 176, 138
+  offset: 1, 1
+  index: -1
+tan_4
+  rotate: true
+  xy: 481, 233
+  size: 100, 45
+  orig: 102, 47
+  offset: 1, 1
+  index: -1
+than
+  rotate: false
+  xy: 181, 92
+  size: 160, 265
+  orig: 160, 265
+  offset: 0, 0
+  index: -1
