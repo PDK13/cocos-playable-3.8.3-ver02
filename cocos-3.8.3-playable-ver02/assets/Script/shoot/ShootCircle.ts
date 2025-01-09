@@ -12,9 +12,9 @@ export class ShootCircle extends Component {
     BulletSpeed: number = 5;
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    StartEvent: boolean = false;
+    Start: boolean = false;
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCString })
     OnEvent: string = '';
     @property({ group: { name: 'Event' }, type: CCFloat })
@@ -49,7 +49,7 @@ export class ShootCircle extends Component {
     }
 
     protected start(): void {
-        if (this.StartEvent)
+        if (this.Start)
             this.scheduleOnce(() => this.onShoot(), this.Delay);
     }
 
@@ -66,7 +66,7 @@ export class ShootCircle extends Component {
             this.scheduleOnce(() => this.onShoot(), this.DelayLoop);
         if (this.EmitEvent != '')
             director.emit(this.EmitEvent);
-        if (this.OnceTrigger)
+        if (this.Once)
             director.off(this.OnEvent, this.onShoot, this);
     }
 }

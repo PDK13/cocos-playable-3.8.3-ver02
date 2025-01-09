@@ -10,9 +10,9 @@ export class ShootInstant extends Component {
     Bullet: Node = null;
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    StartEvent: boolean = false;
+    Start: boolean = false;
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCString })
     OnEvent: string = '';
     @property({ group: { name: 'Event' }, type: CCFloat })
@@ -67,7 +67,7 @@ export class ShootInstant extends Component {
     protected start(): void {
         if (this.Target != null)
             this.m_targetInRange.push(this.Target);
-        if (this.StartEvent)
+        if (this.Start)
             this.scheduleOnce(() => this.onShoot(), this.Delay);
     }
 
@@ -121,8 +121,8 @@ export class ShootInstant extends Component {
         this.m_shootStage = true;
         if (this.Target == null) {
             if (this.Auto) {
-                if (this.m_targetInRange.length == 0){
-                    this.scheduleOnce(()=> this.onShoot(), 0.2);
+                if (this.m_targetInRange.length == 0) {
+                    this.scheduleOnce(() => this.onShoot(), 0.2);
                     return;
                 }
                 this.Target = this.m_targetInRange.find(t => t != null);
@@ -140,7 +140,7 @@ export class ShootInstant extends Component {
             this.scheduleOnce(() => this.onShoot(), this.DelayLoop);
         if (this.EmitEvent != '')
             director.emit(this.EmitEvent);
-        if (this.OnceTrigger)
+        if (this.Once)
             director.off(this.OnEvent, this.onShoot, this);
     }
 }

@@ -5,7 +5,7 @@ const { ccclass, property } = _decorator;
 export class UiPressEvent extends Component {
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCFloat })
     DelayStart: number = 0;
     @property({ group: { name: 'Event' }, type: CCString })
@@ -24,7 +24,7 @@ export class UiPressEvent extends Component {
     onPressStart() {
         if (this.EmitStart != '')
             this.scheduleOnce(() => director.emit(this.EmitStart), this.DelayStart);
-        if (this.OnceTrigger) {
+        if (this.Once) {
             this.node.off(Input.EventType.TOUCH_START, this.onPressStart, this);
             this.node.off(Input.EventType.TOUCH_END, this.onPressEnd, this);
             this.node.off(Input.EventType.TOUCH_CANCEL, this.onPressEnd, this);

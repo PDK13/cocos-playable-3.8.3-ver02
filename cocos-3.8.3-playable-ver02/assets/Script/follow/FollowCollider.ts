@@ -15,7 +15,7 @@ export class FollowCollider extends Component {
     Follow: Node = null;
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCString })
     OnFollow: string = '';
     @property({ group: { name: 'Event' }, type: CCFloat })
@@ -140,7 +140,7 @@ export class FollowCollider extends Component {
             if (this.EmitFollow != '')
                 director.emit(this.EmitFollow);
         }, this.Delay)
-        if (this.OnceTrigger)
+        if (this.Once)
             director.off(this.OnFollow, this.onFollowEvent, this);
     }
 

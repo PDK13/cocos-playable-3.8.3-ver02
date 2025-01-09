@@ -5,7 +5,7 @@ const { ccclass, property } = _decorator;
 export class SpineStage extends Component {
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCString })
     OnEvent: string = 'on-event';
     @property({ group: { name: 'Event' }, type: CCString })
@@ -46,7 +46,7 @@ export class SpineStage extends Component {
         else
             this.Spine.setAnimation(0, this.AnimOff, this.AnimOffLoop);
 
-        if (this.OnceTrigger)
+        if (this.Once)
             director.off(this.OnEvent, this.onAnim, this);
     }
 }

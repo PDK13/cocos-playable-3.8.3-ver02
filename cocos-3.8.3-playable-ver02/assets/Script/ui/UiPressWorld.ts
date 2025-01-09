@@ -15,7 +15,7 @@ export class UiPressWorld extends Component {
     Target: Node[] = [];
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCString })
     EmitEvent: string = '';
     @property({ group: { name: 'Event' }, type: EmitEventType })
@@ -76,7 +76,7 @@ export class UiPressWorld extends Component {
             }
         }
 
-        if (this.OnceTrigger) {
+        if (this.Once) {
             this.node.off(Input.EventType.TOUCH_START, this.onPressStart, this);
             this.node.off(Input.EventType.TOUCH_END, this.onPressStart, this);
             this.node.off(Input.EventType.TOUCH_CANCEL, this.onPressStart, this);

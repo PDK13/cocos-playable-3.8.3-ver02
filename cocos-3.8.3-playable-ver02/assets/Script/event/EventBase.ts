@@ -7,13 +7,13 @@ const { ccclass, property, requireComponent } = _decorator;
 export class EventBase extends Component {
 
     @property({ group: { name: 'Main' }, type: CCBoolean })
-    EventStart: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCString, visible(this: EventBase) { return !this.EventStart; } })
+    Start: boolean = false;
+    @property({ group: { name: 'Main' }, type: CCString, visible(this: EventBase) { return !this.Start; } })
     OnEvent: string = '';
     @property({ group: { name: 'Main' }, type: CCBoolean })
-    EventOnce: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Main' }, type: CCFloat })
-    EventDelay: number = 0;
+    Delay: number = 0;
     @property({ group: { name: 'Main' }, type: CCString })
     EmitEvent: string = '';
 
@@ -23,7 +23,7 @@ export class EventBase extends Component {
     }
 
     protected start(): void {
-        if (this.EventStart)
+        if (this.Start)
             this.onEvent();
     }
 
@@ -33,8 +33,8 @@ export class EventBase extends Component {
             this.node.emit(ConstantBase.ON_NODE_EVENT);
             if (this.EmitEvent != '')
                 director.emit(this.EmitEvent, value);
-        }, this.EventDelay);
-        if (this.EventOnce)
+        }, this.Delay);
+        if (this.Once)
             director.off(this.OnEvent, this.onEvent, this);
     }
 }

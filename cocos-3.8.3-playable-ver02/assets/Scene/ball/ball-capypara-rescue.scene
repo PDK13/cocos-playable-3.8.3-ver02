@@ -2618,10 +2618,10 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "StartEvent": false,
-    "StartDelay": 15,
+    "Start": false,
+    "DelayStart": 15,
     "OnPopup": "game-complete",
-    "DelayShow": 0,
+    "Delay": 2,
     "Mask": {
       "__id__": 47
     },
@@ -3504,10 +3504,10 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "StartEvent": false,
-    "StartDelay": 15,
+    "Start": false,
+    "DelayStart": 15,
     "OnPopup": "game-lose",
-    "DelayShow": 0,
+    "Delay": 2,
     "Mask": {
       "__id__": 72
     },
@@ -4388,10 +4388,10 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "StartEvent": false,
-    "StartDelay": 15,
+    "Start": false,
+    "DelayStart": 15,
     "OnPopup": "game-time-out",
-    "DelayShow": 0,
+    "Delay": 2,
     "Mask": {
       "__id__": 97
     },
@@ -8493,10 +8493,10 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "EventOnce": false,
-    "EventDelay": 0,
+    "Once": false,
+    "Delay": 0,
     "EmitEvent": "",
-    "CheckMuti": false,
+    "Muti": false,
     "TagBody": 0,
     "TagTarget": [
       100
@@ -8513,10 +8513,10 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "EventStart": false,
+    "Start": false,
     "OnEvent": "",
-    "EventOnce": false,
-    "EventDelay": 0,
+    "Once": false,
+    "Delay": 0,
     "EmitEvent": "",
     "_id": "67iMaqhY9APovGR4gy862c"
   },

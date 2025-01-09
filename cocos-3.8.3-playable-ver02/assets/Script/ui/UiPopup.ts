@@ -5,14 +5,14 @@ const { ccclass, property } = _decorator;
 export class UiPopup extends Component {
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    StartEvent: boolean = false;
-    @property({ group: { name: 'Event' }, type: CCFloat })
-    StartDelay: number = 15;
+    Start: boolean = false;
+    @property({ group: { name: 'Event' }, type: CCFloat, visible(this: UiPopup) { return this.Start; } })
+    DelayStart: number = 15;
     @property({ group: { name: 'Event' }, type: CCString })
     OnPopup: string = '';
+    @property({ group: { name: 'Event' }, type: CCFloat })
+    Delay: number = 2;
 
-    @property({ group: { name: 'Popup' }, type: CCFloat })
-    DelayShow: number = 0;
     @property({ group: { name: 'Popup' }, type: Node })
     Mask: Node = null;
     @property({ group: { name: 'Popup' }, type: Node })
@@ -22,7 +22,7 @@ export class UiPopup extends Component {
 
     protected onLoad(): void {
         if (this.OnPopup != '')
-            director.on(this.OnPopup, this.onPopup, this);
+            this.scheduleOnce(() => director.on(this.OnPopup, this.onPopup, this), this.DelayStart);
     }
 
     protected start(): void {
@@ -30,8 +30,8 @@ export class UiPopup extends Component {
         this.Panel.active = false;
         this.Panel.scale = Vec3.ZERO;
 
-        if (this.StartEvent)
-            this.scheduleOnce(() => this.onPopup(), this.StartDelay);
+        if (this.Start)
+            this.onPopup()
     }
 
     onPopup() {
@@ -41,7 +41,7 @@ export class UiPopup extends Component {
         this.scheduleOnce(() => {
             this.Mask.active = true;
             this.Panel.active = true;
-        }, this.DelayShow);
+        }, this.Delay);
         director.off(this.OnPopup, this.onPopup, this);
     }
 }

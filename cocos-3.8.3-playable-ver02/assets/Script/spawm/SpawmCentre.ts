@@ -6,9 +6,9 @@ const { ccclass, property } = _decorator;
 export class SpawmCentre extends Component {
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    StartEvent: boolean = false;
+    Start: boolean = false;
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCString })
     OnStart: string = '';
     @property({ group: { name: 'Event' }, type: CCBoolean })
@@ -54,7 +54,7 @@ export class SpawmCentre extends Component {
             this.List = this.node;
         for (let i = 0; i < this.List.children.length; i++)
             this.List.children[i].active = false;
-        if (this.StartEvent) {
+        if (this.Start) {
             this.onStart();
             if (this.DelayStart) {
                 this.m_delay = true;

@@ -9,9 +9,9 @@ export class MovePingPong extends Component {
     Target: Node = null;
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    StartEvent: boolean = false;
+    Start: boolean = false;
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCString })
     OnEvent: string = '';
     @property({ group: { name: 'Event' }, type: CCFloat })
@@ -57,7 +57,7 @@ export class MovePingPong extends Component {
     protected start(): void {
         if (this.Target == null)
             this.Target = this.node;
-        if (this.StartEvent)
+        if (this.Start)
             this.onEvent();
     }
 
@@ -71,7 +71,7 @@ export class MovePingPong extends Component {
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => this.onTween(), this.Delay + (this.Fixed ? 0.02 : 0));
 
-        if (this.OnceTrigger)
+        if (this.Once)
             director.off(this.OnEvent, this.onEvent, this);
     }
 

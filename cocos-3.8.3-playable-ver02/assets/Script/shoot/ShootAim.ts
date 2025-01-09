@@ -18,9 +18,9 @@ export class ShootAim extends Component {
     BulletSpeed: number = 5;
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    StartEvent: boolean = false;
+    Start: boolean = false;
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCString })
     OnEvent: string = '';
     @property({ group: { name: 'Event' }, type: CCFloat })
@@ -75,7 +75,7 @@ export class ShootAim extends Component {
         this.m_degSpine = this.DegFrom + this.DegSpineOffset;
 
         this.onAimUpdate();
-        if (this.StartEvent)
+        if (this.Start)
             this.onAim();
     }
 
@@ -130,7 +130,7 @@ export class ShootAim extends Component {
                 .call(() => this.onShoot())
                 .start();
         }, this.Delay);
-        if (this.OnceTrigger)
+        if (this.Once)
             director.off(this.OnEvent, this.onAim, this);
     }
 

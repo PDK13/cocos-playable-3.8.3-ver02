@@ -6,9 +6,9 @@ const { ccclass, property } = _decorator;
 export class SpawmActive extends Component {
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    StartEvent: boolean = false;
+    Start: boolean = false;
     @property({ group: { name: 'Event' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCString })
     OnStart: string = '';
     @property({ group: { name: 'Event' }, type: CCBoolean })
@@ -37,7 +37,7 @@ export class SpawmActive extends Component {
             this.Group = this.node;
         for (let i = 0; i < this.Group.children.length; i++)
             this.Group.children[i].active = false;
-        if (this.StartEvent)
+        if (this.Start)
             this.onStart();
     }
 

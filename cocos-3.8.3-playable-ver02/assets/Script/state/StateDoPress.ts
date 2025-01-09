@@ -15,11 +15,11 @@ Enum(PressType);
 export class StateDoPress extends Component {
 
     @property({ group: { name: 'Main' }, type: PressType })
-    PressType: PressType = PressType.Hold;
+    Type: PressType = PressType.Hold;
     @property({ group: { name: 'Main' }, type: CCBoolean })
-    PressFall: boolean = false;
+    Fall: boolean = false;
     @property({ group: { name: 'Main' }, type: CCBoolean })
-    EventOnce: boolean = false;
+    Once: boolean = false;
 
     @property({ group: { name: 'Object' }, type: Node })
     Node: Node = null;
@@ -48,7 +48,7 @@ export class StateDoPress extends Component {
         let colliders = this.getComponents(Collider2D);
         colliders.forEach(collider => {
             if (collider.tag == this.TagBody) {
-                switch (this.PressType) {
+                switch (this.Type) {
                     case PressType.Hold:
                         collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
                         collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
@@ -60,7 +60,7 @@ export class StateDoPress extends Component {
             }
         });
 
-        switch (this.PressType) {
+        switch (this.Type) {
             case PressType.Hold:
                 //State value start OFF on current object
                 this.m_state.State = false;
@@ -88,7 +88,7 @@ export class StateDoPress extends Component {
             return;
         let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
         if (targetIndex > -1) {
-            if (this.PressFall) {
+            if (this.Fall) {
                 let targetRigidbodyY = (otherCollider.body.linearVelocity ?? Vec3.ZERO).clone().y;
                 if (targetRigidbodyY <= -0.02)
                     this.onStateUpdate();
@@ -109,7 +109,7 @@ export class StateDoPress extends Component {
     //
 
     onStateUpdate() {
-        switch (this.PressType) {
+        switch (this.Type) {
             case PressType.Hold:
                 this.m_count++;
                 if (this.m_count > 1)
@@ -123,11 +123,11 @@ export class StateDoPress extends Component {
                 break;
         }
 
-        if (this.EventOnce) {
+        if (this.Once) {
             let colliders = this.getComponents(Collider2D);
             colliders.forEach(collider => {
                 if (collider.tag == this.TagBody) {
-                    switch (this.PressType) {
+                    switch (this.Type) {
                         case PressType.Hold:
                             collider.off(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
                             collider.off(Contact2DType.END_CONTACT, this.onEndContact, this);
@@ -142,7 +142,7 @@ export class StateDoPress extends Component {
     }
 
     onStateRemove() {
-        switch (this.PressType) {
+        switch (this.Type) {
             case PressType.Hold:
                 this.m_count--;
                 if (this.m_count > 0)

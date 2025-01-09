@@ -7,14 +7,14 @@ const { ccclass, property, requireComponent } = _decorator;
 export class TriggerBase extends Component {
 
     @property({ group: { name: 'Main' }, type: CCBoolean })
-    EventOnce: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Main' }, type: CCFloat })
-    EventDelay: number = 0;
+    Delay: number = 0;
     @property({ group: { name: 'Main' }, type: CCString })
     EmitEvent: string = '';
 
     @property({ group: { name: 'Option' }, type: CCBoolean })
-    CheckMuti: boolean = false;
+    Muti: boolean = false;
 
     @property({ group: { name: 'Tag' }, type: CCInteger })
     TagBody: number = 0;
@@ -51,7 +51,7 @@ export class TriggerBase extends Component {
 
     onTriggerUpdate() {
         this.m_triggerCount++;
-        if (!this.CheckMuti && this.m_triggerCount > 1)
+        if (!this.Muti && this.m_triggerCount > 1)
             return;
 
         this.unscheduleAllCallbacks();
@@ -59,9 +59,9 @@ export class TriggerBase extends Component {
             this.node.emit(ConstantBase.ON_NODE_TRIGGER, true);
             if (this.EmitEvent != '')
                 director.emit(this.EmitEvent, true);
-        }, this.EventDelay);
+        }, this.Delay);
 
-        if (this.EventOnce) {
+        if (this.Once) {
             let colliders = this.getComponents(Collider2D);
             colliders.forEach(collider => {
                 switch (collider.tag) {
@@ -76,13 +76,13 @@ export class TriggerBase extends Component {
 
     onTriggerRemove() {
         this.m_triggerCount--;
-        if (!this.CheckMuti && this.m_triggerCount > 0)
+        if (!this.Muti && this.m_triggerCount > 0)
             return;
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
             this.node.emit(ConstantBase.ON_NODE_TRIGGER, false);
             if (this.EmitEvent != '')
                 director.emit(this.EmitEvent, false);
-        }, this.EventDelay);
+        }, this.Delay);
     }
 }

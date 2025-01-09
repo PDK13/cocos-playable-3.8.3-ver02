@@ -8,7 +8,7 @@ export class ObjectDoor extends Component {
     @property({ group: { name: 'Main' }, type: CCBoolean })
     StayContact: boolean = false;
     @property({ group: { name: 'Main' }, type: CCBoolean })
-    TriggerOnce: boolean = false;
+    Once: boolean = false;
     @property({ group: { name: 'Main' }, type: CCString })
     EmitTrigger: string = ConstantBase.PLAYER_COMPLETE;
 
@@ -88,7 +88,7 @@ export class ObjectDoor extends Component {
         if (this.m_ready) {
             if (this.EmitTrigger != '')
                 director.emit(this.EmitTrigger);
-            if (this.TriggerOnce) {
+            if (this.Once) {
                 let colliders = this.getComponents(Collider2D);
                 colliders.forEach(collider => {
                     if (collider.tag == this.TagBody) {
