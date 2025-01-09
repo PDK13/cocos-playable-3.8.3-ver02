@@ -44,7 +44,7 @@ export class BodyPlatformX extends Component {
         this.m_state = this.getComponent(StateBase);
 
         if (this.m_state != null)
-            this.node.on(this.m_state.m_emitState, this.onState, this);
+            this.node.on(this.m_state.ConstantBase.ON_NODE_STATE, this.onState, this);
 
         let colliders = this.getComponents(Collider2D);
         for (let i = 0; i < colliders.length; i++) {

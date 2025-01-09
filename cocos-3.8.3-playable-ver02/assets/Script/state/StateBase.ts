@@ -1,4 +1,5 @@
 import { _decorator, CCBoolean, CCString, Component, director } from 'cc';
+import { ConstantBase } from '../ConstantBase';
 const { ccclass, property } = _decorator;
 
 @ccclass('StateBase')
@@ -18,7 +19,7 @@ export class StateBase extends Component {
     @property({ group: { name: 'State' }, type: CCString })
     OnStateChange: string = '';
     @property({ group: { name: 'State' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    EventOnce: boolean = false;
     @property({ group: { name: 'State' }, type: CCString })
     EmitState: string = '';
 
@@ -32,9 +33,6 @@ export class StateBase extends Component {
     EmitLock: string = '';
 
     m_stateDelay: boolean = false;
-
-    readonly m_emitState: string = 'emit-state-base';
-    readonly m_emitLock: string = 'emit-state-base-lock';
 
     //
 
@@ -66,11 +64,11 @@ export class StateBase extends Component {
         this.scheduleOnce(() => this.m_stateDelay = false, 0);
 
         this.State = state;
-        this.node.emit(this.m_emitState, this.State);
+        this.node.emit(ConstantBase.ON_NODE_STATE, this.State);
         if (this.EmitState != '')
             director.emit(this.EmitState, this.State);
 
-        if (this.OnceTrigger) {
+        if (this.EventOnce) {
             if (this.OnState != '')
                 director.off(this.OnStateOn, this.onState, this);
             if (this.OnStateOn != '')
@@ -108,7 +106,7 @@ export class StateBase extends Component {
             return;
 
         this.Lock = lock;
-        this.node.emit(this.m_emitLock, this.Lock);
+        this.node.emit(ConstantBase.ON_NODE_LOCK, this.Lock);
         if (this.EmitLock != '')
             director.emit(this.EmitLock, this.Lock);
     }

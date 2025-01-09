@@ -1,5 +1,6 @@
-import { _decorator, CCBoolean, CCInteger, Collider2D, Component, Contact2DType, Enum, IPhysics2DContact, RigidBody2D, Vec3 } from 'cc';
+import { _decorator, Node, CCBoolean, CCFloat, CCInteger, Collider2D, Component, Contact2DType, Enum, IPhysics2DContact, RigidBody2D, tween, Vec3 } from 'cc';
 import { StateBase } from './StateBase';
+import { ConstantBase } from '../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
 
 export enum PressType {
@@ -8,17 +9,24 @@ export enum PressType {
 };
 Enum(PressType);
 
-@ccclass('StatePress')
+@ccclass('StateDoPress')
 @requireComponent(StateBase)
 @requireComponent(RigidBody2D)
-export class StatePress extends Component {
+export class StateDoPress extends Component {
 
     @property({ group: { name: 'Main' }, type: PressType })
     PressType: PressType = PressType.Hold;
     @property({ group: { name: 'Main' }, type: CCBoolean })
-    FallTrigger: boolean = false;
+    PressFall: boolean = false;
     @property({ group: { name: 'Main' }, type: CCBoolean })
-    OnceTrigger: boolean = false;
+    EventOnce: boolean = false;
+
+    @property({ group: { name: 'Object' }, type: Node })
+    Node: Node = null;
+    @property({ group: { name: 'Object' }, type: CCFloat, visible(this: StateDoPress) { return this.Node != null; } })
+    TweenOffsetY: number = -20;
+    @property({ group: { name: 'Object' }, type: CCFloat, visible(this: StateDoPress) { return this.Node != null; } })
+    TweenDuration: number = 0.2;
 
     @property({ group: { name: 'Tag' }, type: CCInteger })
     TagBody: number = 0;
@@ -26,7 +34,10 @@ export class StatePress extends Component {
     TagTarget: number[] = [100];
 
     m_count: number = 0;
-    
+
+    m_startY: number;
+    m_endY: number;
+
     m_state: StateBase = null;
 
     //
@@ -58,6 +69,16 @@ export class StatePress extends Component {
                 //State value keep on current object(s)
                 break;
         }
+
+        if (this.Node != null)
+            this.node.on(ConstantBase.ON_NODE_STATE, this.onStateSprite, this);
+    }
+
+    protected start(): void {
+        this.m_startY = this.Node.position.clone().y;
+        this.m_endY = this.m_startY + this.TweenOffsetY;
+        if (this.Node != null)
+            this.onStateSpriteInit();
     }
 
     //
@@ -67,7 +88,7 @@ export class StatePress extends Component {
             return;
         let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
         if (targetIndex > -1) {
-            if (this.FallTrigger) {
+            if (this.PressFall) {
                 let targetRigidbodyY = (otherCollider.body.linearVelocity ?? Vec3.ZERO).clone().y;
                 if (targetRigidbodyY <= -0.02)
                     this.onStateUpdate();
@@ -102,7 +123,7 @@ export class StatePress extends Component {
                 break;
         }
 
-        if (this.OnceTrigger) {
+        if (this.EventOnce) {
             let colliders = this.getComponents(Collider2D);
             colliders.forEach(collider => {
                 if (collider.tag == this.TagBody) {
@@ -131,6 +152,34 @@ export class StatePress extends Component {
             case PressType.Toggle:
                 //Not press off after pressed on, wait until state value is OFF (false)
                 break;
+        }
+    }
+
+    //
+
+    private onStateSprite() {
+        if (this.m_state.State) {
+            let posTo = Vec3.UP.clone().multiplyScalar(this.m_endY);
+            tween(this.Node)
+                .to(this.TweenDuration, { position: posTo }, { easing: 'linear' })
+                .start();
+        }
+        else {
+            let posTo = Vec3.UP.clone().multiplyScalar(this.m_startY);
+            tween(this.Node)
+                .to(this.TweenDuration, { position: posTo }, { easing: 'linear' })
+                .start();
+        }
+    }
+
+    private onStateSpriteInit() {
+        if (this.m_state.State) {
+            let posTo = Vec3.UP.clone().multiplyScalar(this.m_endY);
+            this.Node.position = posTo;
+        }
+        else {
+            let posTo = Vec3.UP.clone().multiplyScalar(this.m_startY);
+            this.Node.position = posTo;
         }
     }
 }

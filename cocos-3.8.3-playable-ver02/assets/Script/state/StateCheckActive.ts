@@ -1,10 +1,11 @@
 import { _decorator, Component, Node } from 'cc';
 import { StateBase } from './StateBase';
+import { ConstantBase } from '../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
 
-@ccclass('StateActive')
+@ccclass('StateCheckActive')
 @requireComponent(StateBase)
-export class StateActive extends Component {
+export class StateCheckActive extends Component {
 
     @property([Node])
     NodeStateOn: Node[] = [];
@@ -17,7 +18,7 @@ export class StateActive extends Component {
     protected onLoad(): void {
         this.m_state = this.getComponent(StateBase);
 
-        this.node.on(this.m_state.m_emitState, this.onStateActive, this);
+        this.node.on(ConstantBase.ON_NODE_STATE, this.onStateActive, this);
     }
 
     protected start(): void {

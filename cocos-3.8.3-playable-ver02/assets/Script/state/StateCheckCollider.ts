@@ -1,11 +1,12 @@
 import { _decorator, CCInteger, Collider2D, Component, RigidBody2D } from 'cc';
 import { StateBase } from './StateBase';
+import { ConstantBase } from '../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
 
-@ccclass('StateCollider')
+@ccclass('StateCheckCollider')
 @requireComponent(StateBase)
 @requireComponent(RigidBody2D)
-export class StateCollider extends Component {
+export class StateCheckCollider extends Component {
 
     //@property({ group: { name: 'Self' }, type: CCInteger })
     @property(CCInteger)
@@ -18,7 +19,7 @@ export class StateCollider extends Component {
     protected onLoad(): void {
         this.m_state = this.getComponent(StateBase);
 
-        this.node.on(this.m_state.m_emitState, this.onStateCollider, this);
+        this.node.on(ConstantBase.ON_NODE_STATE, this.onStateCollider, this);
 
         let colliders = this.getComponents(Collider2D);
         colliders.forEach(collider => {

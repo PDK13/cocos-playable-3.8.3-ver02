@@ -79,7 +79,13 @@ export class ConstantBase {
 
     static readonly ON_NODE_HIT = 'on-node-hit';
     static readonly ON_NODE_DEAD = 'on-node-dead';
+
+    static readonly ON_NODE_STATE = 'on-node-state';
+    static readonly ON_NODE_LOCK = 'on-node-lock';
+
     static readonly ON_NODE_EVENT = 'on-node-event';
+    static readonly ON_NODE_TRIGGER = 'on-node-trigger';
+
     static readonly ON_NODE_PICK = 'on-node-pick';
     static readonly ON_NODE_THROW = 'on-node-throw';
 }
