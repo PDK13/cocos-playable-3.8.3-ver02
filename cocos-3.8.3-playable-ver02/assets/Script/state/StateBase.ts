@@ -5,6 +5,8 @@ const { ccclass, property } = _decorator;
 @ccclass('StateBase')
 export class StateBase extends Component {
 
+    //NOTE: This script focus on TRUE & FALSE event(s)
+
     @property({ group: { name: 'Main' }, type: CCBoolean })
     State: boolean = true;
     @property({ group: { name: 'Main' }, type: CCBoolean })

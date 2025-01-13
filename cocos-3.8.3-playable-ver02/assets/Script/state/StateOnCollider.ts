@@ -3,22 +3,20 @@ import { StateBase } from './StateBase';
 import { ConstantBase } from '../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
 
-@ccclass('StateCheckCollider')
+@ccclass('StateOnCollider')
 @requireComponent(StateBase)
 @requireComponent(RigidBody2D)
-export class StateCheckCollider extends Component {
+export class StateOnCollider extends Component {
 
-    //@property({ group: { name: 'Self' }, type: CCInteger })
+    //@property({ type: CCBoolean, visible(this: StateOnCollider) { return this.getComponent(StateBase) == null; } })
+    State: boolean = true;
+
     @property(CCInteger)
     TagBody: number = 0;
 
     m_collider: Collider2D[] = [];
 
-    m_state: StateBase = null;
-
     protected onLoad(): void {
-        this.m_state = this.getComponent(StateBase);
-
         this.node.on(ConstantBase.ON_NODE_STATE, this.onStateCollider, this);
 
         let colliders = this.getComponents(Collider2D);
@@ -29,12 +27,13 @@ export class StateCheckCollider extends Component {
     }
 
     protected start(): void {
-        this.onStateCollider();
+        let stateBase = this.getComponent(StateBase);
+        this.onStateCollider(stateBase != null ? stateBase.State : this.State);
     }
 
-    private onStateCollider() {
+    private onStateCollider(state: boolean) {
         this.m_collider.forEach(collider => {
-            collider.enabled = this.m_state.State;
+            collider.enabled = state;
         });
     }
 }

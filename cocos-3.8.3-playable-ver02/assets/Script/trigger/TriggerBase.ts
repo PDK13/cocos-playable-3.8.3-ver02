@@ -1,11 +1,20 @@
-import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, director, IPhysics2DContact, Node, RigidBody2D } from 'cc';
+import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, director, Enum, IPhysics2DContact, math, Node, RigidBody2D } from 'cc';
 import { ConstantBase } from '../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
+
+export enum EventType {
+    NONE,
+    BOOLEAN,
+    NODE,
+};
+Enum(EventType);
 
 @ccclass('TriggerBase')
 @requireComponent(RigidBody2D)
 export class TriggerBase extends Component {
 
+    @property({ group: { name: 'Main' }, type: EventType })
+    EventType: EventType = EventType.NONE;
     @property({ group: { name: 'Main' }, type: CCBoolean })
     Once: boolean = false;
     @property({ group: { name: 'Main' }, type: CCFloat })
@@ -13,15 +22,10 @@ export class TriggerBase extends Component {
     @property({ group: { name: 'Main' }, type: CCString })
     EmitEvent: string = '';
 
-    @property({ group: { name: 'Option' }, type: CCBoolean })
-    Muti: boolean = false;
-
     @property({ group: { name: 'Tag' }, type: CCInteger })
     TagBody: number = 0;
     @property({ group: { name: 'Tag' }, type: [CCInteger] })
     TagTarget: number[] = [100];
-
-    m_triggerCount: number = 0;
 
     protected onLoad() {
         let colliders = this.getComponents(Collider2D);
@@ -37,30 +41,28 @@ export class TriggerBase extends Component {
 
     protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
-        if (targetIndex > -1)
-            this.onTriggerUpdate();
-    }
-
-    protected onEndContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
-        let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
-        if (targetIndex > -1)
-            this.onTriggerRemove();
-    }
-
-    //
-
-    onTriggerUpdate() {
-        this.m_triggerCount++;
-        if (!this.Muti && this.m_triggerCount > 1)
+        if (targetIndex <= 0)
             return;
-
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
-            this.node.emit(ConstantBase.ON_NODE_TRIGGER, true);
-            if (this.EmitEvent != '')
-                director.emit(this.EmitEvent, true);
-        }, this.Delay);
-
+            switch (this.EventType) {
+                case EventType.NONE:
+                    this.node.emit(ConstantBase.ON_NODE_TRIGGER);
+                    if (this.EmitEvent != '')
+                        director.emit(this.EmitEvent);
+                    break;
+                case EventType.BOOLEAN:
+                    this.node.emit(ConstantBase.ON_NODE_TRIGGER, true);
+                    if (this.EmitEvent != '')
+                        director.emit(this.EmitEvent, true);
+                    break;
+                case EventType.NODE:
+                    this.node.emit(ConstantBase.ON_NODE_TRIGGER, true, otherCollider.node);
+                    if (this.EmitEvent != '')
+                        director.emit(this.EmitEvent, true, otherCollider.node);
+                    break;
+            }
+        }, Math.max(this.Delay, 0));
         if (this.Once) {
             let colliders = this.getComponents(Collider2D);
             colliders.forEach(collider => {
@@ -74,15 +76,29 @@ export class TriggerBase extends Component {
         }
     }
 
-    onTriggerRemove() {
-        this.m_triggerCount--;
-        if (!this.Muti && this.m_triggerCount > 0)
+    protected onEndContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
+        let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
+        if (targetIndex <= 0)
             return;
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
-            this.node.emit(ConstantBase.ON_NODE_TRIGGER, false);
-            if (this.EmitEvent != '')
-                director.emit(this.EmitEvent, false);
-        }, this.Delay);
+            switch (this.EventType) {
+                case EventType.NONE:
+                    this.node.emit(ConstantBase.ON_NODE_TRIGGER);
+                    if (this.EmitEvent != '')
+                        director.emit(this.EmitEvent);
+                    break;
+                case EventType.BOOLEAN:
+                    this.node.emit(ConstantBase.ON_NODE_TRIGGER, false);
+                    if (this.EmitEvent != '')
+                        director.emit(this.EmitEvent, false);
+                    break;
+                case EventType.NODE:
+                    this.node.emit(ConstantBase.ON_NODE_TRIGGER, false, otherCollider.node);
+                    if (this.EmitEvent != '')
+                        director.emit(this.EmitEvent, false, otherCollider.node);
+                    break;
+            }
+        }, Math.max(this.Delay, 0));
     }
 }

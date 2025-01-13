@@ -1,11 +1,14 @@
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, CCBoolean, Component, Node } from 'cc';
 import { StateBase } from './StateBase';
 import { ConstantBase } from '../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
 
-@ccclass('StateCheckActive')
+@ccclass('StateOnActive')
 @requireComponent(StateBase)
-export class StateCheckActive extends Component {
+export class StateOnActive extends Component {
+
+    //@property({ type: CCBoolean, visible(this: StateOnActive) { return this.getComponent(StateBase) == null; } })
+    State: boolean = true;
 
     @property([Node])
     NodeStateOn: Node[] = [];
@@ -13,24 +16,21 @@ export class StateCheckActive extends Component {
     @property([Node])
     NodeStateOff: Node[] = [];
 
-    m_state: StateBase = null;
-
     protected onLoad(): void {
-        this.m_state = this.getComponent(StateBase);
-
         this.node.on(ConstantBase.ON_NODE_STATE, this.onStateActive, this);
     }
 
     protected start(): void {
-        this.onStateActive();
+        let stateBase = this.getComponent(StateBase);
+        this.onStateActive(stateBase != null ? stateBase.State : this.State);
     }
 
-    private onStateActive() {
+    private onStateActive(state: boolean) {
         this.NodeStateOn.forEach(node => {
-            node.active = this.m_state.State;
+            node.active = state;
         });
         this.NodeStateOff.forEach(node => {
-            node.active = !this.m_state.State;
+            node.active = !state;
         });
     }
 }

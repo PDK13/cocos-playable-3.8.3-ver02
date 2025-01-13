@@ -9,10 +9,10 @@ export enum PressType {
 };
 Enum(PressType);
 
-@ccclass('StateDoPress')
+@ccclass('StateTriggerPress')
 @requireComponent(StateBase)
 @requireComponent(RigidBody2D)
-export class StateDoPress extends Component {
+export class StateTriggerPress extends Component {
 
     @property({ group: { name: 'Main' }, type: PressType })
     Type: PressType = PressType.Hold;
@@ -23,9 +23,9 @@ export class StateDoPress extends Component {
 
     @property({ group: { name: 'Object' }, type: Node })
     Node: Node = null;
-    @property({ group: { name: 'Object' }, type: CCFloat, visible(this: StateDoPress) { return this.Node != null; } })
+    @property({ group: { name: 'Object' }, type: CCFloat, visible(this: StateTriggerPress) { return this.Node != null; } })
     TweenOffsetY: number = -20;
-    @property({ group: { name: 'Object' }, type: CCFloat, visible(this: StateDoPress) { return this.Node != null; } })
+    @property({ group: { name: 'Object' }, type: CCFloat, visible(this: StateTriggerPress) { return this.Node != null; } })
     TweenDuration: number = 0.2;
 
     @property({ group: { name: 'Tag' }, type: CCInteger })
