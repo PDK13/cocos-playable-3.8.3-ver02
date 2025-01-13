@@ -1,0 +1,111 @@
+
+cref_fly.png
+size: 156,773
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 10
+  rotate: true
+  xy: 2, 92
+  size: 156, 113
+  orig: 156, 113
+  offset: 0, 0
+  index: -1
+Group 24
+  rotate: true
+  xy: 125, 313
+  size: 35, 24
+  orig: 35, 24
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 2
+  size: 95, 88
+  orig: 95, 88
+  offset: 0, 0
+  index: -1
+dk_L
+  rotate: true
+  xy: 117, 222
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 125, 285
+  size: 26, 28
+  orig: 26, 28
+  offset: 0, 0
+  index: -1
+hand_L_01
+  rotate: true
+  xy: 125, 238
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+hand_L_02
+  rotate: true
+  xy: 125, 258
+  size: 25, 27
+  orig: 25, 27
+  offset: 0, 0
+  index: -1
+hand_L_03
+  rotate: true
+  xy: 125, 388
+  size: 39, 29
+  orig: 39, 29
+  offset: 0, 0
+  index: -1
+hand_L_04
+  rotate: true
+  xy: 117, 184
+  size: 17, 19
+  orig: 17, 19
+  offset: 0, 0
+  index: -1
+hand_L_05
+  rotate: false
+  xy: 141, 203
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: -1
+hand_R_01
+  rotate: false
+  xy: 117, 203
+  size: 22, 17
+  orig: 22, 17
+  offset: 0, 0
+  index: -1
+hand_R_02
+  rotate: false
+  xy: 125, 350
+  size: 27, 36
+  orig: 27, 36
+  offset: 0, 0
+  index: -1
+kinh
+  rotate: false
+  xy: 2, 585
+  size: 151, 186
+  orig: 151, 186
+  offset: 0, 0
+  index: -1
+ong_khoi
+  rotate: false
+  xy: 2, 250
+  size: 121, 177
+  orig: 121, 177
+  offset: 0, 0
+  index: -1
+sung
+  rotate: true
+  xy: 2, 429
+  size: 154, 151
+  orig: 154, 151
+  offset: 0, 0
+  index: -1

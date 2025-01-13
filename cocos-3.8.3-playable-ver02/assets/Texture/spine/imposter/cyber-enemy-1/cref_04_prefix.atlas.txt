@@ -1,0 +1,55 @@
+
+cref_04_prefix.png
+size: 209,542
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 193
+  size: 131, 140
+  orig: 131, 140
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 2, 9
+  size: 91, 108
+  orig: 91, 108
+  offset: 0, 0
+  index: -1
+face
+  rotate: true
+  xy: 2, 335
+  size: 205, 198
+  orig: 205, 198
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: true
+  xy: 2, 102
+  size: 89, 125
+  orig: 89, 125
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 129, 81
+  size: 78, 110
+  orig: 78, 110
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: true
+  xy: 112, 2
+  size: 77, 95
+  orig: 77, 95
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 135, 259
+  size: 67, 74
+  orig: 67, 74
+  offset: 0, 0
+  index: -1

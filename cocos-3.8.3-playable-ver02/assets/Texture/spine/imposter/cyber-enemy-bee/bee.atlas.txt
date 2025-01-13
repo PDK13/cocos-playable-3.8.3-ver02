@@ -1,0 +1,90 @@
+
+bee.png
+size: 361,115
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 2
+  size: 111, 131
+  orig: 111, 131
+  offset: 0, 0
+  index: -1
+hand_L
+  rotate: false
+  xy: 319, 32
+  size: 38, 18
+  orig: 38, 18
+  offset: 0, 0
+  index: -1
+hand_R
+  rotate: false
+  xy: 319, 32
+  size: 38, 18
+  orig: 38, 18
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 309, 7
+  size: 34, 23
+  orig: 34, 23
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 270, 10
+  size: 37, 24
+  orig: 37, 24
+  offset: 0, 0
+  index: -1
+noc
+  rotate: false
+  xy: 317, 86
+  size: 42, 27
+  orig: 42, 27
+  offset: 0, 0
+  index: -1
+r_L
+  rotate: true
+  xy: 229, 11
+  size: 23, 39
+  orig: 23, 39
+  offset: 0, 0
+  index: -1
+r_R
+  rotate: false
+  xy: 319, 52
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+wing_L_01
+  rotate: false
+  xy: 135, 60
+  size: 102, 53
+  orig: 102, 53
+  offset: 0, 0
+  index: -1
+wing_L_02
+  rotate: false
+  xy: 239, 73
+  size: 76, 40
+  orig: 76, 40
+  offset: 0, 0
+  index: -1
+wing_R_01
+  rotate: false
+  xy: 135, 5
+  size: 92, 53
+  orig: 92, 53
+  offset: 0, 0
+  index: -1
+wing_R_02
+  rotate: false
+  xy: 239, 36
+  size: 78, 35
+  orig: 78, 35
+  offset: 0, 0
+  index: -1
