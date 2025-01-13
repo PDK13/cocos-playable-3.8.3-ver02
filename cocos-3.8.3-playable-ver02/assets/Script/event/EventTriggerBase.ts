@@ -9,9 +9,9 @@ export enum EventType {
 };
 Enum(EventType);
 
-@ccclass('TriggerBase')
+@ccclass('EventTriggerBase')
 @requireComponent(RigidBody2D)
-export class TriggerBase extends Component {
+export class EventTriggerBase extends Component {
 
     @property({ group: { name: 'Main' }, type: EventType })
     EventType: EventType = EventType.NONE;

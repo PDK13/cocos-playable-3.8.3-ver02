@@ -18,7 +18,7 @@ export class EventBase extends Component {
     EventType: EventType = EventType.NONE;
     @property({ group: { name: 'Main' }, type: CCString, visible(this: EventBase) { return !this.Start; } })
     OnEvent: string = '';
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+    @property({ group: { name: 'Main' }, type: CCBoolean, visible(this: EventBase) { return !this.Start; } })
     Once: boolean = false;
     @property({ group: { name: 'Main' }, type: CCFloat })
     Delay: number = 0;
@@ -48,7 +48,7 @@ export class EventBase extends Component {
             this.onEventNone();
     }
 
-    protected onEventNone() {
+    onEventNone() {
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
             this.node.emit(ConstantBase.ON_NODE_EVENT);
@@ -59,7 +59,7 @@ export class EventBase extends Component {
             director.off(this.OnEvent, this.onEventNone, this);
     }
 
-    protected onEventBoolean(state: boolean) {
+    onEventBoolean(state: boolean) {
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
             this.node.emit(ConstantBase.ON_NODE_EVENT, state);
@@ -70,7 +70,7 @@ export class EventBase extends Component {
             director.off(this.OnEvent, this.onEventBoolean, this);
     }
 
-    protected onEventNode(state: boolean, target: Node) {
+    onEventNode(state: boolean, target: Node) {
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
             this.node.emit(ConstantBase.ON_NODE_EVENT, state, target);

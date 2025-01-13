@@ -31,9 +31,7 @@ export enum BodyType {
 Enum(BodyType)
 
 @ccclass('BodyControlX')
-@requireComponent(BodyCheckX)
-@requireComponent(BodySpine)
-@requireComponent(RigidBody2D)
+@requireComponent([BodyCheckX, BodySpine, RigidBody2D])
 export class BodyControlX extends Component {
 
     @property({ type: BodyType })
