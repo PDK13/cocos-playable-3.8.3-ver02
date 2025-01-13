@@ -14,38 +14,27 @@ export class BodySpine extends Component {
     AnimIdle: string = 'idle';
     @property({ group: { name: 'Main' }, type: CCBoolean, visible(this: BodySpine) { return this.AnimIdleActive; } })
     AnimIdleLoop: boolean = true;
-    @property({ group: { name: 'Main' }, type: CCBoolean })
-    AnimHitActive: boolean = true;
-    @property({ group: { name: 'Main' }, type: CCString, visible(this: BodySpine) { return this.AnimHitActive; } })
-    AnimHit: string = 'hit';
-    @property({ group: { name: 'Main' }, type: CCBoolean })
-    AnimDeadActive: boolean = true;
-    @property({ group: { name: 'Main' }, type: CCString, visible(this: BodySpine) { return this.AnimDeadActive; } })
-    AnimDead: string = 'dead';
-    @property({ group: { name: 'Main' }, type: CCBoolean, visible(this: BodySpine) { return this.AnimDeadActive; } })
-    AnimDeadLoop: boolean = true;
     @property({ group: { name: 'Main' }, type: CCString })
-    AnimFinish: string = 'win';
-    @property({ group: { name: 'Main' }, type: CCBoolean })
-    AnimFinishLoop: boolean = true;
-
-    @property({ group: { name: 'Other' }, type: CCString })
     AnimMove: string = 'move';
-    @property({ group: { name: 'Other' }, type: CCString })
+    @property({ group: { name: 'Main' }, type: CCString })
     AnimPush: string = 'push';
-    @property({ group: { name: 'Other' }, type: CCString })
+    @property({ group: { name: 'Main' }, type: CCString })
     AnimAirOn: string = 'air_on';
-    @property({ group: { name: 'Other' }, type: CCString })
+    @property({ group: { name: 'Main' }, type: CCString })
     AnimAirOff: string = 'air_off';
-    @property({ group: { name: 'Other' }, type: CCString })
+    @property({ group: { name: 'Main' }, type: CCString })
     AnimDash: string = 'dash';
 
-    @property({ group: { name: 'Attack' }, type: CCString })
-    AnimAttackReady: string = 'attack_ready';
-    @property({ group: { name: 'Attack' }, type: CCString })
-    AnimAttackHold: string = 'attack_hold';
-    @property({ group: { name: 'Attack' }, type: CCString })
-    AnimAttack: string = 'attack';
+    @property({ group: { name: 'Hit' }, type: CCBoolean })
+    AnimHitActive: boolean = true;
+    @property({ group: { name: 'Hit' }, type: CCString, visible(this: BodySpine) { return this.AnimHitActive; } })
+    AnimHit: string = 'hit';
+    @property({ group: { name: 'Hit' }, type: CCBoolean })
+    AnimDeadActive: boolean = true;
+    @property({ group: { name: 'Hit' }, type: CCString, visible(this: BodySpine) { return this.AnimDeadActive; } })
+    AnimDead: string = 'dead';
+    @property({ group: { name: 'Hit' }, type: CCBoolean, visible(this: BodySpine) { return this.AnimDeadActive; } })
+    AnimDeadLoop: boolean = true;
 
     @property({ group: { name: 'Pick' }, type: CCString })
     AnimPick: string = 'pick';
@@ -55,6 +44,11 @@ export class BodySpine extends Component {
     AnimThrow: string = 'throw';
     @property({ group: { name: 'Pick' }, type: CCInteger })
     AnimPickIndex: number = 2;
+
+    @property({ group: { name: 'Finish' }, type: CCString })
+    AnimFinish: string = 'win';
+    @property({ group: { name: 'Finish' }, type: CCBoolean })
+    AnimFinishLoop: boolean = true;
 
     @property({ group: { name: 'Audio' }, type: AudioSource })
     AudioJump: AudioSource = null;
@@ -154,16 +148,6 @@ export class BodySpine extends Component {
 
     onDash(): number {
         return this.m_spine.onAnimation(this.AnimDash, true);
-    }
-
-    //ATTACK:
-
-    onAttackReady(): number {
-        return this.m_spine.onAnimation(this.AnimAttackReady, false);
-    }
-
-    onAttackHold(): number {
-        return this.m_spine.onAnimation(this.AnimAttackHold, true);
     }
 
     //PICK:

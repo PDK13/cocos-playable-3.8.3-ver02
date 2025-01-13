@@ -37,67 +37,71 @@ export class BodyControlX extends Component {
     @property({ type: BodyType })
     Type: BodyType = BodyType.STICK;
 
-    @property({ group: { name: 'MoveX' }, type: CCFloat })
+    @property({ group: { name: 'MoveX' }, type: CCBoolean })
+    LockX: boolean = false;
+    @property({ group: { name: 'MoveX' }, type: CCFloat, visible(this: BodyControlX) { return !this.LockX; } })
     MoveForceX = 10;
-    @property({ group: { name: 'MoveX' }, type: CCFloat })
+    @property({ group: { name: 'MoveX' }, type: CCFloat, visible(this: BodyControlX) { return !this.LockX; } })
     MoveDampX = 40;
-    @property({ group: { name: 'MoveX' }, type: CCFloat, visible(this: BodyControlX) { return this.Type == BodyType.BALL; } })
+    @property({ group: { name: 'MoveX' }, type: CCFloat, visible(this: BodyControlX) { return !this.LockX && this.Type == BodyType.BALL; } })
     TorqueX = 2000;
-    @property({ group: { name: 'MoveX' }, type: CCFloat })
+    @property({ group: { name: 'MoveX' }, type: CCFloat, visible(this: BodyControlX) { return !this.LockX; } })
     MoveGroundX: number = 40;
-    @property({ group: { name: 'MoveX' }, type: CCFloat })
+    @property({ group: { name: 'MoveX' }, type: CCFloat, visible(this: BodyControlX) { return !this.LockX; } })
     MoveAirX: number = 40;
-    @property({ group: { name: 'MoveX' }, type: CCBoolean })
+    @property({ group: { name: 'MoveX' }, type: CCBoolean, visible(this: BodyControlX) { return !this.LockX; } })
     MoveForceStop = true;
-    @property({ group: { name: 'MoveX' }, type: CCBoolean })
+    @property({ group: { name: 'MoveX' }, type: CCBoolean, visible(this: BodyControlX) { return !this.LockX; } })
     MoveForceFlip = true;
 
-    @property({ group: { name: 'MoveY' }, type: CCFloat })
+    @property({ group: { name: 'MoveY' }, type: CCBoolean })
+    LockY: boolean = false;
+    @property({ group: { name: 'MoveY' }, type: CCFloat, visible(this: BodyControlX) { return !this.LockY; } })
     JumpUpY: number = 90;
-    @property({ group: { name: 'MoveY' }, type: CCFloat })
+    @property({ group: { name: 'MoveY' }, type: CCFloat, visible(this: BodyControlX) { return !this.LockY; } })
     JumpDelay: number = 0.15;
-    @property({ group: { name: 'MoveY' }, type: CCInteger })
+    @property({ group: { name: 'MoveY' }, type: CCInteger, visible(this: BodyControlX) { return !this.LockY; } })
     JumpCount: number = 1;
-    @property({ group: { name: 'MoveY' }, type: CCBoolean })
+    @property({ group: { name: 'MoveY' }, type: CCBoolean, visible(this: BodyControlX) { return !this.LockY; } })
     JumpFall: boolean = false;
-    @property({ group: { name: 'MoveY' }, type: CCBoolean })
+    @property({ group: { name: 'MoveY' }, type: CCBoolean, visible(this: BodyControlX) { return !this.LockY; } })
     JumpAuto: boolean = false;
 
-    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
     AttackHold: boolean = false;
-    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
     AttackHoldAnim: boolean = false;
-    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
     AttackAim: boolean = false;
-    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
     AttackStopMoveAnim = true;
-    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
     AttackStopMovePress = true;
-    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
     AttackStopFall = false;
 
-    @property({ group: { name: 'Pick&Throw' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Pick&Throw' }, type: CCBoolean })
     Pick: boolean = false;
-    @property({ group: { name: 'Pick&Throw' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Pick&Throw' }, type: CCBoolean, visible(this: BodyControlX) { return this.Pick; } })
     PickHold: boolean = false;
-    @property({ group: { name: 'Pick&Throw' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Pick&Throw' }, type: CCBoolean, visible(this: BodyControlX) { return this.Pick; } })
     PickJumpOnce: boolean = true;
-    @property({ group: { name: 'Pick&Throw' }, type: Vec2, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Pick&Throw' }, type: Vec2, visible(this: BodyControlX) { return this.Pick; } })
     ThrowForce: Vec2 = v2(20, 20);
-    @property({ group: { name: 'Pick&Throw' }, type: Node, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Pick&Throw' }, type: Node, visible(this: BodyControlX) { return this.Pick; } })
     PickUpPoint: Node = null;
-    @property({ group: { name: 'Pick&Throw' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Pick&Throw' }, type: CCBoolean, visible(this: BodyControlX) { return this.Pick; } })
     UiPickBtnActive: boolean = true;
-    @property({ group: { name: 'Pick&Throw' }, type: CCInteger, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Pick&Throw' }, type: CCInteger, visible(this: BodyControlX) { return this.Pick; } })
     UiPickIconIndex: number = 0;
-    @property({ group: { name: 'Pick&Throw' }, type: CCInteger, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Pick&Throw' }, type: CCInteger, visible(this: BodyControlX) { return this.Pick; } })
     UiThrowIconIndex: number = 1;
 
-    @property({ group: { name: 'End' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'End' }, type: CCBoolean, visible(this: BodyControlX) { return this.Pick; } })
     EndPickDestroy: boolean = true;
     @property({ group: { name: 'End' }, type: CCBoolean })
     EndOnGround: boolean = true;
-    @property({ group: { name: 'End' }, type: CCBoolean, visible(this: BodyControlX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'End' }, type: CCBoolean })
     EndRevertX: boolean = false;
 
     m_baseSize: number = 1;
@@ -190,10 +194,10 @@ export class BodyControlX extends Component {
             director.emit(ConstantBase.INPUT_INTERACTION_SHOW, false);
     }
 
-    protected update(dt: number): void {
+    protected lateUpdate(dt: number): void {
         this.onPhysicUpdate(dt);
         this.onStateUpdate(dt);
-        this.onCompleteUpdate(dt);
+        this.onCompleteGroundUpdate(dt);
     }
 
     //MOVE:
@@ -239,7 +243,7 @@ export class BodyControlX extends Component {
                 break;
         }
 
-        if (this.MoveForceStop && this.m_moveDirX == 0) {
+        if (this.MoveForceStop && this.m_moveDirX == 0 && this.m_rigidbody.linearVelocity.clone().x != 0) {
             this.m_rigidbody.linearVelocity = v2(0, this.m_rigidbody.linearVelocity.y);
             if (this.Type == BodyType.BALL)
                 this.m_rigidbody.applyTorque(0, true);
@@ -317,7 +321,7 @@ export class BodyControlX extends Component {
     }
 
     onMoveLeft() {
-        this.m_moveDirX = -1;
+        this.m_moveDirX = !this.LockX ? -1 : 0;
         if (this.m_faceDirX != -1) {
             this.m_faceDirX = -1;
             this.m_bodySpine.onViewDirection(this.m_faceDirX);
@@ -328,7 +332,7 @@ export class BodyControlX extends Component {
     }
 
     onMoveRight() {
-        this.m_moveDirX = 1;
+        this.m_moveDirX = !this.LockX ? 1 : 0;
         if (this.m_faceDirX != 1) {
             this.m_faceDirX = 1;
             this.m_bodySpine.onViewDirection(this.m_faceDirX);
@@ -367,7 +371,7 @@ export class BodyControlX extends Component {
     //JUMP:
 
     onJump(dt: number) {
-        if (this.m_lockInput || this.m_jumpContinue || this.m_jumpCountCurrent >= this.JumpCount)
+        if (this.LockY || this.m_lockInput || this.m_jumpContinue || this.m_jumpCountCurrent >= this.JumpCount)
             return;
 
         if (this.PickJumpOnce && this.m_pickUp != null)
@@ -386,8 +390,6 @@ export class BodyControlX extends Component {
         this.m_jumpSchedule = this.scheduleOnce(() => {
             this.m_lockJump = false;
         }, this.JumpDelay);
-
-        console.log('Jump!');
     }
 
     onJumRelease() {
@@ -438,17 +440,19 @@ export class BodyControlX extends Component {
                     this.m_rigidbody.sleep();
                     this.scheduleOnce(() => this.m_rigidbody.wakeUp(), 0.02);
                     if (this.m_bodyAttack != null)
-                        this.m_bodySpine.m_spine.onAimDeg(this.m_faceDirX == 1 ? 0 : 180);
+                        this.m_bodyAttack.onAimDeg(this.m_faceDirX == 1 ? 0 : 180);
                 }
                 if (!this.AttackHold) {
                     if (this.m_bodyAttack != null)
-                        this.m_bodySpine.m_spine.onAimDeg(this.m_faceDirX == 1 ? 0 : 180);
+                        this.m_bodyAttack.onAimDeg(this.m_faceDirX == 1 ? 0 : 180);
                     this.onAttackProgess();
                 }
                 break;
             case false:
-                if (this.AttackStopFall)
+                if (this.AttackStopFall) {
                     this.m_rigidbody.gravityScale = this.m_baseGravity;
+                    this.m_rigidbody.linearVelocity = v2(this.m_rigidbody.linearVelocity.clone().x, -0.02); //Fix bug not fall after attack
+                }
                 if (this.AttackHold)
                     this.onAttackProgess();
                 break;
@@ -456,23 +460,19 @@ export class BodyControlX extends Component {
     }
 
     private onAttackProgess() {
-        if (this.m_bodyAttack != null) {
-            if (this.AttackAim) {
-                if (this.m_bodyAttack.m_rangeTarget == null ? true : !this.m_bodyAttack.m_rangeTarget.isValid)
-                    this.m_bodyAttack.m_rangeTarget = this.m_bodyAttack.m_bodyCheck.onRangeTargetNearest();
-                if (this.m_bodyAttack.m_rangeTarget == null ? true : !this.m_bodyAttack.m_rangeTarget.isValid) {
-                    this.m_bodySpine.m_spine.onUnAim();
-                    this.m_bodyAttack.onAttackProgess();
-                }
-                else {
-                    this.m_bodySpine.m_spine.onAimTarget(this.m_bodyAttack.m_rangeTarget);
-                    this.scheduleOnce(() => {
-                        this.m_bodySpine.m_spine.onUnAim();
-                    }, this.m_bodyAttack.onAttackProgess());
-                }
+        if (this.m_bodyAttack == null)
+            return;
+        if (this.AttackAim) {
+            if (this.m_bodyAttack.m_rangeTarget == null ? true : !this.m_bodyAttack.m_rangeTarget.isValid)
+                this.m_bodyAttack.m_rangeTarget = this.m_bodyAttack.m_bodyCheck.onRangeTargetNearest();
+            if (this.m_bodyAttack.m_rangeTarget == null ? true : !this.m_bodyAttack.m_rangeTarget.isValid) {
+                this.m_bodyAttack.onUnAim();
+                this.m_bodyAttack.onAttackProgess();
             }
-            else
-                this.m_bodyAttack.onAttackProgess()
+            else {
+                this.m_bodyAttack.onAimTarget(this.m_bodyAttack.m_rangeTarget);
+                this.scheduleOnce(() => this.m_bodyAttack.onUnAim(), this.m_bodyAttack.onAttackProgess());
+            }
         }
         else
             this.m_bodyAttack.onAttackProgess()
@@ -627,8 +627,8 @@ export class BodyControlX extends Component {
                 if (!this.AttackHoldAnim)
                     break;
                 this.m_attackReadySchedule = this.scheduleOnce(() => {
-                    this.m_bodySpine.onAttackHold();
-                }, this.m_bodySpine.onAttackReady());
+                    this.m_bodyAttack.onAttackHold();
+                }, this.m_bodyAttack.onAttackReady());
                 break;
         }
         this.m_state = state;
@@ -662,6 +662,17 @@ export class BodyControlX extends Component {
 
     //COMPLETE:
 
+    /**Check Player on ground after excute complete and 'EndOnGround' value is TRUE*/
+    private onCompleteGroundUpdate(dt: number) {
+        if (!this.EndOnGround)
+            return;
+        if (!this.m_end || !this.m_endReady || !this.m_bodyCheck.m_isBot)
+            return;
+        this.m_endReady = false;
+        this.onCompleteProgess();
+    }
+
+    /**Excute Player complete, but not continue complete progress if 'EndOnGround' value is TRUE*/
     protected onComplete(Centre: Vec3) {
         director.emit(ConstantBase.INPUT_MOVE_RELEASE);
         director.emit(ConstantBase.INPUT_JUMP_RELEASE);
@@ -691,13 +702,6 @@ export class BodyControlX extends Component {
                 director.emit(ConstantBase.GAME_COMPLETE);
             }, this.m_bodySpine.onComplete());
         }, 0);
-    }
-
-    private onCompleteUpdate(dt: number) {
-        if (!this.m_end || !this.m_endReady || !this.m_bodyCheck.m_isBot)
-            return;
-        this.m_endReady = false;
-        this.onCompleteProgess();
     }
 
     //DEAD:

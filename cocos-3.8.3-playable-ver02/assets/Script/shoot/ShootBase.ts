@@ -4,9 +4,9 @@ const { ccclass, property } = _decorator;
 @ccclass('ShootBase')
 export class ShootBase extends Component {
 
-    @property(Node)
+    @property({ group: { name: 'Main' }, type: Node })
     Bullet: Node = null;
-    @property(CCFloat)
+    @property({ group: { name: 'Main' }, type: CCFloat })
     BulletSpeed: number = 5;
 
     @property({ group: { name: 'Node' }, type: Node })

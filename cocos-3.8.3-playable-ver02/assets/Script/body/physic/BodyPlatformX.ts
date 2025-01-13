@@ -1,5 +1,6 @@
 import { _decorator, CCBoolean, CCInteger, Collider2D, Component, Contact2DType, IPhysics2DContact, macro, PhysicsSystem2D, RigidBody2D, VERSION } from 'cc';
 import { StateBase } from '../../state/StateBase';
+import { ConstantBase } from '../../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
 
 @ccclass('BodyPlatformX')
@@ -44,7 +45,7 @@ export class BodyPlatformX extends Component {
         this.m_state = this.getComponent(StateBase);
 
         if (this.m_state != null)
-            this.node.on(this.m_state.ConstantBase.ON_NODE_STATE, this.onState, this);
+            this.node.on(ConstantBase.ON_NODE_STATE, this.onState, this);
 
         let colliders = this.getComponents(Collider2D);
         for (let i = 0; i < colliders.length; i++) {

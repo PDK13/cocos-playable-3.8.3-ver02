@@ -1,6 +1,5 @@
-import { _decorator, CCBoolean, CCInteger, CCString, Component, director, sp, Vec2, Node, v2, v3, Vec3, VERSION } from 'cc';
+import { _decorator, CCBoolean, CCString, Component, director, sp, VERSION } from 'cc';
 const { ccclass, property } = _decorator;
-const { spine } = sp;
 
 @ccclass('SpineBase')
 export class SpineBase extends Component {
@@ -10,27 +9,17 @@ export class SpineBase extends Component {
 
     @property({ group: { name: 'Main' }, type: CCBoolean })
     FaceRight: boolean = true;
-    @property({ group: { name: 'Main' }, type: CCBoolean })
-    SpineEvent: boolean = false;
     @property({ group: { name: 'Main' }, type: sp.Skeleton })
     Spine: sp.Skeleton = null;
-    @property({ group: { name: 'Main' }, type: sp.SkeletonData })
-    Skeleton: sp.SkeletonData = null;
     @property({ group: { name: 'Main' }, type: [CCString] })
     Skin: string[] = [];
-    @property({ group: { name: 'Main' }, type: [CCString] })
-    Anim: string[] = [];
 
-    @property({ group: { name: 'Aim' }, type: CCBoolean })
-    Aim: boolean = false;
-    @property({ group: { name: 'Aim' }, type: CCString })
-    AimAnim: string = 'attack_aim';
-    @property({ group: { name: 'Aim' }, type: CCInteger })
-    AimAnimIndex: number = 1;
-    @property({ group: { name: 'Aim' }, type: CCString })
-    AimBone: string = 'aim_bone';
-    @property({ group: { name: 'Aim' }, type: Node })
-    AimFrom: Node = null;
+    @property({ group: { name: 'Option' }, type: CCBoolean })
+    SpineEvent: boolean = false;
+    @property({ group: { name: 'Option' }, type: sp.SkeletonData })
+    Skeleton: sp.SkeletonData = null;
+    @property({ group: { name: 'Option' }, type: [CCString] })
+    Anim: string[] = [];
 
     m_spineScaleXR: number;
     m_dir: number = 1;
@@ -40,19 +29,13 @@ export class SpineBase extends Component {
     m_spineAnimDurationScale: number = 0;
     m_spineTimeScale: number = 1;
 
-    m_aimBone: sp.spine.Bone;
-    m_aimPosPrimary: Vec2;
-
     protected onLoad(): void {
         if (this.Spine == null)
-            this.Spine = this.getComponent(sp.Skeleton);
+            this.Spine = this.getComponent(sp.Skeleton) ?? this.getComponentInChildren(sp.Skeleton);
 
         this.m_dir = this.FaceRight ? 1 : -1;
         this.m_spineScaleXR = this.Spine._skeleton.scaleX;
         this.m_spineTimeScale = this.Spine.timeScale;
-        
-        if (this.Aim)
-            this.onAimInit(this.AimAnim, this.AimAnimIndex, this.AimBone, this.AimFrom);
 
         if (this.SpineEvent) {
             director.on(SpineBase.SPINE_PLAY, this.onPlay, this);
@@ -192,51 +175,5 @@ export class SpineBase extends Component {
         this.m_dir = dir;
         this.Spine._skeleton.scaleX = this.m_spineScaleXR * dir;
         this.Spine._skeleton.updateWorldTransform();
-    }
-
-    //
-
-    onAimInit(anim: string, index: number, bone: string, from: Node) {
-        this.AimAnim = anim;
-        this.AimAnimIndex = index;
-        this.m_aimBone = this.Spine.findBone(bone);
-        this.m_aimPosPrimary = v2(this.m_aimBone.x, this.m_aimBone.y);
-        this.AimFrom = from;
-    }
-
-    onAimTarget(target: Node) {
-        if (this.m_aimBone == null)
-            return;
-        let aimPosition = target.worldPosition.clone().subtract(this.node.worldPosition.clone());
-        this.onAim(v2(aimPosition.x, aimPosition.y));
-    }
-
-    onAimDeg(deg: number) {
-        if (this.m_aimBone == null)
-            return;
-        let direction = v3(Math.cos(deg * (Math.PI / 180)), Math.sin(deg * (Math.PI / 180)), 0);
-        direction = direction.clone().normalize().multiplyScalar(200);
-        let aimPosition = this.AimFrom.position.clone().add(direction);
-        this.onAim(v2(aimPosition.x, aimPosition.y));
-    }
-
-    onAim(posLocal: Vec2) {
-        if (this.m_aimBone == null)
-            return;
-        //Not used this on update() or lateUpdate() to avoid some bug with caculate position
-        let posLocalSpine = new sp.spine.Vector2(posLocal.clone().x, posLocal.clone().y);
-        this.m_aimBone.parent.worldToLocal(posLocalSpine);
-        this.m_aimBone.x = posLocalSpine.x;
-        this.m_aimBone.y = posLocalSpine.y;
-        this.Spine._skeleton.updateWorldTransform();
-        this.Spine.setAnimation(this.AimAnimIndex, this.AimAnim, true);
-    }
-
-    onUnAim() {
-        if (this.m_aimBone == null)
-            return;
-        this.onAnimationEmty(this.AimAnimIndex, 0.02);
-        this.m_aimBone.x = this.m_aimPosPrimary.x;
-        this.m_aimBone.y = this.m_aimPosPrimary.y;
     }
 }

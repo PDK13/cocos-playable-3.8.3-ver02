@@ -1,6 +1,5 @@
 import { _decorator, CCBoolean, CCInteger, Collider2D, Component, Contact2DType, director, Enum, ERaycast2DType, IPhysics2DContact, macro, math, Node, PhysicsSystem2D, RigidBody2D, v2, v3, Vec2 } from 'cc';
 import { BodyPlatformX } from './BodyPlatformX';
-import { ConstantBase } from '../../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
 
 export enum BodyType {
@@ -13,38 +12,37 @@ Enum(BodyType)
 @requireComponent(RigidBody2D)
 export class BodyCheckX extends Component {
 
-    @property({ type: BodyType })
-    Type: BodyType = BodyType.STICK;
-
-    @property({ group: { name: 'Target' }, type: CCBoolean, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean })
+    UpdateRaycast: boolean = false;
+    @property({ group: { name: 'Option' }, type: CCBoolean })
     DirMelee: boolean = true;
-    @property({ group: { name: 'Target' }, type: CCBoolean, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean })
     DirRange: boolean = true;
 
     @property({ group: { name: 'Self' }, type: CCInteger })
     TagBody: number = 100;
-    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return !this.UpdateRaycast; } })
     TagTop: number = 99;
-    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return !this.UpdateRaycast; } })
     TagBot: number = 98;
-    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return !this.UpdateRaycast; } })
     TagHead: number = 97;
-    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return !this.UpdateRaycast; } })
     TagBotHead: number = 96;
-    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Self' }, type: CCInteger })
     TagMelee: number = 101;
-    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Self' }, type: CCInteger })
     TagRange: number = 102;
-    @property({ group: { name: 'Self' }, type: CCInteger, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Self' }, type: CCInteger })
     TagInteraction: number = 103;
 
     @property({ group: { name: 'Other' }, type: CCInteger })
     TagGround: number = -1;
     @property({ group: { name: 'Other' }, type: CCInteger })
     TagPlatform: number = -2;
-    @property({ group: { name: 'Other' }, type: CCInteger, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Other' }, type: CCInteger })
     TagTarget: number = 200;
-    @property({ group: { name: 'Other' }, type: CCInteger, visible(this: BodyCheckX) { return this.Type == BodyType.STICK; } })
+    @property({ group: { name: 'Other' }, type: CCInteger })
     TagBox: number = 300;
 
     m_dir: number = 1;
@@ -85,104 +83,84 @@ export class BodyCheckX extends Component {
 
     protected onLoad(): void {
         let colliders = this.getComponents(Collider2D);
-        switch (this.Type) {
-            case BodyType.STICK:
-                for (let i = 0; i < colliders.length; i++) {
-                    let collider = colliders[i];
-                    switch (collider.tag) {
-                        case this.TagBody:
-                            this.m_colliderBody = collider;
-                            break;
-                        case this.TagTop:
-                            this.m_colliderTop = collider;
-                            break;
-                        case this.TagBot:
-                            this.m_colliderBot = collider;
-                            break;
-                        case this.TagHead:
-                            this.m_colliderHead = collider;
-                            break;
-                        case this.TagBotHead:
-                            this.m_colliderBotHead = collider;
-                            break;
-                        case this.TagMelee:
-                            this.m_colliderMelee = collider;
-                            break;
-                        case this.TagRange:
-                            this.m_colliderRange = collider;
-                            break;
-                        case this.TagInteraction:
-                            this.m_colliderinteracte = collider;
-                            break;
-                        default:
-                            continue;
-                    }
-                    collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
-                    collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
-                };
-                break;
-            case BodyType.BALL:
-                for (let i = 0; i < colliders.length; i++) {
-                    let collider = colliders[i];
-                    switch (collider.tag) {
-                        case this.TagBody:
-                            this.m_colliderBody = collider;
-                            break;
-                        default:
-                            continue;
-                    }
-                };
-                this.m_updateSchedule = () => {
-                    //Check Ground 
-                    let p1 = this.node.worldPosition;
-                    let p2 = p1.clone().subtract(v3(0, this.m_colliderBody.worldAABB.size.clone().x + 1, 0));
-                    const results = PhysicsSystem2D.instance.raycast(p1, p2, ERaycast2DType.Any);
-                    let state = this.m_isBot;
-                    if (results.length < 1) {
-                        //Not collide with any collision!
-                        this.m_isBot = false;
-                    }
-                    else {
-                        //Collide with aleast 1 collision!
-                        for (let i = 0; i < results.length; i++) {
-                            let out = false;
-                            switch (results[i].collider.tag) {
-                                case this.TagGround:
-                                case this.TagPlatform:
-                                    this.m_isBot = true;
-                                    out = true;
-                                    break;
-                                default:
-                                    this.m_isBot = false;
-                                    break;
-                            }
-                            if (out)
+        for (let i = 0; i < colliders.length; i++) {
+            let collider = colliders[i];
+            switch (collider.tag) {
+                case this.TagBody:
+                    this.m_colliderBody = collider;
+                    break;
+                case this.TagTop:
+                    this.m_colliderTop = collider;
+                    break;
+                case this.TagBot:
+                    this.m_colliderBot = collider;
+                    break;
+                case this.TagHead:
+                    this.m_colliderHead = collider;
+                    break;
+                case this.TagBotHead:
+                    this.m_colliderBotHead = collider;
+                    break;
+                case this.TagMelee:
+                    this.m_colliderMelee = collider;
+                    break;
+                case this.TagRange:
+                    this.m_colliderRange = collider;
+                    break;
+                case this.TagInteraction:
+                    this.m_colliderinteracte = collider;
+                    break;
+                default:
+                    continue;
+            }
+            collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
+            collider.on(Contact2DType.END_CONTACT, this.onEndContact, this);
+        };
+        if (this.UpdateRaycast) {
+            this.m_updateSchedule = () => {
+                //Check Ground 
+                let p1 = this.node.worldPosition;
+                let p2 = p1.clone().subtract(v3(0, this.m_colliderBody.worldAABB.size.clone().x + 1, 0));
+                const results = PhysicsSystem2D.instance.raycast(p1, p2, ERaycast2DType.Any);
+                let state = this.m_isBot;
+                if (results.length < 1) {
+                    //Not collide with any collision!
+                    this.m_isBot = false;
+                }
+                else {
+                    //Collide with aleast 1 collision!
+                    for (let i = 0; i < results.length; i++) {
+                        let out = false;
+                        switch (results[i].collider.tag) {
+                            case this.TagGround:
+                            case this.TagPlatform:
+                                this.m_isBot = true;
+                                out = true;
+                                break;
+                            default:
+                                this.m_isBot = false;
                                 break;
                         }
+                        if (out)
+                            break;
                     }
-                    if (state != this.m_isBot)
-                        this.node.emit(this.m_emitBot, this.m_isBot);
                 }
-                this.schedule(this.m_updateSchedule, PhysicsSystem2D.instance.fixedTimeStep, macro.REPEAT_FOREVER, 0);
-                break;
+                if (state != this.m_isBot)
+                    this.node.emit(this.m_emitBot, this.m_isBot);
+            }
+            this.schedule(this.m_updateSchedule, PhysicsSystem2D.instance.fixedTimeStep, macro.REPEAT_FOREVER, 0);
         }
     }
 
     protected start(): void {
-        switch (this.Type) {
-            case BodyType.STICK:
-                if (this.m_colliderHead != null)
-                    this.m_offsetHeadX = this.m_colliderHead.offset.x;
-                if (this.m_colliderBotHead != null)
-                    this.m_offsetBotHeadX = this.m_colliderBotHead.offset.x;
-                if (this.m_colliderMelee != null)
-                    this.m_offsetMeleeX = this.m_colliderMelee.offset.x;
-                if (this.m_colliderRange != null)
-                    this.m_offsetRangeX = this.m_colliderRange.offset.x;
-                break;
-            case BodyType.BALL:
-                break;
-        }
+        if (this.m_colliderHead != null)
+            this.m_offsetHeadX = this.m_colliderHead.offset.x;
+        if (this.m_colliderBotHead != null)
+            this.m_offsetBotHeadX = this.m_colliderBotHead.offset.x;
+        if (this.m_colliderMelee != null)
+            this.m_offsetMeleeX = this.m_colliderMelee.offset.x;
+        if (this.m_colliderRange != null)
+            this.m_offsetRangeX = this.m_colliderRange.offset.x;
     }
 
     //

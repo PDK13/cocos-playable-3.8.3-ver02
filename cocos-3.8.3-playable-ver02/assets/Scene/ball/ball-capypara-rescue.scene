@@ -26,7 +26,7 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 298
+      "__id__": 297
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -57,7 +57,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 299
+      "__id__": 298
     },
     "_id": "fee3ad83-6e75-42ed-9052-7a1c4b36b799"
   },
@@ -4651,11 +4651,14 @@
         "__id__": 283
       },
       {
-        "__id__": 288
+        "__id__": 287
       }
     ],
     "_active": true,
     "_components": [
+      {
+        "__id__": 292
+      },
       {
         "__id__": 293
       },
@@ -4667,9 +4670,6 @@
       },
       {
         "__id__": 296
-      },
-      {
-        "__id__": 297
       }
     ],
     "_prefab": null,
@@ -9994,6 +9994,7 @@
     "_enabled": true,
     "__prefab": null,
     "Type": 1,
+    "LockX": false,
     "MoveForceX": 10,
     "MoveDampX": 40,
     "TorqueX": 2000,
@@ -10001,6 +10002,7 @@
     "MoveAirX": 25,
     "MoveForceStop": false,
     "MoveForceFlip": false,
+    "LockY": false,
     "JumpUpY": 90,
     "JumpDelay": 0.15,
     "JumpCount": 2,
@@ -10039,7 +10041,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "Type": 1,
+    "UpdateRaycast": true,
     "DirMelee": false,
     "DirRange": false,
     "TagBody": 100,
@@ -10199,9 +10201,6 @@
       },
       {
         "__id__": 286
-      },
-      {
-        "__id__": 287
       }
     ],
     "_prefab": null,
@@ -10244,10 +10243,12 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "Type": 0,
     "Start": false,
-    "EventType": 0,
     "OnEvent": "",
     "Once": false,
+    "StartStage": true,
+    "StartTarget": null,
     "Delay": 0,
     "EmitEvent": "",
     "_id": "d8+ruTw8dKwInCG37trNb/"
@@ -10281,23 +10282,6 @@
     "_id": "20r+quHqBGBribIemQxfCv"
   },
   {
-    "__type__": "94f70WWcEBPxJShWNsOe+DM",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 283
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "EventType": 0,
-    "TagBody": 0,
-    "TagTarget": [
-      100
-    ],
-    "_id": "1cGpCs7XNB8Y3MCy59/6mn"
-  },
-  {
     "__type__": "0477ddExZRJ567T3j8zS7Rp",
     "_name": "",
     "_objFlags": 0,
@@ -10307,7 +10291,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "EventType": 0,
+    "Type": 0,
     "Once": false,
     "Delay": 0,
     "EmitEvent": "",
@@ -10329,6 +10313,9 @@
     "_active": true,
     "_components": [
       {
+        "__id__": 288
+      },
+      {
         "__id__": 289
       },
       {
@@ -10336,9 +10323,6 @@
       },
       {
         "__id__": 291
-      },
-      {
-        "__id__": 292
       }
     ],
     "_prefab": null,
@@ -10377,7 +10361,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 288
+      "__id__": 287
     },
     "_enabled": true,
     "__prefab": null,
@@ -10401,7 +10385,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 288
+      "__id__": 287
     },
     "_enabled": true,
     "__prefab": null,
@@ -10415,7 +10399,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 288
+      "__id__": 287
     },
     "_enabled": true,
     "__prefab": null,
@@ -10428,7 +10412,7 @@
     "_objFlags": 0,
     "__editorExtras__": {},
     "node": {
-      "__id__": 288
+      "__id__": 287
     },
     "_enabled": true,
     "__prefab": null,
@@ -10551,28 +10535,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 300
+      "__id__": 299
     },
     "shadows": {
-      "__id__": 301
+      "__id__": 300
     },
     "_skybox": {
-      "__id__": 302
+      "__id__": 301
     },
     "fog": {
-      "__id__": 303
+      "__id__": 302
     },
     "octree": {
-      "__id__": 304
+      "__id__": 303
     },
     "skin": {
-      "__id__": 305
+      "__id__": 304
     },
     "lightProbeInfo": {
-      "__id__": 306
+      "__id__": 305
     },
     "postSettings": {
-      "__id__": 307
+      "__id__": 306
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false

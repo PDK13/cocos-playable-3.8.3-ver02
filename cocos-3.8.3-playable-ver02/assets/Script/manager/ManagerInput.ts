@@ -28,7 +28,7 @@ export class ManagerInput extends Component {
     @property({ group: { name: 'Main' }, type: KeyCodeType })
     KeyRight: KeyCodeType = KeyCodeType.ARROW_RIGHT;
     @property({ group: { name: 'Main' }, type: KeyCodeType })
-    KeyJump: KeyCodeType = KeyCodeType.ARROW_UP;
+    KeyJump: KeyCodeType = KeyCodeType.SPACE;
     @property({ group: { name: 'Main' }, type: KeyCodeType })
     KeyDash: KeyCodeType = KeyCodeType.KEY_D;
 
