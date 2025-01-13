@@ -12,14 +12,22 @@ Enum(EventType);
 @ccclass('EventBase')
 export class EventBase extends Component {
 
+    @property({ group: { name: 'Main' }, type: EventType })
+    Type: EventType = EventType.NONE;
+
     @property({ group: { name: 'Main' }, type: CCBoolean })
     Start: boolean = false;
-    @property({ group: { name: 'Main' }, type: EventType, visible(this: EventBase) { return !this.Start; } })
-    EventType: EventType = EventType.NONE;
+    //Start == FALSE
     @property({ group: { name: 'Main' }, type: CCString, visible(this: EventBase) { return !this.Start; } })
     OnEvent: string = '';
     @property({ group: { name: 'Main' }, type: CCBoolean, visible(this: EventBase) { return !this.Start; } })
     Once: boolean = false;
+    //Start == TRUE
+    @property({ group: { name: 'Main' }, type: CCBoolean, visible(this: EventBase) { return this.Start && this.Type > EventType.NONE; } })
+    StartStage: boolean = true;
+    @property({ group: { name: 'Main' }, type: Node, visible(this: EventBase) { return this.Start && this.Type > EventType.BOOLEAN; } })
+    StartTarget: Node = null;
+
     @property({ group: { name: 'Main' }, type: CCFloat })
     Delay: number = 0;
     @property({ group: { name: 'Main' }, type: CCString })
@@ -29,7 +37,7 @@ export class EventBase extends Component {
         if (this.Start)
             return;
         if (this.OnEvent != '') {
-            switch (this.EventType) {
+            switch (this.Type) {
                 case EventType.NONE:
                     director.on(this.OnEvent, this.onEventNone, this);
                     break;
@@ -44,8 +52,19 @@ export class EventBase extends Component {
     }
 
     protected start(): void {
-        if (this.Start)
-            this.onEventNone();
+        if (this.Start) {
+            switch (this.Type) {
+                case EventType.NONE:
+                    this.onEventNone();
+                    break;
+                case EventType.BOOLEAN:
+                    this.onEventBoolean(this.StartStage);
+                    break;
+                case EventType.NODE:
+                    this.onEventNode(this.StartStage, this.StartTarget);
+                    break;
+            }
+        }
     }
 
     onEventNone() {

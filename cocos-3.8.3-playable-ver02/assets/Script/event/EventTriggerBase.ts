@@ -14,7 +14,8 @@ Enum(EventType);
 export class EventTriggerBase extends Component {
 
     @property({ group: { name: 'Main' }, type: EventType })
-    EventType: EventType = EventType.NONE;
+    Type: EventType = EventType.NONE;
+
     @property({ group: { name: 'Main' }, type: CCBoolean })
     Once: boolean = false;
     @property({ group: { name: 'Main' }, type: CCFloat })
@@ -45,7 +46,7 @@ export class EventTriggerBase extends Component {
             return;
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
-            switch (this.EventType) {
+            switch (this.Type) {
                 case EventType.NONE:
                     this.node.emit(ConstantBase.ON_NODE_TRIGGER);
                     if (this.EmitEvent != '')
@@ -82,7 +83,7 @@ export class EventTriggerBase extends Component {
             return;
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
-            switch (this.EventType) {
+            switch (this.Type) {
                 case EventType.NONE:
                     this.node.emit(ConstantBase.ON_NODE_TRIGGER);
                     if (this.EmitEvent != '')
