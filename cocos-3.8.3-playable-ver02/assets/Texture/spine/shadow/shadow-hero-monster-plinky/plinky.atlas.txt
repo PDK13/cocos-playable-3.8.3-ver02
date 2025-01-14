@@ -1,0 +1,62 @@
+
+plinky.png
+size: 379, 573
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+canh_duoi
+  rotate: true
+  xy: 228, 406
+  size: 165, 149
+  orig: 165, 149
+  offset: 0, 0
+  index: -1
+canh_phai
+  rotate: true
+  xy: 196, 88
+  size: 149, 164
+  orig: 151, 170
+  offset: 2, 5
+  index: -1
+canh_trai
+  rotate: true
+  xy: 2, 2
+  size: 149, 164
+  orig: 151, 165
+  offset: 2, 0
+  index: -1
+canh_tren
+  rotate: true
+  xy: 228, 239
+  size: 165, 149
+  orig: 166, 149
+  offset: 0, 0
+  index: -1
+m_den
+  rotate: true
+  xy: 168, 24
+  size: 62, 92
+  orig: 64, 94
+  offset: 1, 1
+  index: -1
+m_trang
+  rotate: true
+  xy: 262, 29
+  size: 57, 65
+  orig: 59, 67
+  offset: 1, 0
+  index: -1
+mat_do
+  rotate: false
+  xy: 2, 153
+  size: 192, 192
+  orig: 194, 194
+  offset: 1, 1
+  index: -1
+mat_xam
+  rotate: false
+  xy: 2, 347
+  size: 224, 224
+  orig: 224, 224
+  offset: 0, 0
+  index: -1

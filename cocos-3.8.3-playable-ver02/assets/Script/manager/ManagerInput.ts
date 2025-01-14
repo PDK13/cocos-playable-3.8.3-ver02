@@ -198,7 +198,7 @@ export class ManagerInput extends Component {
             }
         }
 
-        if (this.m_lock) {
+        if (this.m_lock || this.DirectStore || ManagerEvent.Finish) {
             this.m_up = false;
             this.m_down = false;
             this.m_left = false;
@@ -491,10 +491,9 @@ export class ManagerInput extends Component {
     //
 
     onKeyPressed(event) {
-        if (this.m_lock)
+        if (this.m_lock || this.DirectStore || ManagerEvent.Finish)
             return;
         this.m_keyboard = true;
-
         let keyCode = event.keyCode;
         switch (keyCode) {
             case this.KeyUp:
@@ -525,9 +524,8 @@ export class ManagerInput extends Component {
     }
 
     onKeyReleased(event) {
-        if (this.m_lock)
+        if (this.m_lock || this.DirectStore || ManagerEvent.Finish)
             return;
-
         let keyCode = event.keyCode;
         switch (keyCode) {
             case this.KeyUp:
@@ -555,7 +553,6 @@ export class ManagerInput extends Component {
                 //...
                 break;
         }
-
         if (!this.m_up &&
             !this.m_down &&
             !this.m_left &&
