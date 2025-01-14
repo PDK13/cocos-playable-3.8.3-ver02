@@ -70,10 +70,6 @@ export class BodyControlX extends Component {
     @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
     AttackHold: boolean = false;
     @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
-    AttackHoldAnim: boolean = false;
-    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
-    AttackAim: boolean = false;
-    @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
     AttackStopMoveAnim = true;
     @property({ group: { name: 'Attack' }, type: CCBoolean, visible(this: BodyControlX) { return this.getComponent(BodyAttackX) != null; } })
     AttackStopMovePress = true;
@@ -462,7 +458,7 @@ export class BodyControlX extends Component {
     private onAttackProgess() {
         if (this.m_bodyAttack == null)
             return;
-        if (this.AttackAim) {
+        if (this.m_bodyAttack.Aim) {
             if (this.m_bodyAttack.m_rangeTarget == null ? true : !this.m_bodyAttack.m_rangeTarget.isValid)
                 this.m_bodyAttack.m_rangeTarget = this.m_bodyAttack.m_bodyCheck.onRangeTargetNearest();
             if (this.m_bodyAttack.m_rangeTarget == null ? true : !this.m_bodyAttack.m_rangeTarget.isValid) {
@@ -619,12 +615,12 @@ export class BodyControlX extends Component {
                 this.m_bodySpine.onDash();
                 break;
             case PlayerState.ATTACK:
-                if (!this.AttackHoldAnim)
+                if (!this.m_bodyAttack.AnimAttackHoldActive)
                     break;
                 this.unschedule(this.m_attackReadySchedule);
                 break;
             case PlayerState.ATTACK_HOLD:
-                if (!this.AttackHoldAnim)
+                if (!this.m_bodyAttack.AnimAttackHoldActive)
                     break;
                 this.m_attackReadySchedule = this.scheduleOnce(() => {
                     this.m_bodyAttack.onAttackHold();

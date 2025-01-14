@@ -44,9 +44,11 @@ export class BodyAttackX extends Component {
     @property({ group: { name: 'Range' }, type: CCBoolean, visible(this: BodyAttackX) { return this.getComponent(ShootBase) != null; } })
     RangeTargetReset: boolean = true;
 
-    @property({ group: { name: 'Anim' }, type: CCString })
+    @property({ group: { name: 'Anim' }, type: CCBoolean })
+    AnimAttackHoldActive: boolean = true;
+    @property({ group: { name: 'Anim' }, type: CCString, visible(this: BodyAttackX) { return this.AnimAttackHoldActive; } })
     AnimAttackReady: string = 'attack_ready';
-    @property({ group: { name: 'Anim' }, type: CCString })
+    @property({ group: { name: 'Anim' }, type: CCString, visible(this: BodyAttackX) { return this.AnimAttackHoldActive; } })
     AnimAttackHold: string = 'attack_hold';
     @property({ group: { name: 'Anim' }, type: CCString })
     AnimAttack: string = 'attack';
