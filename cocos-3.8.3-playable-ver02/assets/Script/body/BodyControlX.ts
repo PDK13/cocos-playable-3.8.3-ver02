@@ -497,6 +497,8 @@ export class BodyControlX extends Component {
             let pickUpRigidbody = this.m_pickUp.getComponent(RigidBody2D);
             this.m_pickUpRigidbody = new DataRigidbody(pickUpRigidbody);
             this.scheduleOnce(() => {
+                if (this.m_pickUp == null ? true : !this.m_pickUp.isValid)
+                    return;
                 pickUpRigidbody.destroy();
                 //Set parent of Pick-up Object to Pick-up Point and Tween Move it
                 this.m_pickUp.setParent(this.PickUpPoint, true);

@@ -22,16 +22,15 @@ export class UiPopup extends Component {
 
     protected onLoad(): void {
         if (this.OnPopup != '')
-            this.scheduleOnce(() => director.on(this.OnPopup, this.onPopup, this), this.DelayStart);
+            director.on(this.OnPopup, this.onPopup, this);
     }
 
     protected start(): void {
         this.Mask.active = false;
         this.Panel.active = false;
         this.Panel.scale = Vec3.ZERO;
-
         if (this.Start)
-            this.onPopup()
+            this.scheduleOnce(() => this.onPopup(), this.DelayStart);
     }
 
     onPopup() {
