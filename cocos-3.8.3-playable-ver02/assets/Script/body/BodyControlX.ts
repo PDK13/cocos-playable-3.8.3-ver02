@@ -164,19 +164,17 @@ export class BodyControlX extends Component {
         director.on(ConstantBase.PLAYER_BODY_AWAKE, this.onAwake, this);
 
         director.on(ConstantBase.PLAYER_COMPLETE, this.onComplete, this);
-        //director.on(BaseConstant.PLAYER_DEAD, this.onDead, this);
-        this.node.on(this.m_body.m_emitBodyBaseDead, this.onDead, this);
         director.on(ConstantBase.GAME_TIME_OUT, this.onStop, this);
 
-        this.node.on(this.m_bodyCheck.m_emitBot, this.onBot, this);
-
-        if (this.m_bodyAttack != null)
+        if (this.m_bodyAttack != null) {
             director.on(ConstantBase.PLAYER_ATTACK_UP, this.m_bodyAttack.onMeleeAttackUp, this.m_bodyAttack);
-
-        if (this.m_bodyAttack != null)
             director.on(ConstantBase.INPUT_FIRE, this.onAttack, this);
+        }
 
         director.on(ConstantBase.INPUT_INTERACTION, this.onInteraction, this);
+
+        this.node.on(this.m_body.m_emitBodyBaseDead, this.onDead, this);
+        this.node.on(this.m_bodyCheck.m_emitBot, this.onBot, this);
         this.node.on(this.m_bodyCheck.m_emitInteracte, this.onInteractionFound, this);
     }
 
