@@ -685,8 +685,9 @@ export class BodyControlX extends Component {
     }
 
     private onCompleteProgess() {
-        if (this.EndPickDestroy) {
-            this.m_pickUp.destroy();
+        if (this.Pick && this.EndPickDestroy) {
+            if (this.m_pickUp != null ? this.m_pickUp.isValid : false)
+                this.m_pickUp.destroy();
             this.m_bodySpine.onPickEmty();
         }
         if (this.EndRevertX) {

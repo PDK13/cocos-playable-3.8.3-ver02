@@ -42,23 +42,23 @@ export class EventTriggerBase extends Component {
 
     protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
-        if (targetIndex <= 0)
+        if (targetIndex < 0)
             return;
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
             switch (this.Type) {
                 case EventType.NONE:
-                    this.node.emit(ConstantBase.ON_NODE_TRIGGER);
+                    this.node.emit(ConstantBase.ON_NODE_EVENT);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent);
                     break;
                 case EventType.BOOLEAN:
-                    this.node.emit(ConstantBase.ON_NODE_TRIGGER, true);
+                    this.node.emit(ConstantBase.ON_NODE_EVENT, true);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent, true);
                     break;
                 case EventType.NODE:
-                    this.node.emit(ConstantBase.ON_NODE_TRIGGER, true, otherCollider.node);
+                    this.node.emit(ConstantBase.ON_NODE_EVENT, true, otherCollider.node);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent, true, otherCollider.node);
                     break;
@@ -79,23 +79,23 @@ export class EventTriggerBase extends Component {
 
     protected onEndContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
-        if (targetIndex <= 0)
+        if (targetIndex < 0)
             return;
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
             switch (this.Type) {
                 case EventType.NONE:
-                    this.node.emit(ConstantBase.ON_NODE_TRIGGER);
+                    this.node.emit(ConstantBase.ON_NODE_EVENT);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent);
                     break;
                 case EventType.BOOLEAN:
-                    this.node.emit(ConstantBase.ON_NODE_TRIGGER, false);
+                    this.node.emit(ConstantBase.ON_NODE_EVENT, false);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent, false);
                     break;
                 case EventType.NODE:
-                    this.node.emit(ConstantBase.ON_NODE_TRIGGER, false, otherCollider.node);
+                    this.node.emit(ConstantBase.ON_NODE_EVENT, false, otherCollider.node);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent, false, otherCollider.node);
                     break;
