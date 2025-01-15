@@ -19,8 +19,6 @@ export class TriggerActive extends Component {
     Delay: number = 0;
     @property({ group: { name: 'Main' }, type: CCString })
     EmitEvent: string = '';
-    @property({ group: { name: 'Main' }, type: CCString })
-    EmitEventFinal: string = '';
 
     @property({ group: { name: 'Option' }, type: CCBoolean })
     StateActive: boolean = true;
