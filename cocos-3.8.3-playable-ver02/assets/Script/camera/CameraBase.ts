@@ -80,7 +80,7 @@ export default class CameraBase extends Component {
         director.on(ConstantBase.CAMERA_EFFECT_SHAKE, this.onShake, this);
         director.on(ConstantBase.CAMERA_EFFECT_SHAKE_ONCE, this.onShakeOnce, this);
 
-        director.on(ConstantBase.PLAYER_X4, this.onShake, this);
+        director.on(ConstantBase.BODY_X4, this.onShake, this);
         //
         if (this.m_camera == null)
             this.m_camera = this.getComponent(Camera);

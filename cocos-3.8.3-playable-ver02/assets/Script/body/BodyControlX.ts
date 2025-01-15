@@ -180,96 +180,120 @@ export class BodyControlX extends Component {
 
     protected onControlByDirector(state: boolean) {
         if (state) {
-            director.on(ConstantBase.INPUT_JUMP, this.onJump, this);
-            director.on(ConstantBase.INPUT_JUMP_RELEASE, this.onJumRelease, this);
+            director.on(ConstantBase.BODY_SLEEP, this.onSleep, this);
+            director.on(ConstantBase.BODY_AWAKE, this.onAwake, this);
 
-            director.on(ConstantBase.INPUT_MOVE_UP, this.onMoveUp, this);
-            director.on(ConstantBase.INPUT_MOVE_DOWN, this.onMoveDown, this);
-            director.on(ConstantBase.INPUT_MOVE_LEFT, this.onMoveLeft, this);
-            director.on(ConstantBase.INPUT_MOVE_RIGHT, this.onMoveRight, this);
-            director.on(ConstantBase.INPUT_MOVE_RELEASE, this.onMoveRelease, this);
-            director.on(ConstantBase.INPUT_MOVE_RELEASE_X, this.onMoveReleaseX, this);
-            director.on(ConstantBase.INPUT_MOVE_RELEASE_Y, this.onMoveReleaseY, this);
+            director.on(ConstantBase.CONTROL_JUMP, this.onJump, this);
+            director.on(ConstantBase.CONTROL_JUMP_RELEASE, this.onJumRelease, this);
 
-            director.on(ConstantBase.PLAYER_BODY_SLEEP, this.onSleep, this);
-            director.on(ConstantBase.PLAYER_BODY_AWAKE, this.onAwake, this);
+            director.on(ConstantBase.CONTROL_UP, this.onMoveUp, this);
+            director.on(ConstantBase.CONTROL_DOWN, this.onMoveDown, this);
+            director.on(ConstantBase.CONTROL_LEFT, this.onMoveLeft, this);
+            director.on(ConstantBase.CONTROL_RIGHT, this.onMoveRight, this);
+            director.on(ConstantBase.CONTROL_RELEASE, this.onMoveRelease, this);
+            director.on(ConstantBase.CONTROL_RELEASE_X, this.onMoveReleaseX, this);
+            director.on(ConstantBase.CONTROL_RELEASE_Y, this.onMoveReleaseY, this);
 
             if (this.m_bodyAttack != null) {
-                director.on(ConstantBase.PLAYER_ATTACK_UP, this.m_bodyAttack.onMeleeAttackUp, this.m_bodyAttack);
-                director.on(ConstantBase.INPUT_FIRE, this.onAttack, this);
+                director.on(ConstantBase.BODY_ATTACK_UP, this.m_bodyAttack.onMeleeAttackUp, this.m_bodyAttack);
+                director.on(ConstantBase.CONTROL_ATTACK, this.onAttack, this);
             }
 
-            director.on(ConstantBase.INPUT_INTERACTION, this.onInteraction, this);
+            director.on(ConstantBase.CONTROL_INTERACTION, this.onInteraction, this);
         }
         else {
-            director.off(ConstantBase.INPUT_JUMP, this.onJump, this);
-            director.off(ConstantBase.INPUT_JUMP_RELEASE, this.onJumRelease, this);
+            director.off(ConstantBase.BODY_SLEEP, this.onSleep, this);
+            director.off(ConstantBase.BODY_AWAKE, this.onAwake, this);
 
-            director.off(ConstantBase.INPUT_MOVE_UP, this.onMoveUp, this);
-            director.off(ConstantBase.INPUT_MOVE_DOWN, this.onMoveDown, this);
-            director.off(ConstantBase.INPUT_MOVE_LEFT, this.onMoveLeft, this);
-            director.off(ConstantBase.INPUT_MOVE_RIGHT, this.onMoveRight, this);
-            director.off(ConstantBase.INPUT_MOVE_RELEASE, this.onMoveRelease, this);
-            director.off(ConstantBase.INPUT_MOVE_RELEASE_X, this.onMoveReleaseX, this);
-            director.off(ConstantBase.INPUT_MOVE_RELEASE_Y, this.onMoveReleaseY, this);
+            director.off(ConstantBase.CONTROL_JUMP, this.onJump, this);
+            director.off(ConstantBase.CONTROL_JUMP_RELEASE, this.onJumRelease, this);
 
-            director.off(ConstantBase.PLAYER_BODY_SLEEP, this.onSleep, this);
-            director.off(ConstantBase.PLAYER_BODY_AWAKE, this.onAwake, this);
+            director.off(ConstantBase.CONTROL_UP, this.onMoveUp, this);
+            director.off(ConstantBase.CONTROL_DOWN, this.onMoveDown, this);
+            director.off(ConstantBase.CONTROL_LEFT, this.onMoveLeft, this);
+            director.off(ConstantBase.CONTROL_RIGHT, this.onMoveRight, this);
+            director.off(ConstantBase.CONTROL_RELEASE, this.onMoveRelease, this);
+            director.off(ConstantBase.CONTROL_RELEASE_X, this.onMoveReleaseX, this);
+            director.off(ConstantBase.CONTROL_RELEASE_Y, this.onMoveReleaseY, this);
 
             if (this.m_bodyAttack != null) {
-                director.off(ConstantBase.PLAYER_ATTACK_UP, this.m_bodyAttack.onMeleeAttackUp, this.m_bodyAttack);
-                director.off(ConstantBase.INPUT_FIRE, this.onAttack, this);
+                director.off(ConstantBase.BODY_ATTACK_UP, this.m_bodyAttack.onMeleeAttackUp, this.m_bodyAttack);
+                director.off(ConstantBase.CONTROL_ATTACK, this.onAttack, this);
             }
 
-            director.off(ConstantBase.INPUT_INTERACTION, this.onInteraction, this);
+            director.off(ConstantBase.CONTROL_INTERACTION, this.onInteraction, this);
         }
     }
 
     protected onControlByNode(state: boolean) {
         if (state) {
-            this.node.on(ConstantBase.INPUT_JUMP, this.onJump, this);
-            this.node.on(ConstantBase.INPUT_JUMP_RELEASE, this.onJumRelease, this);
+            this.node.on(ConstantBase.BODY_SLEEP, this.onSleep, this);
+            this.node.on(ConstantBase.BODY_AWAKE, this.onAwake, this);
 
-            this.node.on(ConstantBase.INPUT_MOVE_UP, this.onMoveUp, this);
-            this.node.on(ConstantBase.INPUT_MOVE_DOWN, this.onMoveDown, this);
-            this.node.on(ConstantBase.INPUT_MOVE_LEFT, this.onMoveLeft, this);
-            this.node.on(ConstantBase.INPUT_MOVE_RIGHT, this.onMoveRight, this);
-            this.node.on(ConstantBase.INPUT_MOVE_RELEASE, this.onMoveRelease, this);
-            this.node.on(ConstantBase.INPUT_MOVE_RELEASE_X, this.onMoveReleaseX, this);
-            this.node.on(ConstantBase.INPUT_MOVE_RELEASE_Y, this.onMoveReleaseY, this);
+            this.node.on(ConstantBase.CONTROL_JUMP, this.onJump, this);
+            this.node.on(ConstantBase.CONTROL_JUMP_RELEASE, this.onJumRelease, this);
 
-            this.node.on(ConstantBase.PLAYER_BODY_SLEEP, this.onSleep, this);
-            this.node.on(ConstantBase.PLAYER_BODY_AWAKE, this.onAwake, this);
+            this.node.on(ConstantBase.CONTROL_UP, this.onMoveUp, this);
+            this.node.on(ConstantBase.CONTROL_DOWN, this.onMoveDown, this);
+            this.node.on(ConstantBase.CONTROL_LEFT, this.onMoveLeft, this);
+            this.node.on(ConstantBase.CONTROL_RIGHT, this.onMoveRight, this);
+            this.node.on(ConstantBase.CONTROL_RELEASE, this.onMoveRelease, this);
+            this.node.on(ConstantBase.CONTROL_RELEASE_X, this.onMoveReleaseX, this);
+            this.node.on(ConstantBase.CONTROL_RELEASE_Y, this.onMoveReleaseY, this);
 
             if (this.m_bodyAttack != null) {
-                this.node.on(ConstantBase.PLAYER_ATTACK_UP, this.m_bodyAttack.onMeleeAttackUp, this.m_bodyAttack);
-                this.node.on(ConstantBase.INPUT_FIRE, this.onAttack, this);
+                this.node.on(ConstantBase.BODY_ATTACK_UP, this.m_bodyAttack.onMeleeAttackUp, this.m_bodyAttack);
+                this.node.on(ConstantBase.CONTROL_ATTACK, this.onAttack, this);
             }
 
-            this.node.on(ConstantBase.INPUT_INTERACTION, this.onInteraction, this);
+            this.node.on(ConstantBase.CONTROL_INTERACTION, this.onInteraction, this);
         }
         else {
-            this.node.off(ConstantBase.INPUT_JUMP, this.onJump, this);
-            this.node.off(ConstantBase.INPUT_JUMP_RELEASE, this.onJumRelease, this);
+            this.node.off(ConstantBase.BODY_SLEEP, this.onSleep, this);
+            this.node.off(ConstantBase.BODY_AWAKE, this.onAwake, this);
 
-            this.node.off(ConstantBase.INPUT_MOVE_UP, this.onMoveUp, this);
-            this.node.off(ConstantBase.INPUT_MOVE_DOWN, this.onMoveDown, this);
-            this.node.off(ConstantBase.INPUT_MOVE_LEFT, this.onMoveLeft, this);
-            this.node.off(ConstantBase.INPUT_MOVE_RIGHT, this.onMoveRight, this);
-            this.node.off(ConstantBase.INPUT_MOVE_RELEASE, this.onMoveRelease, this);
-            this.node.off(ConstantBase.INPUT_MOVE_RELEASE_X, this.onMoveReleaseX, this);
-            this.node.off(ConstantBase.INPUT_MOVE_RELEASE_Y, this.onMoveReleaseY, this);
+            this.node.off(ConstantBase.CONTROL_JUMP, this.onJump, this);
+            this.node.off(ConstantBase.CONTROL_JUMP_RELEASE, this.onJumRelease, this);
 
-            this.node.off(ConstantBase.PLAYER_BODY_SLEEP, this.onSleep, this);
-            this.node.off(ConstantBase.PLAYER_BODY_AWAKE, this.onAwake, this);
+            this.node.off(ConstantBase.CONTROL_UP, this.onMoveUp, this);
+            this.node.off(ConstantBase.CONTROL_DOWN, this.onMoveDown, this);
+            this.node.off(ConstantBase.CONTROL_LEFT, this.onMoveLeft, this);
+            this.node.off(ConstantBase.CONTROL_RIGHT, this.onMoveRight, this);
+            this.node.off(ConstantBase.CONTROL_RELEASE, this.onMoveRelease, this);
+            this.node.off(ConstantBase.CONTROL_RELEASE_X, this.onMoveReleaseX, this);
+            this.node.off(ConstantBase.CONTROL_RELEASE_Y, this.onMoveReleaseY, this);
 
             if (this.m_bodyAttack != null) {
-                this.node.off(ConstantBase.PLAYER_ATTACK_UP, this.m_bodyAttack.onMeleeAttackUp, this.m_bodyAttack);
-                this.node.off(ConstantBase.INPUT_FIRE, this.onAttack, this);
+                this.node.off(ConstantBase.BODY_ATTACK_UP, this.m_bodyAttack.onMeleeAttackUp, this.m_bodyAttack);
+                this.node.off(ConstantBase.CONTROL_ATTACK, this.onAttack, this);
             }
 
-            this.node.off(ConstantBase.INPUT_INTERACTION, this.onInteraction, this);
+            this.node.off(ConstantBase.CONTROL_INTERACTION, this.onInteraction, this);
         }
+    }
+
+    //STOP:
+
+    protected onStop() {
+        director.emit(ConstantBase.CONTROL_RELEASE);
+        director.emit(ConstantBase.CONTROL_JUMP_RELEASE);
+        director.emit(ConstantBase.CONTROL_LOCK);
+        this.onJumRelease();
+        this.onMoveRelease();
+    }
+
+    //RIGIDBODY:
+
+    onSleep() {
+        this.onJumRelease();
+        this.onMoveRelease();
+        this.m_rigidbody.gravityScale = 0;
+        this.m_rigidbody.sleep();
+    }
+
+    onAwake() {
+        this.m_rigidbody.gravityScale = this.m_baseGravity;
+        this.m_rigidbody.wakeUp();
     }
 
     //MOVE:
@@ -415,14 +439,8 @@ export class BodyControlX extends Component {
     }
 
     onMoveRelease() {
-        this.m_moveDirX = 0;
-        if (this.MoveForceStop) {
-            let veloc = this.m_rigidbody.linearVelocity.clone();
-            veloc.x = 0;
-            this.m_rigidbody.linearVelocity = veloc;
-            if (this.Type == BodyType.BALL)
-                this.m_rigidbody.applyTorque(0, true);
-        }
+        this.onMoveReleaseX();
+        this.onMoveReleaseY();
     }
 
     onMoveReleaseX() {
@@ -758,9 +776,9 @@ export class BodyControlX extends Component {
 
     /**Excute Player complete, but not continue complete progress if 'EndOnGround' value is TRUE*/
     protected onComplete(Centre: Vec3) {
-        director.emit(ConstantBase.INPUT_MOVE_RELEASE);
-        director.emit(ConstantBase.INPUT_JUMP_RELEASE);
-        director.emit(ConstantBase.INPUT_LOCK);
+        director.emit(ConstantBase.CONTROL_RELEASE);
+        director.emit(ConstantBase.CONTROL_JUMP_RELEASE);
+        director.emit(ConstantBase.CONTROL_LOCK);
 
         this.m_end = true;
         this.m_endReady = this.EndOnGround;
@@ -792,9 +810,9 @@ export class BodyControlX extends Component {
     //DEAD:
 
     protected onDead() {
-        director.emit(ConstantBase.INPUT_MOVE_RELEASE);
-        director.emit(ConstantBase.INPUT_JUMP_RELEASE);
-        director.emit(ConstantBase.INPUT_LOCK);
+        director.emit(ConstantBase.CONTROL_RELEASE);
+        director.emit(ConstantBase.CONTROL_JUMP_RELEASE);
+        director.emit(ConstantBase.CONTROL_LOCK);
 
         this.m_end = true;
 
@@ -813,30 +831,5 @@ export class BodyControlX extends Component {
                 director.emit(ConstantBase.GAME_LOSE);
             }, this.m_bodySpine.onDead());
         }, 0);
-    }
-
-    //STOP:
-
-    protected onStop() {
-        director.emit(ConstantBase.INPUT_MOVE_RELEASE);
-        director.emit(ConstantBase.INPUT_JUMP_RELEASE);
-        director.emit(ConstantBase.INPUT_LOCK);
-
-        this.onJumRelease();
-        this.onMoveRelease();
-    }
-
-    //RIGIDBODY:
-
-    onSleep() {
-        this.onJumRelease();
-        this.onMoveRelease();
-        this.m_rigidbody.gravityScale = 0;
-        this.m_rigidbody.sleep();
-    }
-
-    onAwake() {
-        this.m_rigidbody.gravityScale = this.m_baseGravity;
-        this.m_rigidbody.wakeUp();
     }
 }

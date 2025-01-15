@@ -34,7 +34,6 @@ export class TriggerDestroy extends Component {
                     break;
             }
         });
-
         if (this.OnNode)
             this.node.on(ConstantBase.NODE_EVENT, this.onEvent, this);
     }
@@ -45,13 +44,17 @@ export class TriggerDestroy extends Component {
     }
 
     onEvent() {
-        this.scheduleOnce(() => {
-            this.Target.forEach(target => {
-                if (target != null ? target.isValid : false)
-                    target.destroy();
-            });
-            this.Target = this.Target.filter(t => t == null);
-        }, 0);
+        this.Target = this.Target.filter(t => t == null);
+        this.Target.forEach(target => {
+            this.onEventSingle(target);
+        });
+        this.Target = this.Target.filter(t => t == null);
+    }
+
+    onEventSingle(target: Node) {
+        if (target == null ? true : !target.isValid)
+            return;
+        target.destroy();
     }
 
     protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
@@ -59,7 +62,13 @@ export class TriggerDestroy extends Component {
         if (targetIndex < 0)
             return;
         this.unscheduleAllCallbacks();
-        this.scheduleOnce(() => this.onEvent(), Math.max(this.Delay, 0));
+        this.scheduleOnce(() => {
+            this.onEvent();
+            if (this.TargetSelf)
+                this.onEventSingle(this.node);
+            if (this.TargetContact)
+                this.onEventSingle(otherCollider.node);
+        }, Math.max(this.Delay, 0));
         if (this.Once) {
             let colliders = this.getComponents(Collider2D);
             colliders.forEach(collider => {
@@ -70,9 +79,5 @@ export class TriggerDestroy extends Component {
                 }
             });
         }
-        if (this.TargetSelf)
-            this.scheduleOnce(() => this.node.destroy(), 0);
-        if (this.TargetContact)
-            this.scheduleOnce(() => otherCollider.node.destroy(), 0);
     }
 }

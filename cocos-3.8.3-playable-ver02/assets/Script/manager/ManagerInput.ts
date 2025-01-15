@@ -93,8 +93,8 @@ export class ManagerInput extends Component {
     m_debugDtReset: number = 0;
 
     protected onLoad(): void {
-        director.on(ConstantBase.INPUT_LOCK, this.onLock, this);
-        director.on(ConstantBase.INPUT_RESUME, this.onResume, this);
+        director.on(ConstantBase.CONTROL_LOCK, this.onLock, this);
+        director.on(ConstantBase.CONTROL_RESUME, this.onResume, this);
 
         director.on(ConstantBase.GAME_COMPLETE, this.onLock, this);
         director.on(ConstantBase.GAME_LOSE, this.onLock, this);
@@ -140,10 +140,10 @@ export class ManagerInput extends Component {
             this.BtnDash.on(Input.EventType.TOUCH_START, this.onDash, this);
 
         if (this.BtnAttack != null) {
-            this.BtnAttack.on(Input.EventType.TOUCH_START, this.onFireStart, this);
-            this.BtnAttack.on(Input.EventType.TOUCH_END, this.onFireEnd, this);
-            this.BtnAttack.on(Input.EventType.TOUCH_CANCEL, this.onFireEnd, this);
-            director.on(ConstantBase.INPUT_FIRE_SHOW, this.onFireShow, this);
+            this.BtnAttack.on(Input.EventType.TOUCH_START, this.onAttackStart, this);
+            this.BtnAttack.on(Input.EventType.TOUCH_END, this.onAttackEnd, this);
+            this.BtnAttack.on(Input.EventType.TOUCH_CANCEL, this.onAttackEnd, this);
+            director.on(ConstantBase.INPUT_ATTACK_SHOW, this.onAttackShow, this);
         }
 
         if (this.BtnInteraction != null) {
@@ -176,7 +176,7 @@ export class ManagerInput extends Component {
                 this.Switch[this.SwitchStartIndex].getComponent(UIOpacity).opacity = 150;
             else
                 this.Switch[this.SwitchStartIndex].active = false;
-            director.emit(ConstantBase.INPUT_SWITCH, this.SwitchStartIndex, this.Switch[this.SwitchStartIndex]);
+            director.emit(ConstantBase.CONTROL_SWITCH, this.SwitchStartIndex, this.Switch[this.SwitchStartIndex]);
         }
         else
             director.emit(ConstantBase.INPUT_SWITCH_UNFOCUS);
@@ -216,86 +216,86 @@ export class ManagerInput extends Component {
                     case JoyStickDirectionType.Y:
                         //ZERO
                         if (joyDirection.x == 0 && joyDirection.y == 0) {
-                            director.emit(ConstantBase.INPUT_MOVE_RELEASE);
+                            director.emit(ConstantBase.CONTROL_RELEASE);
                             if (this.JoyMoveType == JoyStickDirectionType.Y)
-                                director.emit(ConstantBase.INPUT_MOVE_RELEASE_X);
+                                director.emit(ConstantBase.CONTROL_RELEASE_X);
                             else if (this.JoyMoveType == JoyStickDirectionType.X)
-                                director.emit(ConstantBase.INPUT_MOVE_RELEASE_Y);
+                                director.emit(ConstantBase.CONTROL_RELEASE_Y);
                             break;
                         }
                         let deg = Math.atan2(joyDirection.y, joyDirection.x) * 57.295779513;
                         let deg360 = deg < 0 ? deg + 360 : deg;
                         //X
                         if (joyDirection.x == 0 && this.JoyMoveType == JoyStickDirectionType.Y)
-                            director.emit(ConstantBase.INPUT_MOVE_RELEASE_X);
+                            director.emit(ConstantBase.CONTROL_RELEASE_X);
                         else if (135 < deg360 && deg360 < 225)
-                            director.emit(ConstantBase.INPUT_MOVE_LEFT);
+                            director.emit(ConstantBase.CONTROL_LEFT);
                         else if (-45 < deg && deg < 45)
-                            director.emit(ConstantBase.INPUT_MOVE_RIGHT);
+                            director.emit(ConstantBase.CONTROL_RIGHT);
                         else if (this.JoyMoveType == JoyStickDirectionType.X)
-                            director.emit(ConstantBase.INPUT_MOVE_RELEASE);
+                            director.emit(ConstantBase.CONTROL_RELEASE);
                         else
-                            director.emit(ConstantBase.INPUT_MOVE_RELEASE_X);
+                            director.emit(ConstantBase.CONTROL_RELEASE_X);
                         //Y
                         if (joyDirection.y == 0 && this.JoyMoveType == JoyStickDirectionType.X)
-                            director.emit(ConstantBase.INPUT_MOVE_RELEASE_Y);
+                            director.emit(ConstantBase.CONTROL_RELEASE_Y);
                         else if (45 < deg360 && deg360 < 135)
-                            director.emit(ConstantBase.INPUT_MOVE_UP);
+                            director.emit(ConstantBase.CONTROL_UP);
                         else if (-135 < deg && deg < -45)
-                            director.emit(ConstantBase.INPUT_MOVE_DOWN);
+                            director.emit(ConstantBase.CONTROL_DOWN);
                         else if (this.JoyMoveType == JoyStickDirectionType.Y)
-                            director.emit(ConstantBase.INPUT_MOVE_RELEASE);
+                            director.emit(ConstantBase.CONTROL_RELEASE);
                         else
-                            director.emit(ConstantBase.INPUT_MOVE_RELEASE_Y);
+                            director.emit(ConstantBase.CONTROL_RELEASE_Y);
                         break;
                     case JoyStickDirectionType.EIGHT:
                         //ZERO
                         if (joyDirection.x == 0 && joyDirection.y == 0)
-                            director.emit(ConstantBase.INPUT_MOVE_RELEASE);
+                            director.emit(ConstantBase.CONTROL_RELEASE);
                         //DIRECTION
-                        director.emit(ConstantBase.INPUT_JOY_STICK, joyDirection);
+                        director.emit(ConstantBase.CONTROL_JOY_STICK, joyDirection);
                         break;
                 }
             }
             else if (sys.os == sys.OS.WINDOWS && this.JoyMove.node.activeInHierarchy) {
                 //X
                 if (this.m_left)
-                    director.emit(ConstantBase.INPUT_MOVE_LEFT);
+                    director.emit(ConstantBase.CONTROL_LEFT);
                 else if (this.m_right)
-                    director.emit(ConstantBase.INPUT_MOVE_RIGHT);
+                    director.emit(ConstantBase.CONTROL_RIGHT);
                 else if (this.JoyMoveType == JoyStickDirectionType.X)
-                    director.emit(ConstantBase.INPUT_MOVE_RELEASE);
+                    director.emit(ConstantBase.CONTROL_RELEASE);
                 else
-                    director.emit(ConstantBase.INPUT_MOVE_RELEASE_X);
+                    director.emit(ConstantBase.CONTROL_RELEASE_X);
                 //Y
                 if (this.m_up)
-                    director.emit(ConstantBase.INPUT_MOVE_UP);
+                    director.emit(ConstantBase.CONTROL_UP);
                 else if (this.m_down)
-                    director.emit(ConstantBase.INPUT_MOVE_DOWN);
+                    director.emit(ConstantBase.CONTROL_DOWN);
                 else if (this.JoyMoveType == JoyStickDirectionType.Y)
-                    director.emit(ConstantBase.INPUT_MOVE_RELEASE);
+                    director.emit(ConstantBase.CONTROL_RELEASE);
                 else
-                    director.emit(ConstantBase.INPUT_MOVE_RELEASE_Y);
+                    director.emit(ConstantBase.CONTROL_RELEASE_Y);
             }
         }
         else {
             if (this.BtnLeft != null ? this.BtnLeft.activeInHierarchy && this.m_left : false)
-                director.emit(ConstantBase.INPUT_MOVE_LEFT);
+                director.emit(ConstantBase.CONTROL_LEFT);
             else if (this.BtnRight != null ? this.BtnRight.activeInHierarchy && this.m_right : false)
-                director.emit(ConstantBase.INPUT_MOVE_RIGHT);
+                director.emit(ConstantBase.CONTROL_RIGHT);
             else if (this.BtnLeft != null || this.BtnRight != null)
-                director.emit(ConstantBase.INPUT_MOVE_RELEASE);
+                director.emit(ConstantBase.CONTROL_RELEASE);
         }
 
         if (this.BtnJump != null ? this.BtnJump.activeInHierarchy && this.m_jump : false)
-            director.emit(ConstantBase.INPUT_JUMP, dt);
+            director.emit(ConstantBase.CONTROL_JUMP, dt);
 
         if (this.BtnAttack != null ? this.AttackUpdate : false) {
             if (this.BtnAttack.activeInHierarchy) {
                 if (this.m_attack)
-                    director.emit(ConstantBase.INPUT_FIRE, true);
+                    director.emit(ConstantBase.CONTROL_ATTACK, true);
                 else if (this.AttackFull)
-                    director.emit(ConstantBase.INPUT_FIRE, false);
+                    director.emit(ConstantBase.CONTROL_ATTACK, false);
             }
         }
     }
@@ -374,7 +374,7 @@ export class ManagerInput extends Component {
 
     onUpStart() {
         this.m_up = true;
-        director.emit(ConstantBase.INPUT_MOVE_UP);
+        director.emit(ConstantBase.CONTROL_UP);
     }
 
     onUpEnd() {
@@ -385,7 +385,7 @@ export class ManagerInput extends Component {
 
     onDownStart() {
         this.m_down = true;
-        director.emit(ConstantBase.INPUT_MOVE_DOWN);
+        director.emit(ConstantBase.CONTROL_DOWN);
     }
 
     onDownEnd() {
@@ -396,7 +396,7 @@ export class ManagerInput extends Component {
 
     onLeftStart() {
         this.m_left = true;
-        director.emit(ConstantBase.INPUT_MOVE_LEFT);
+        director.emit(ConstantBase.CONTROL_LEFT);
     }
 
     onLeftEnd() {
@@ -407,7 +407,7 @@ export class ManagerInput extends Component {
 
     onRightStart() {
         this.m_right = true;
-        director.emit(ConstantBase.INPUT_MOVE_RIGHT);
+        director.emit(ConstantBase.CONTROL_RIGHT);
     }
 
     onRightEnd() {
@@ -418,44 +418,44 @@ export class ManagerInput extends Component {
 
     onJumpStart() {
         this.m_jump = true;
-        director.emit(ConstantBase.INPUT_JUMP, 0);
+        director.emit(ConstantBase.CONTROL_JUMP, 0);
     }
 
     onJumpEnd() {
         this.m_jump = false;
-        director.emit(ConstantBase.INPUT_JUMP_RELEASE);
+        director.emit(ConstantBase.CONTROL_JUMP_RELEASE);
     }
 
     //Dash
 
     onDash() {
-        director.emit(ConstantBase.INPUT_DASH);
+        director.emit(ConstantBase.CONTROL_DASH);
     }
 
     //Fire
 
-    onFireStart() {
+    onAttackStart() {
         if (this.AttackUpdate)
             this.m_attack = true;
         else
-            director.emit(ConstantBase.INPUT_FIRE, true);
+            director.emit(ConstantBase.CONTROL_ATTACK, true);
     }
 
-    onFireEnd() {
+    onAttackEnd() {
         if (this.AttackUpdate)
             this.m_attack = false;
         else if (this.AttackFull)
-            director.emit(ConstantBase.INPUT_FIRE, false);
+            director.emit(ConstantBase.CONTROL_ATTACK, false);
     }
 
-    onFireShow(stage: boolean) {
+    onAttackShow(stage: boolean) {
         this.BtnAttack.active = this.m_avaible && stage;
     }
 
     //Interaction
 
     onInteraction() {
-        director.emit(ConstantBase.INPUT_INTERACTION);
+        director.emit(ConstantBase.CONTROL_INTERACTION);
     }
 
     onInteractionShow(stage: boolean) {
@@ -477,7 +477,7 @@ export class ManagerInput extends Component {
                     this.Switch[i].getComponent(UIOpacity).opacity = 150;
                 else
                     this.Switch[i].active = false;
-                director.emit(ConstantBase.INPUT_SWITCH, i);
+                director.emit(ConstantBase.CONTROL_SWITCH, i);
             }
             else {
                 if (this.Switch[i].getComponent(UIOpacity) != null)
@@ -512,7 +512,7 @@ export class ManagerInput extends Component {
                 this.onJumpStart();
                 break;
             case this.KeyAttack:
-                this.onFireStart();
+                this.onAttackStart();
                 break;
             case this.KeyDash:
                 this.onDash();
@@ -544,7 +544,7 @@ export class ManagerInput extends Component {
                 this.onJumpEnd();
                 break;
             case this.KeyAttack:
-                this.onFireEnd();
+                this.onAttackEnd();
                 break;
             case this.KeyDash:
                 //...

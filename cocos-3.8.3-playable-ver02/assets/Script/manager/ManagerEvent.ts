@@ -72,8 +72,8 @@ export class ManagerEvent extends Component {
             }
             if (this.DirectPress) {
                 this.m_directPress.on(Input.EventType.TOUCH_START, this.onPress, this);
-                director.on(ConstantBase.INPUT_LOCK, this.onLock, this);
-                director.on(ConstantBase.INPUT_RESUME, this.onResume, this);
+                director.on(ConstantBase.CONTROL_LOCK, this.onLock, this);
+                director.on(ConstantBase.CONTROL_RESUME, this.onResume, this);
             }
         }
     }
@@ -143,8 +143,8 @@ export class ManagerEvent extends Component {
 
     onPressStoreInit() {
         this.m_directPress.off(Input.EventType.TOUCH_START, this.onPress, this);
-        director.off(ConstantBase.INPUT_LOCK, this.onLock, this);
-        director.off(ConstantBase.INPUT_RESUME, this.onResume, this);
+        director.off(ConstantBase.CONTROL_LOCK, this.onLock, this);
+        director.off(ConstantBase.CONTROL_RESUME, this.onResume, this);
 
         if (this.DirectStore || ManagerEvent.Finish)
             this.m_directPress.on(Input.EventType.TOUCH_START, this.onStore, this);
