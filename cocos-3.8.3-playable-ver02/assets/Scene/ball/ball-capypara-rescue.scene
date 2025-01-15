@@ -12460,7 +12460,6 @@
     "Once": false,
     "Delay": 0,
     "EmitEvent": "",
-    "EmitEventFinal": "",
     "StateActive": true,
     "TagBody": 0,
     "TagTarget": [
