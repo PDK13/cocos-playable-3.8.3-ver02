@@ -72,11 +72,11 @@ export class TriggerControl extends Component {
     }
 
     onEvent() {
-        this.Target = this.Target.filter(t => t == null);
+        this.Target = this.Target.filter(t => t != null);
         this.Target.forEach(target => {
             this.onEventSingle(target);
         });
-        this.Target = this.Target.filter(t => t == null);
+        this.Target = this.Target.filter(t => t != null);
     }
 
     onEventSingle(target: Node) {

@@ -1,13 +1,13 @@
-import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, director, IPhysics2DContact, Node, RigidBody2D } from 'cc';
+import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, director, IPhysics2DContact, Node } from 'cc';
 import { ConstantBase } from '../../ConstantBase';
-const { ccclass, property, requireComponent } = _decorator;
+import { SpineBase } from '../../renderer/SpineBase';
+const { ccclass, property } = _decorator;
 
-@ccclass('TriggerDestroy')
-@requireComponent(RigidBody2D)
-export class TriggerDestroy extends Component {
+@ccclass('TriggerSpine')
+export class TriggerSpine extends Component {
 
-    @property({ group: { name: 'Main' }, type: Node })
-    Target: Node[] = [];
+    @property({ group: { name: 'Main' }, type: SpineBase })
+    Target: SpineBase[] = [];
     @property({ group: { name: 'Main' }, type: CCBoolean })
     TargetSelf: boolean = false;
     @property({ group: { name: 'Main' }, type: CCBoolean })
@@ -20,6 +20,19 @@ export class TriggerDestroy extends Component {
     Delay: number = 0;
     @property({ group: { name: 'Main' }, type: CCString })
     EmitEvent: string = '';
+    @property({ group: { name: 'Main' }, type: CCString })
+    EmitEventFinal: string = '';
+
+    @property({ group: { name: 'Option' }, type: CCString })
+    AnimStart: string = '';
+    @property({ group: { name: 'Option' }, type: CCString })
+    AnimLoop: string = '';
+    @property({ group: { name: 'Option' }, type: CCFloat })
+    AnimLoopDuration: number = 0;
+    @property({ group: { name: 'Option' }, type: CCString })
+    AnimEnd: string = '';
+    @property({ group: { name: 'Option' }, type: CCBoolean })
+    AnimEndLoop: boolean = false;
 
     @property({ group: { name: 'Tag' }, type: CCInteger })
     TagBody: number = 0;
@@ -47,10 +60,17 @@ export class TriggerDestroy extends Component {
         this.Target = this.Target.filter(t => t != null);
     }
 
-    onEventSingle(target: Node) {
+    onEventSingle(target: SpineBase) {
         if (target == null ? true : !target.isValid)
             return;
-        target.destroy();
+        target.scheduleOnce(() => {
+            target.scheduleOnce(() => {
+                target.scheduleOnce(() => {
+                    if (this.EmitEvent != '')
+                        director.emit(this.EmitEventFinal);
+                }, target.onAnimation(this.AnimEnd, this.AnimEndLoop));
+            }, Math.max(target.onAnimation(this.AnimLoop, true), this.AnimLoopDuration, 0));
+        }, target.onAnimation(this.AnimStart, false));
     }
 
     protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
@@ -61,9 +81,9 @@ export class TriggerDestroy extends Component {
         this.scheduleOnce(() => {
             this.onEvent();
             if (this.TargetSelf)
-                this.onEventSingle(this.node);
+                this.onEventSingle(this.node.getComponent(SpineBase));
             if (this.TargetContact)
-                this.onEventSingle(otherCollider.node);
+                this.onEventSingle(otherCollider.node.getComponent(SpineBase));
             if (this.EmitEvent != '')
                 director.emit(this.EmitEvent);
         }, Math.max(this.Delay, 0));

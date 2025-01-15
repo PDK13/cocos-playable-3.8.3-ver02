@@ -114,6 +114,8 @@ export class SpineBase extends Component {
     //
 
     onAnimation(anim: string, loop: boolean, durationScale: boolean = false): number {
+        if (anim == '')
+            return 0;
         if (this.m_spineAnim == anim)
             return durationScale ? this.m_spineAnimDuration : this.m_spineAnimDurationScale;
         this.m_spineAnim = anim;
@@ -124,6 +126,8 @@ export class SpineBase extends Component {
     }
 
     onAnimationForce(anim: string, loop: boolean, durationScale: boolean = false): number {
+        if (anim == '')
+            return 0;
         this.m_spineAnim = anim;
         this.m_spineLoop = loop;
         this.m_spineAnimDuration = this.Spine.setAnimation(0, anim, loop).animationEnd;
