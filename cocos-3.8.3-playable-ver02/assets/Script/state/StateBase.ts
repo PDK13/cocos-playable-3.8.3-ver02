@@ -66,7 +66,7 @@ export class StateBase extends Component {
         this.scheduleOnce(() => this.m_stateDelay = false, 0);
 
         this.State = state;
-        this.node.emit(ConstantBase.ON_NODE_STATE, this.State);
+        this.node.emit(ConstantBase.NODE_STATE, this.State);
         if (this.EmitState != '')
             director.emit(this.EmitState, this.State);
 
@@ -108,7 +108,7 @@ export class StateBase extends Component {
             return;
 
         this.Lock = lock;
-        this.node.emit(ConstantBase.ON_NODE_LOCK, this.Lock);
+        this.node.emit(ConstantBase.NODE_STATE_LOCK, this.Lock);
         if (this.EmitLock != '')
             director.emit(this.EmitLock, this.Lock);
     }

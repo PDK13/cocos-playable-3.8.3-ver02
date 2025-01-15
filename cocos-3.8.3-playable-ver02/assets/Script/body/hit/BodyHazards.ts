@@ -19,7 +19,7 @@ export class BodyHazards extends Component {
     protected onLoad(): void {
         let collider = this.getComponents(Collider2D);
 
-        this.node.on(ConstantBase.ON_NODE_THROW, this.onThrow, this);
+        this.node.on(ConstantBase.NODE_THROW, this.onThrow, this);
 
         collider.forEach(colliderCheck => {
             if (colliderCheck.tag == this.TagRange) {
@@ -35,7 +35,7 @@ export class BodyHazards extends Component {
             return;
         let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
         if (targetIndex > -1)
-            otherCollider.node.emit(ConstantBase.ON_NODE_HIT, this.Hit, this.node);
+            otherCollider.node.emit(ConstantBase.NODE_BODY_HIT, this.Hit, this.node);
     }
 
     private onThrow() {

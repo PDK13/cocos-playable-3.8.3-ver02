@@ -156,9 +156,9 @@ export class BodyAttackX extends Component {
     onMeleeAttackTargetEmit() {
         this.m_bodyCheck.m_meleeTarget.forEach(target => {
             if (this.m_meleeAttackUp)
-                target.emit(ConstantBase.ON_NODE_DEAD, this.node);
+                target.emit(ConstantBase.NODE_BODY_DEAD, this.node);
             else
-                target.emit(ConstantBase.ON_NODE_HIT, this.MeleeHit, this.node);
+                target.emit(ConstantBase.NODE_BODY_HIT, this.MeleeHit, this.node);
         });
     }
 

@@ -91,8 +91,8 @@ export class BodyBase extends Component {
             this.m_maskTransform = this.BarMask.getComponent(UITransform);
         }
 
-        this.node.on(ConstantBase.ON_NODE_HIT, this.onHit, this);
-        this.node.on(ConstantBase.ON_NODE_DEAD, this.onDead, this);
+        this.node.on(ConstantBase.NODE_BODY_HIT, this.onHit, this);
+        this.node.on(ConstantBase.NODE_BODY_DEAD, this.onDead, this);
 
         let collider = this.getComponents(Collider2D);
         collider.forEach(colliderCheck => {
@@ -190,8 +190,8 @@ export class BodyBase extends Component {
                 director.emit(this.EmitDead);
         }
 
-        this.node.off(ConstantBase.ON_NODE_HIT, this.onHit, this);
-        this.node.off(ConstantBase.ON_NODE_DEAD, this.onDead, this);
+        this.node.off(ConstantBase.NODE_BODY_HIT, this.onHit, this);
+        this.node.off(ConstantBase.NODE_BODY_DEAD, this.onDead, this);
     }
 
     onBarUpdate() {

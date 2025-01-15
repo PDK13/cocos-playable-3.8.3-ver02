@@ -71,7 +71,7 @@ export class StateTriggerPress extends Component {
         }
 
         if (this.Node != null)
-            this.node.on(ConstantBase.ON_NODE_STATE, this.onStateSprite, this);
+            this.node.on(ConstantBase.NODE_STATE, this.onStateSprite, this);
     }
 
     protected start(): void {

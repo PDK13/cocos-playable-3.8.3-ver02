@@ -51,7 +51,7 @@ export class LazeBase extends Component {
                 let targetIndex = this.TagContact.findIndex((t) => t == raycastResult[i].collider.tag);
                 if (targetIndex > -1) {
                     raycastTag = true;
-                    raycastResult[i].collider.node.emit(ConstantBase.ON_NODE_HIT, 1);
+                    raycastResult[i].collider.node.emit(ConstantBase.NODE_BODY_HIT, 1);
                     break;
                 }
             }

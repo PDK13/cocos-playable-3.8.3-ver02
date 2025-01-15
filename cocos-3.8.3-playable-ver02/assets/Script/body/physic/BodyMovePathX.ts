@@ -73,8 +73,8 @@ export class BodyMovePathX extends Component {
         this.m_spine = this.getComponent(SpineBase);
         this.m_rigidbody = this.getComponent(RigidBody2D);
 
-        this.node.on(ConstantBase.ON_NODE_PICK, this.onPick, this);
-        this.node.on(ConstantBase.ON_NODE_THROW, this.onThrow, this);
+        this.node.on(ConstantBase.NODE_PICK, this.onPick, this);
+        this.node.on(ConstantBase.NODE_THROW, this.onThrow, this);
     }
 
     protected start(): void {

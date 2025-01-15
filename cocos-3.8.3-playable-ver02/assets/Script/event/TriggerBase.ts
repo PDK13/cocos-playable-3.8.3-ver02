@@ -9,9 +9,9 @@ export enum EventType {
 };
 Enum(EventType);
 
-@ccclass('EventTriggerBase')
+@ccclass('TriggerBase')
 @requireComponent(RigidBody2D)
-export class EventTriggerBase extends Component {
+export class TriggerBase extends Component {
 
     @property({ group: { name: 'Main' }, type: EventType })
     Type: EventType = EventType.NONE;
@@ -48,17 +48,17 @@ export class EventTriggerBase extends Component {
         this.scheduleOnce(() => {
             switch (this.Type) {
                 case EventType.NONE:
-                    this.node.emit(ConstantBase.ON_NODE_EVENT);
+                    this.node.emit(ConstantBase.NODE_EVENT);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent);
                     break;
                 case EventType.BOOLEAN:
-                    this.node.emit(ConstantBase.ON_NODE_EVENT, true);
+                    this.node.emit(ConstantBase.NODE_EVENT, true);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent, true);
                     break;
                 case EventType.NODE:
-                    this.node.emit(ConstantBase.ON_NODE_EVENT, true, otherCollider.node);
+                    this.node.emit(ConstantBase.NODE_EVENT, true, otherCollider.node);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent, true, otherCollider.node);
                     break;
@@ -85,17 +85,17 @@ export class EventTriggerBase extends Component {
         this.scheduleOnce(() => {
             switch (this.Type) {
                 case EventType.NONE:
-                    this.node.emit(ConstantBase.ON_NODE_EVENT);
+                    this.node.emit(ConstantBase.NODE_EVENT);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent);
                     break;
                 case EventType.BOOLEAN:
-                    this.node.emit(ConstantBase.ON_NODE_EVENT, false);
+                    this.node.emit(ConstantBase.NODE_EVENT, false);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent, false);
                     break;
                 case EventType.NODE:
-                    this.node.emit(ConstantBase.ON_NODE_EVENT, false, otherCollider.node);
+                    this.node.emit(ConstantBase.NODE_EVENT, false, otherCollider.node);
                     if (this.EmitEvent != '')
                         director.emit(this.EmitEvent, false, otherCollider.node);
                     break;

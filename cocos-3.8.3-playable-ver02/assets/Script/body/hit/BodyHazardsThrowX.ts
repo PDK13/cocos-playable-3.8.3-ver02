@@ -38,8 +38,8 @@ export class BodyHazardsThrowX extends Component {
         if (!this.m_bodyCheck.m_isBot) {
             let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
             if (targetIndex > -1) {
-                otherCollider.node.emit(ConstantBase.ON_NODE_HIT, this.Hit, this.node);
-                this.node.emit(ConstantBase.ON_NODE_HIT, this.Hit, this.node);
+                otherCollider.node.emit(ConstantBase.NODE_BODY_HIT, this.Hit, this.node);
+                this.node.emit(ConstantBase.NODE_BODY_HIT, this.Hit, this.node);
             }
         }
     }

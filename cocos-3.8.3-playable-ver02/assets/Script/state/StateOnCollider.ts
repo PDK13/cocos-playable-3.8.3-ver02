@@ -17,7 +17,7 @@ export class StateOnCollider extends Component {
     m_collider: Collider2D[] = [];
 
     protected onLoad(): void {
-        this.node.on(ConstantBase.ON_NODE_STATE, this.onStateCollider, this);
+        this.node.on(ConstantBase.NODE_STATE, this.onStateCollider, this);
 
         let colliders = this.getComponents(Collider2D);
         colliders.forEach(collider => {

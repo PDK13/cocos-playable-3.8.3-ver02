@@ -70,7 +70,7 @@ export class EventBase extends Component {
     onEventNone() {
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
-            this.node.emit(ConstantBase.ON_NODE_EVENT);
+            this.node.emit(ConstantBase.NODE_EVENT);
             if (this.EmitEvent != '')
                 director.emit(this.EmitEvent);
         }, Math.max(this.Delay, 0));
@@ -81,7 +81,7 @@ export class EventBase extends Component {
     onEventBoolean(state: boolean) {
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
-            this.node.emit(ConstantBase.ON_NODE_EVENT, state);
+            this.node.emit(ConstantBase.NODE_EVENT, state);
             if (this.EmitEvent != '')
                 director.emit(this.EmitEvent, state);
         }, Math.max(this.Delay, 0));
@@ -92,7 +92,7 @@ export class EventBase extends Component {
     onEventNode(state: boolean, target: Node) {
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
-            this.node.emit(ConstantBase.ON_NODE_EVENT, state, target);
+            this.node.emit(ConstantBase.NODE_EVENT, state, target);
             if (this.EmitEvent != '')
                 director.emit(this.EmitEvent, state, target);
         }, Math.max(this.Delay, 0));

@@ -11,8 +11,8 @@ export class ObjectDoorKey extends Component {
     DoorOpen: ObjectDoor = null;
 
     protected onLoad(): void {
-        this.node.on(ConstantBase.ON_NODE_PICK, this.onPick, this);
-        this.node.on(ConstantBase.ON_NODE_THROW, this.onThrow, this);
+        this.node.on(ConstantBase.NODE_PICK, this.onPick, this);
+        this.node.on(ConstantBase.NODE_THROW, this.onThrow, this);
     }
 
     protected start(): void {

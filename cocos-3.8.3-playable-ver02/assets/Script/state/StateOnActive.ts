@@ -17,7 +17,7 @@ export class StateOnActive extends Component {
     NodeStateOff: Node[] = [];
 
     protected onLoad(): void {
-        this.node.on(ConstantBase.ON_NODE_STATE, this.onStateActive, this);
+        this.node.on(ConstantBase.NODE_STATE, this.onStateActive, this);
     }
 
     protected start(): void {

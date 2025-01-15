@@ -15717,6 +15717,15 @@
     "_enabled": true,
     "__prefab": null,
     "Target": [],
+    "OnNode": false,
+    "Once": false,
+    "Delay": 0,
+    "EmitEvent": "",
+    "TagBody": 300,
+    "TagTarget": [
+      200,
+      -1
+    ],
     "_id": "b3gTmOLSxFuIIQBgD73f6W"
   },
   {

@@ -8,6 +8,6 @@ export class EventOnControl extends Component {
 
 
     protected onLoad(): void {
-        this.node.on(ConstantBase.ON_NODE_EVENT, this.onEventDestroy, this);
+        this.node.on(ConstantBase.NODE_EVENT, this.onEventDestroy, this);
     }
 }

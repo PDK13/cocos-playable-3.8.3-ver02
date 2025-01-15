@@ -77,16 +77,19 @@ export class ConstantBase {
 
     //
 
-    static readonly ON_NODE_HIT = 'on-node-hit';
-    static readonly ON_NODE_DEAD = 'on-node-dead';
+    static readonly NODE_BODY_HIT = 'node-body-hit';
+    static readonly NODE_BODY_DEAD = 'node-body-dead';
 
-    static readonly ON_NODE_STATE = 'on-node-state';
-    static readonly ON_NODE_LOCK = 'on-node-lock';
+    static readonly NODE_STATE = 'node-state';
+    static readonly NODE_STATE_LOCK = 'node-state-lock';
 
-    static readonly ON_NODE_EVENT = 'on-node-event';
+    static readonly NODE_EVENT = 'node-event';
 
-    static readonly ON_NODE_PICK = 'on-node-pick';
-    static readonly ON_NODE_THROW = 'on-node-throw';
+    static readonly NODE_CONTROL_DIRECTOR = 'node-control-director';
+    static readonly NODE_CONTROL_NODE = 'node-control-node';
+
+    static readonly NODE_PICK = 'node-pick';
+    static readonly NODE_THROW = 'node-throw';
 }
 
 export enum EaseType {
