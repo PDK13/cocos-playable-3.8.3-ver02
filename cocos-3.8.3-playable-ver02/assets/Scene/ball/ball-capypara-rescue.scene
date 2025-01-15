@@ -10733,13 +10733,14 @@
     "TargetContact": false,
     "OnNode": false,
     "Once": false,
-    "Delay": 2,
+    "Delay": 1,
     "EmitEvent": "",
     "EmitEventFinal": "",
     "AnimStart": "idle",
     "AnimLoop": "tayphai",
     "AnimLoopDuration": 3,
     "AnimEnd": "tayphai",
+    "AnimEndLoop": false,
     "TagBody": 0,
     "TagTarget": [
       100
