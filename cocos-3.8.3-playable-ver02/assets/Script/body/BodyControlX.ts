@@ -1,4 +1,4 @@
-import { _decorator, CCBoolean, CCFloat, CCInteger, Collider2D, Component, director, Enum, Node, RigidBody2D, tween, v2, Vec2, Vec3 } from 'cc';
+import { _decorator, CCBoolean, CCFloat, CCInteger, Collider2D, Component, director, Enum, Node, RigidBody2D, tween, v2, v3, Vec2, Vec3 } from 'cc';
 import { ConstantBase } from '../ConstantBase';
 import { DataRigidbody } from '../data/DataRigidbody';
 import { BodyBase } from './BodyBase';
@@ -200,6 +200,7 @@ export class BodyControlX extends Component {
             }
 
             director.on(ConstantBase.CONTROL_INTERACTION, this.onInteraction, this);
+            director.on(ConstantBase.CONTROL_FIXED, this.onFixed, this);
         }
         else {
             director.off(ConstantBase.BODY_SLEEP, this.onSleep, this);
@@ -222,6 +223,7 @@ export class BodyControlX extends Component {
             }
 
             director.off(ConstantBase.CONTROL_INTERACTION, this.onInteraction, this);
+            director.off(ConstantBase.CONTROL_FIXED, this.onFixed, this);
         }
     }
 
@@ -247,6 +249,7 @@ export class BodyControlX extends Component {
             }
 
             this.node.on(ConstantBase.CONTROL_INTERACTION, this.onInteraction, this);
+            this.node.on(ConstantBase.CONTROL_FIXED, this.onFixed, this);
         }
         else {
             this.node.off(ConstantBase.BODY_SLEEP, this.onSleep, this);
@@ -269,6 +272,7 @@ export class BodyControlX extends Component {
             }
 
             this.node.off(ConstantBase.CONTROL_INTERACTION, this.onInteraction, this);
+            this.node.off(ConstantBase.CONTROL_FIXED, this.onFixed, this);
         }
     }
 
@@ -488,13 +492,13 @@ export class BodyControlX extends Component {
         this.m_jumpContinue = false;
     }
 
-    onJumpForce() {
+    onJumpForce(jumpUp?: number) {
         this.m_bodyCheck.onBotCheckOut();
 
         this.m_rigidbody.gravityScale = this.m_baseGravity;
 
         let veloc = this.m_rigidbody.linearVelocity;
-        veloc.y = this.JumpUpY;
+        veloc.y = jumpUp != null ? jumpUp : this.JumpUpY;
         this.m_rigidbody.linearVelocity = veloc;
     }
 
@@ -664,6 +668,21 @@ export class BodyControlX extends Component {
         if (this.UiPickBtnActive)
             director.emit(ConstantBase.INPUT_INTERACTION_SHOW, true);
         director.emit(ConstantBase.INPUT_INTERACTION_ICON, this.UiPickIconIndex);
+    }
+
+    //FIXED:
+
+    protected onFixed() {
+        switch (this.Type) {
+            case BodyType.STICK:
+                break;
+            case BodyType.BALL:
+                this.onJumpForce();
+                tween(this.node)
+                    .to(0.5, { eulerAngles: v3(0, 0, 0) })
+                    .start();
+                break;
+        }
     }
 
     //STAGE:

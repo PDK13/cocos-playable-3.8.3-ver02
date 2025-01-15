@@ -1,8 +1,9 @@
-import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, IPhysics2DContact, Node } from 'cc';
+import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, IPhysics2DContact, Node, RigidBody2D } from 'cc';
 import { ConstantBase } from '../../ConstantBase';
-const { ccclass, property } = _decorator;
+const { ccclass, property, requireComponent } = _decorator;
 
 @ccclass('TriggerDestroy')
+@requireComponent(RigidBody2D)
 export class TriggerDestroy extends Component {
 
     @property({ group: { name: 'Main' }, type: Node })

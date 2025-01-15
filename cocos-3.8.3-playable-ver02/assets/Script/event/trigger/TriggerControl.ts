@@ -1,8 +1,9 @@
-import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, IPhysics2DContact, Node } from 'cc';
+import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, director, IPhysics2DContact, Node, RigidBody2D } from 'cc';
 import { ConstantBase } from '../../ConstantBase';
-const { ccclass, property } = _decorator;
+const { ccclass, property, requireComponent } = _decorator;
 
 @ccclass('TriggerControl')
+@requireComponent(RigidBody2D)
 export class TriggerControl extends Component {
 
     @property({ group: { name: 'Main' }, type: Node })
@@ -21,28 +22,31 @@ export class TriggerControl extends Component {
     EmitEvent: string = '';
 
     @property({ group: { name: 'Option' }, type: CCBoolean })
+    ControlActive: boolean = true;
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive; } })
     ControlSleep: boolean = false;
-    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return !this.ControlSleep; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive && !this.ControlSleep; } })
     ControlJump: boolean = false;
-    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return !this.ControlSleep; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive && !this.ControlSleep; } })
     ControlRelease: boolean = false;
-    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return !this.ControlSleep && !this.ControlRelease; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive && !this.ControlSleep && !this.ControlRelease; } })
     ControlReleaseX: boolean = false;
-    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return !this.ControlSleep && !this.ControlRelease; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive && !this.ControlSleep && !this.ControlRelease; } })
     ControlReleaseY: boolean = false;
-    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return !this.ControlSleep && !this.ControlRelease && !this.ControlReleaseX; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive && !this.ControlSleep && !this.ControlRelease && !this.ControlReleaseX; } })
     ControlLeft: boolean = false;
-    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return !this.ControlSleep && !this.ControlRelease && !this.ControlReleaseX; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive && !this.ControlSleep && !this.ControlRelease && !this.ControlReleaseX; } })
     ControlRight: boolean = false;
-    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return !this.ControlSleep && !this.ControlRelease && !this.ControlReleaseY; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive && !this.ControlSleep && !this.ControlRelease && !this.ControlReleaseY; } })
     ControlUp: boolean = false;
-    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return !this.ControlSleep && !this.ControlRelease && !this.ControlReleaseY; } })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive && !this.ControlSleep && !this.ControlRelease && !this.ControlReleaseY; } })
     ControlDown: boolean = false;
-
-    @property({ group: { name: 'Option' }, type: CCBoolean })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive; } })
     ControlAttack: boolean = false;
-    @property({ group: { name: 'Option' }, type: CCBoolean })
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive; } })
     ControlInteraction: boolean = false;
+    @property({ group: { name: 'Option' }, type: CCBoolean, visible(this: TriggerControl) { return this.ControlActive && !this.ControlSleep; } })
+    ControlFixed: boolean = false;
 
     @property({ group: { name: 'Tag' }, type: CCInteger })
     TagBody: number = 0;
@@ -78,6 +82,18 @@ export class TriggerControl extends Component {
     onEventSingle(target: Node) {
         if (target == null ? true : !target.isValid)
             return;
+
+        if (this.ControlActive) {
+            director.emit(ConstantBase.CONTROL_LOCK);
+            target.emit(ConstantBase.NODE_CONTROL_NODE, true);
+            target.emit(ConstantBase.NODE_CONTROL_DIRECTOR, false);
+        }
+        else {
+            director.emit(ConstantBase.CONTROL_RESUME);
+            target.emit(ConstantBase.NODE_CONTROL_NODE, false);
+            target.emit(ConstantBase.NODE_CONTROL_DIRECTOR, true);
+            return;
+        }
 
         if (this.ControlSleep) {
             target.emit(ConstantBase.BODY_SLEEP);
@@ -116,6 +132,9 @@ export class TriggerControl extends Component {
 
         if (this.ControlInteraction)
             target.emit(ConstantBase.CONTROL_INTERACTION);
+
+        if (this.ControlFixed)
+            target.emit(ConstantBase.CONTROL_FIXED);
     }
 
     protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {

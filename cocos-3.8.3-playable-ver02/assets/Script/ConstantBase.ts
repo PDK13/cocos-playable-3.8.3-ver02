@@ -27,6 +27,7 @@ export class ConstantBase {
     static readonly CONTROL_JOY_STICK: string = 'control-joy-stick';
     static readonly CONTROL_ATTACK: string = 'control-attack';
     static readonly CONTROL_INTERACTION: string = 'control-interaction';
+    static readonly CONTROL_FIXED: string = 'control-fixed';
     static readonly CONTROL_SWITCH: string = 'control-switch';
 
     static readonly INPUT_ATTACK_SHOW: string = 'input-attack-show';
