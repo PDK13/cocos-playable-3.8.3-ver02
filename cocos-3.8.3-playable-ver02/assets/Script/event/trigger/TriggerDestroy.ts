@@ -1,5 +1,5 @@
 import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, IPhysics2DContact, Node } from 'cc';
-import { ConstantBase } from '../ConstantBase';
+import { ConstantBase } from '../../ConstantBase';
 const { ccclass, property } = _decorator;
 
 @ccclass('TriggerDestroy')
@@ -7,7 +7,10 @@ export class TriggerDestroy extends Component {
 
     @property({ group: { name: 'Main' }, type: Node })
     Target: Node[] = [];
-
+    @property({ group: { name: 'Main' }, type: CCBoolean })
+    TargetSelf: boolean = false;
+    @property({ group: { name: 'Main' }, type: CCBoolean })
+    TargetContact: boolean = false;
     @property({ group: { name: 'Main' }, type: CCBoolean })
     OnNode: boolean = false;
     @property({ group: { name: 'Main' }, type: CCBoolean })
@@ -47,6 +50,7 @@ export class TriggerDestroy extends Component {
                 if (target != null ? target.isValid : false)
                     target.destroy();
             });
+            this.Target = this.Target.filter(t => t == null);
         }, 0);
     }
 
@@ -66,5 +70,9 @@ export class TriggerDestroy extends Component {
                 }
             });
         }
+        if (this.TargetSelf)
+            this.scheduleOnce(() => this.node.destroy(), 0);
+        if (this.TargetContact)
+            this.scheduleOnce(() => otherCollider.node.destroy(), 0);
     }
 }

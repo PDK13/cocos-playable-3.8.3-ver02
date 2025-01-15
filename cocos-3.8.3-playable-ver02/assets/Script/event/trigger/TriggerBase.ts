@@ -1,5 +1,5 @@
 import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, director, Enum, IPhysics2DContact, math, Node, RigidBody2D } from 'cc';
-import { ConstantBase } from '../ConstantBase';
+import { ConstantBase } from '../../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
 
 export enum EventType {
