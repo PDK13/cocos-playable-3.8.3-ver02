@@ -1,383 +1,383 @@
 
 Tamtang.png
-size: 106,286
+size: 177,177
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 Ellipse 1
   rotate: false
-  xy: 2, 60
+  xy: 43, 6
   size: 29, 29
   orig: 31, 31
   offset: 1, 1
   index: -1
 Layer 14
   rotate: false
-  xy: 82, 39
+  xy: 113, 70
   size: 21, 11
   orig: 21, 11
   offset: 0, 0
   index: -1
 chanphai
   rotate: false
-  xy: 85, 70
+  xy: 106, 51
   size: 19, 17
   orig: 19, 17
   offset: 0, 0
   index: -1
 duongtang_body
-  rotate: false
-  xy: 43, 125
+  rotate: true
+  xy: 104, 131
   size: 44, 55
   orig: 44, 55
   offset: 0, 0
   index: -1
 duongtang_chuoihat1
   rotate: false
-  xy: 76, 6
+  xy: 127, 31
   size: 9, 9
   orig: 9, 9
   offset: 0, 0
   index: -1
 duongtang_chuoihat2
   rotate: false
-  xy: 13, 7
+  xy: 102, 16
   size: 8, 8
   orig: 8, 8
   offset: 0, 0
   index: -1
 duongtang_chuoihat3
   rotate: false
-  xy: 87, 6
+  xy: 138, 31
   size: 9, 9
   orig: 9, 9
   offset: 0, 0
   index: -1
 duongtang_chuoihat4
   rotate: false
-  xy: 16, 17
+  xy: 149, 31
   size: 9, 9
   orig: 9, 9
   offset: 0, 0
   index: -1
 duongtang_chuoihat5
   rotate: false
-  xy: 52, 27
+  xy: 165, 60
   size: 10, 10
   orig: 10, 10
   offset: 0, 0
   index: -1
 duongtang_chuoihat6
-  rotate: false
-  xy: 49, 8
+  rotate: true
+  xy: 91, 9
   size: 8, 9
   orig: 8, 9
   offset: 0, 0
   index: -1
 duongtang_chuoihat7
   rotate: false
-  xy: 2, 9
+  xy: 160, 32
   size: 9, 9
   orig: 9, 9
   offset: 0, 0
   index: -1
 duongtang_chuoihat8
   rotate: false
-  xy: 27, 17
+  xy: 160, 21
   size: 9, 9
   orig: 9, 9
   offset: 0, 0
   index: -1
 duongtang_chuoihatblack
   rotate: false
-  xy: 66, 59
+  xy: 159, 92
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 duongtang_head
   rotate: false
-  xy: 43, 182
+  xy: 43, 73
   size: 47, 54
   orig: 47, 54
   offset: 0, 0
   index: -1
 duongtang_head_dot
-  rotate: false
-  xy: 42, 28
+  rotate: true
+  xy: 151, 50
   size: 8, 10
   orig: 8, 10
   offset: 0, 0
   index: -1
 duongtang_headhat
   rotate: false
-  xy: 43, 238
+  xy: 43, 129
   size: 59, 46
   orig: 59, 46
   offset: 0, 0
   index: -1
 duongtang_headrope
   rotate: false
-  xy: 92, 191
+  xy: 92, 82
   size: 12, 45
   orig: 12, 45
   offset: 0, 0
   index: -1
 duongtang_headrope2
-  rotate: false
-  xy: 92, 144
+  rotate: true
+  xy: 106, 83
   size: 12, 45
   orig: 12, 45
   offset: 0, 0
   index: -1
 duongtang_inner_leg
   rotate: false
-  xy: 38, 17
+  xy: 102, 26
   size: 9, 9
   orig: 9, 9
   offset: 0, 0
   index: -1
 duongtang_lear
-  rotate: false
-  xy: 55, 52
+  rotate: true
+  xy: 92, 73
   size: 7, 19
   orig: 7, 19
   offset: 0, 0
   index: -1
 duongtang_leye
   rotate: false
-  xy: 64, 16
+  xy: 163, 48
   size: 10, 10
   orig: 10, 10
   offset: 0, 0
   index: -1
 duongtang_leyebrow
   rotate: false
-  xy: 49, 19
+  xy: 127, 42
   size: 13, 6
   orig: 13, 6
   offset: 0, 0
   index: -1
 duongtang_lhand1
   rotate: false
-  xy: 89, 89
+  xy: 89, 46
   size: 15, 25
   orig: 15, 25
   offset: 0, 0
   index: -1
 duongtang_lhand2
-  rotate: false
-  xy: 84, 52
+  rotate: true
+  xy: 159, 110
   size: 19, 16
   orig: 19, 16
   offset: 0, 0
   index: -1
 duongtang_lhand3
   rotate: false
-  xy: 89, 116
+  xy: 74, 9
   size: 15, 26
   orig: 15, 26
   offset: 0, 0
   index: -1
 duongtang_lhand4
-  rotate: false
-  xy: 2, 37
+  rotate: true
+  xy: 2, 2
   size: 24, 21
   orig: 24, 21
   offset: 0, 0
   index: -1
 duongtang_lowereyeclose
   rotate: false
-  xy: 37, 10
+  xy: 88, 2
   size: 10, 5
   orig: 10, 5
   offset: 0, 0
   index: -1
 duongtang_lpupil
   rotate: false
-  xy: 76, 33
+  xy: 171, 35
   size: 4, 6
   orig: 4, 6
   offset: 0, 0
   index: -1
 duongtang_lpupil_glow
-  rotate: false
-  xy: 52, 39
+  rotate: true
+  xy: 138, 50
   size: 10, 11
   orig: 10, 11
   offset: 0, 0
   index: -1
 duongtang_lsleave
-  rotate: false
-  xy: 2, 91
+  rotate: true
+  xy: 43, 37
   size: 34, 44
   orig: 34, 44
   offset: 0, 0
   index: -1
 duongtang_mounth
   rotate: false
-  xy: 2, 29
+  xy: 25, 2
   size: 15, 6
   orig: 15, 17
   offset: 0, 0
   index: -1
 duongtang_mounth2
-  rotate: false
-  xy: 82, 17
+  rotate: true
+  xy: 127, 50
   size: 18, 9
   orig: 18, 9
   offset: 0, 0
   index: -1
 duongtang_mounth3
   rotate: false
-  xy: 23, 10
+  xy: 74, 2
   size: 12, 5
   orig: 13, 17
   offset: 0, 0
   index: -1
 duongtang_nose
   rotate: false
-  xy: 55, 73
+  xy: 91, 19
   size: 9, 16
   orig: 9, 16
   offset: 0, 0
   index: -1
 duongtang_rear
   rotate: false
-  xy: 69, 77
+  xy: 161, 153
   size: 14, 22
   orig: 14, 22
   offset: 0, 0
   index: -1
 duongtang_reye
   rotate: false
-  xy: 28, 28
+  xy: 138, 62
   size: 12, 11
   orig: 12, 11
   offset: 0, 0
   index: -1
 duongtang_reyebrow
   rotate: false
-  xy: 82, 28
+  xy: 106, 40
   size: 19, 9
   orig: 19, 9
   offset: 0, 0
   index: -1
 duongtang_rhand
-  rotate: false
-  xy: 69, 101
+  rotate: true
+  xy: 153, 72
   size: 18, 22
   orig: 18, 22
   offset: 0, 0
   index: -1
 duongtang_rpupil
-  rotate: false
-  xy: 19, 28
+  rotate: true
+  xy: 102, 9
   size: 5, 7
   orig: 5, 7
   offset: 0, 0
   index: -1
 duongtang_rpupil_glow
-  rotate: false
-  xy: 64, 28
+  rotate: true
+  xy: 152, 60
   size: 10, 11
   orig: 10, 11
   offset: 0, 0
   index: -1
 duongtang_rsleave
   rotate: false
-  xy: 38, 91
+  xy: 106, 97
   size: 29, 32
   orig: 29, 32
   offset: 0, 0
   index: -1
 duongtang_rsleave1
   rotate: false
-  xy: 33, 57
+  xy: 137, 97
   size: 20, 32
   orig: 20, 32
   offset: 0, 0
   index: -1
 duongtang_stick
   rotate: false
-  xy: 2, 137
+  xy: 2, 28
   size: 39, 147
   orig: 39, 147
   offset: 0, 0
   index: -1
 duongtang_uppereyeclose
   rotate: false
-  xy: 2, 20
+  xy: 89, 37
   size: 12, 7
   orig: 12, 7
   offset: 0, 0
   index: -1
 mounth/duongtang_a
   rotate: false
-  xy: 98, 10
+  xy: 155, 43
   size: 6, 5
   orig: 6, 5
   offset: 0, 0
   index: -1
 mounth/duongtang_da
   rotate: false
-  xy: 2, 2
+  xy: 100, 2
   size: 9, 5
   orig: 9, 5
   offset: 0, 0
   index: -1
 mounth/duongtang_di
   rotate: false
-  xy: 23, 4
+  xy: 161, 131
   size: 9, 4
   orig: 9, 4
   offset: 0, 0
   index: -1
 mounth/duongtang_mo_phat
   rotate: false
-  xy: 76, 25
+  xy: 171, 27
   size: 4, 6
   orig: 4, 6
   offset: 0, 0
   index: -1
 mounth/duongtang_nam1
   rotate: false
-  xy: 59, 8
+  xy: 142, 42
   size: 11, 6
   orig: 11, 6
   offset: 0, 0
   index: -1
 mounth/duongtang_nam2
   rotate: false
-  xy: 46, 4
+  xy: 42, 2
   size: 10, 2
   orig: 10, 2
   offset: 0, 0
   index: -1
 mounth/duongtang_phat
   rotate: false
-  xy: 34, 5
+  xy: 163, 43
   size: 10, 3
   orig: 10, 3
   offset: 0, 0
   index: -1
 mounth/duongtang_text1
   rotate: false
-  xy: 64, 41
+  xy: 25, 10
   size: 16, 16
   orig: 16, 16
   offset: 0, 0
   index: -1
 mounth/duongtang_text2
   rotate: false
-  xy: 28, 41
+  xy: 161, 137
   size: 14, 14
   orig: 14, 14
   offset: 0, 0
   index: -1
 mounth/duongtang_text3
-  rotate: false
-  xy: 44, 40
+  rotate: true
+  xy: 136, 75
   size: 6, 15
   orig: 6, 15
   offset: 0, 0

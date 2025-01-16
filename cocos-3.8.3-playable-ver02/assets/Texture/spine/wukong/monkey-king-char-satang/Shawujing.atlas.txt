@@ -1,461 +1,461 @@
 
 Shawujing.png
-size: 917, 1678
+size: 263,263
 format: RGBA8888
-filter: Linear, Linear
+filter: Linear,Linear
 repeat: none
 XANGTANG_Ldaythung
-  rotate: true
-  xy: 790, 170
-  size: 39, 58
-  orig: 41, 60
-  offset: 1, 1
+  rotate: false
+  xy: 253, 83
+  size: 8, 12
+  orig: 8, 12
+  offset: 0, 0
   index: -1
 XANGTANG_Lear
-  rotate: false
-  xy: 440, 2
-  size: 75, 89
-  orig: 77, 91
-  offset: 1, 1
+  rotate: true
+  xy: 233, 74
+  size: 15, 18
+  orig: 15, 18
+  offset: 0, 0
   index: -1
 XANGTANG_Leye
   rotate: false
-  xy: 772, 121
-  size: 53, 47
-  orig: 56, 50
-  offset: 1, 1
+  xy: 200, 98
+  size: 11, 10
+  orig: 11, 10
+  offset: 0, 0
   index: -1
 XANGTANG_Leye2
   rotate: false
-  xy: 609, 205
-  size: 58, 22
-  orig: 60, 24
-  offset: 1, 1
+  xy: 222, 4
+  size: 12, 5
+  orig: 12, 5
+  offset: 0, 0
   index: -1
 XANGTANG_Lhand
   rotate: false
-  xy: 705, 187
-  size: 83, 93
-  orig: 86, 96
-  offset: 1, 1
+  xy: 210, 31
+  size: 17, 19
+  orig: 17, 19
+  offset: 0, 0
   index: -1
 XANGTANG_Llowerarm
   rotate: false
-  xy: 800, 1563
-  size: 115, 113
-  orig: 115, 113
+  xy: 159, 50
+  size: 23, 23
+  orig: 23, 23
   offset: 0, 0
   index: -1
 XANGTANG_Llowleg
   rotate: false
-  xy: 685, 46
-  size: 85, 88
-  orig: 85, 88
+  xy: 242, 54
+  size: 17, 18
+  orig: 17, 18
   offset: 0, 0
   index: -1
 XANGTANG_Lpupil
   rotate: true
-  xy: 765, 1042
-  size: 26, 31
-  orig: 28, 33
-  offset: 1, 1
+  xy: 254, 153
+  size: 6, 7
+  orig: 6, 7
+  offset: 0, 0
   index: -1
 XANGTANG_Lupleg
   rotate: true
-  xy: 233, 46
-  size: 108, 118
-  orig: 108, 118
+  xy: 159, 26
+  size: 22, 24
+  orig: 22, 24
   offset: 0, 0
   index: -1
 XANGTANG_Lupperarm
-  rotate: true
-  xy: 810, 323
-  size: 93, 104
-  orig: 96, 106
-  offset: 2, 1
+  rotate: false
+  xy: 190, 75
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
   index: -1
 XANGTANG_Rdaythung
   rotate: true
-  xy: 772, 39
-  size: 38, 48
-  orig: 40, 51
-  offset: 1, 2
+  xy: 230, 43
+  size: 8, 10
+  orig: 8, 10
+  offset: 0, 0
   index: -1
 XANGTANG_Rear
-  rotate: true
-  xy: 802, 1226
-  size: 110, 113
-  orig: 114, 115
-  offset: 2, 1
+  rotate: false
+  xy: 184, 50
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
   index: -1
 XANGTANG_Reye
   rotate: false
-  xy: 790, 211
-  size: 74, 57
-  orig: 76, 60
-  offset: 1, 1
+  xy: 235, 91
+  size: 15, 12
+  orig: 15, 12
+  offset: 0, 0
   index: -1
 XANGTANG_Reye2
-  rotate: false
-  xy: 685, 12
-  size: 75, 32
-  orig: 78, 34
-  offset: 1, 1
+  rotate: true
+  xy: 254, 170
+  size: 16, 7
+  orig: 16, 7
+  offset: 0, 0
   index: -1
 XANGTANG_Rfoot
-  rotate: false
-  xy: 810, 270
-  size: 86, 51
-  orig: 86, 51
+  rotate: true
+  xy: 235, 105
+  size: 17, 10
+  orig: 17, 10
   offset: 0, 0
   index: -1
 XANGTANG_Rhand
-  rotate: true
-  xy: 810, 633
-  size: 109, 105
-  orig: 115, 108
-  offset: 2, 1
+  rotate: false
+  xy: 182, 2
+  size: 23, 22
+  orig: 23, 22
+  offset: 0, 0
   index: -1
 XANGTANG_Rlowerarm
   rotate: false
-  xy: 765, 907
-  size: 136, 132
-  orig: 137, 132
-  offset: 1, 0
+  xy: 161, 105
+  size: 27, 26
+  orig: 27, 26
+  offset: 0, 0
   index: -1
 XANGTANG_Rlowleg
   rotate: false
-  xy: 353, 2
-  size: 85, 89
-  orig: 85, 89
+  xy: 222, 11
+  size: 17, 18
+  orig: 17, 18
   offset: 0, 0
   index: -1
 XANGTANG_Rpupil
   rotate: false
-  xy: 762, 2
-  size: 35, 35
-  orig: 37, 37
-  offset: 1, 1
+  xy: 254, 161
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
   index: -1
 XANGTANG_Rupleg
   rotate: false
-  xy: 357, 93
-  size: 116, 109
-  orig: 116, 109
+  xy: 185, 26
+  size: 23, 22
+  orig: 23, 22
   offset: 0, 0
   index: -1
 XANGTANG_Rupperarm
-  rotate: true
-  xy: 569, 382
-  size: 126, 141
-  orig: 126, 142
-  offset: 0, 1
+  rotate: false
+  xy: 163, 75
+  size: 25, 28
+  orig: 25, 28
+  offset: 0, 0
   index: -1
 XANGTANG_backhair_1
   rotate: false
-  xy: 370, 377
-  size: 197, 191
-  orig: 197, 191
+  xy: 120, 98
+  size: 39, 38
+  orig: 39, 38
   offset: 0, 0
   index: -1
 XANGTANG_backhair_2
   rotate: false
-  xy: 2, 56
-  size: 229, 184
-  orig: 229, 184
+  xy: 2, 23
+  size: 46, 37
+  orig: 46, 37
   offset: 0, 0
   index: -1
 XANGTANG_body
   rotate: true
-  xy: 606, 1070
-  size: 204, 194
-  orig: 204, 194
+  xy: 127, 138
+  size: 41, 39
+  orig: 41, 39
   offset: 0, 0
   index: -1
 XANGTANG_cucdaythung
-  rotate: true
-  xy: 793, 744
-  size: 161, 96
-  orig: 161, 97
-  offset: 0, 1
+  rotate: false
+  xy: 2, 2
+  size: 32, 19
+  orig: 32, 19
+  offset: 0, 0
   index: -1
 XANGTANG_daychuyen
   rotate: true
-  xy: 802, 1041
-  size: 183, 106
-  orig: 183, 106
+  xy: 50, 23
+  size: 37, 21
+  orig: 37, 21
   offset: 0, 0
   index: -1
 XANGTANG_daythung
-  rotate: false
-  xy: 572, 510
-  size: 180, 78
-  orig: 183, 82
-  offset: 2, 2
+  rotate: true
+  xy: 73, 23
+  size: 37, 15
+  orig: 37, 16
+  offset: 0, 1
   index: -1
 XANGTANG_eyeclosebot
-  rotate: true
-  xy: 563, 204
-  size: 171, 44
-  orig: 171, 44
+  rotate: false
+  xy: 74, 62
+  size: 34, 9
+  orig: 34, 9
   offset: 0, 0
   index: -1
 XANGTANG_eyeclosetop
   rotate: false
-  xy: 2, 4
-  size: 172, 50
-  orig: 172, 50
+  xy: 168, 133
+  size: 34, 10
+  orig: 34, 10
   offset: 0, 0
   index: -1
 XANGTANG_face
   rotate: false
-  xy: 2, 242
-  size: 231, 259
-  orig: 278, 261
-  offset: 45, 1
+  xy: 2, 62
+  size: 47, 52
+  orig: 56, 52
+  offset: 9, 0
   index: -1
 XANGTANG_mounth
   rotate: false
-  xy: 230, 2
-  size: 98, 42
-  orig: 101, 44
-  offset: 1, 1
+  xy: 213, 91
+  size: 20, 9
+  orig: 20, 9
+  offset: 0, 0
   index: -1
 XANGTANG_non
-  rotate: true
-  xy: 235, 267
-  size: 234, 133
-  orig: 235, 134
-  offset: 1, 0
+  rotate: false
+  xy: 71, 109
+  size: 47, 27
+  orig: 47, 27
+  offset: 0, 0
   index: -1
 XANGTANG_nose
   rotate: false
-  xy: 826, 78
-  size: 43, 41
-  orig: 45, 43
-  offset: 1, 1
+  xy: 252, 97
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
   index: -1
 XANGTANG_rau1
-  rotate: false
-  xy: 572, 590
-  size: 178, 134
-  orig: 178, 134
+  rotate: true
+  xy: 90, 24
+  size: 36, 27
+  orig: 36, 27
   offset: 0, 0
   index: -1
 XANGTANG_rau2
-  rotate: false
-  xy: 584, 4
-  size: 99, 95
-  orig: 99, 95
+  rotate: true
+  xy: 236, 125
+  size: 20, 19
+  orig: 20, 19
   offset: 0, 0
   index: -1
 XANGTANG_rau3
-  rotate: true
-  xy: 810, 418
-  size: 107, 99
-  orig: 107, 99
+  rotate: false
+  xy: 95, 2
+  size: 21, 20
+  orig: 21, 20
   offset: 0, 0
   index: -1
 XANGTANG_rau4
-  rotate: false
-  xy: 712, 384
-  size: 96, 124
-  orig: 96, 124
+  rotate: true
+  xy: 68, 2
+  size: 19, 25
+  orig: 19, 25
   offset: 0, 0
   index: -1
 XANGTANG_rau5
-  rotate: true
-  xy: 705, 282
-  size: 98, 74
-  orig: 98, 74
+  rotate: false
+  xy: 211, 74
+  size: 20, 15
+  orig: 20, 15
   offset: 0, 0
   index: -1
 XANGTANG_rau6
   rotate: true
-  xy: 752, 623
-  size: 107, 53
-  orig: 107, 53
+  xy: 200, 110
+  size: 21, 11
+  orig: 21, 11
   offset: 0, 0
   index: -1
 XANGTANG_rau7
   rotate: true
-  xy: 754, 546
-  size: 75, 54
-  orig: 75, 54
+  xy: 247, 108
+  size: 15, 11
+  orig: 15, 11
   offset: 0, 0
   index: -1
 XANGTANG_rau8
   rotate: false
-  xy: 334, 970
-  size: 233, 98
-  orig: 233, 98
+  xy: 114, 76
+  size: 47, 20
+  orig: 47, 20
   offset: 0, 0
   index: -1
 XANGTANG_rau9
   rotate: false
-  xy: 334, 1070
-  size: 270, 204
-  orig: 270, 204
+  xy: 71, 138
+  size: 54, 41
+  orig: 54, 41
   offset: 0, 0
   index: -1
 XANGTANG_vatao
   rotate: true
-  xy: 800, 1338
-  size: 223, 107
-  orig: 223, 107
+  xy: 51, 62
+  size: 45, 21
+  orig: 45, 21
   offset: 0, 0
   index: -1
 XANGTANG_weapon
   rotate: false
-  xy: 2, 951
-  size: 330, 725
-  orig: 333, 727
-  offset: 2, 1
+  xy: 2, 116
+  size: 67, 145
+  orig: 67, 145
+  offset: 0, 0
   index: -1
 XATANG_Leyebrown
   rotate: false
-  xy: 578, 101
-  size: 95, 101
-  orig: 95, 101
+  xy: 209, 52
+  size: 19, 20
+  orig: 19, 20
   offset: 0, 0
   index: -1
 XATANG_Reyebrown
   rotate: true
-  xy: 235, 156
-  size: 109, 120
-  orig: 109, 120
+  xy: 156, 2
+  size: 22, 24
+  orig: 22, 24
   offset: 0, 0
   index: -1
 ao
   rotate: false
-  xy: 370, 204
-  size: 191, 171
-  orig: 191, 171
+  xy: 74, 73
+  size: 38, 34
+  orig: 38, 34
   offset: 0, 0
   index: -1
 ao1
   rotate: false
-  xy: 572, 897
-  size: 191, 171
-  orig: 191, 171
+  xy: 119, 40
+  size: 38, 34
+  orig: 38, 34
   offset: 0, 0
   index: -1
 fx/attack_normal/fx_attack_1
-  rotate: true
-  xy: 2, 503
-  size: 446, 362
-  orig: 556, 429
-  offset: 99, 42
+  rotate: false
+  xy: 166, 188
+  size: 89, 73
+  orig: 111, 86
+  offset: 20, 8
   index: -1
 fx/attack_normal/fx_attack_2
   rotate: false
-  xy: 334, 1276
-  size: 464, 400
-  orig: 556, 429
-  offset: 17, 15
+  xy: 71, 181
+  size: 93, 80
+  orig: 111, 86
+  offset: 3, 3
   index: -1
 fx/attack_normal/fx_attack_3
   rotate: false
-  xy: 366, 570
-  size: 204, 192
-  orig: 556, 429
-  offset: 241, 115
+  xy: 211, 147
+  size: 41, 39
+  orig: 111, 86
+  offset: 48, 23
   index: -1
 fx/attack_normal/fx_attack_4
   rotate: false
-  xy: 572, 726
-  size: 175, 169
-  orig: 556, 429
-  offset: 254, 128
+  xy: 119, 4
+  size: 35, 34
+  orig: 111, 86
+  offset: 51, 26
   index: -1
 fx/fish/Layer 1
   rotate: false
-  xy: 366, 764
-  size: 204, 204
-  orig: 204, 204
+  xy: 168, 145
+  size: 41, 41
+  orig: 41, 41
   offset: 0, 0
   index: -1
 fx/fish/Layer 2
   rotate: false
-  xy: 176, 2
-  size: 52, 52
-  orig: 52, 52
+  xy: 229, 31
+  size: 10, 10
+  orig: 10, 10
   offset: 0, 0
   index: -1
 fx/fish/fish_body
   rotate: true
-  xy: 517, 2
-  size: 96, 65
-  orig: 99, 65
+  xy: 207, 4
+  size: 20, 13
+  orig: 20, 13
   offset: 0, 0
   index: -1
 fx/fish/fish_eye
-  rotate: true
-  xy: 781, 303
-  size: 79, 27
-  orig: 79, 27
+  rotate: false
+  xy: 51, 109
+  size: 16, 5
+  orig: 16, 5
   offset: 0, 0
   index: -1
 fx/fish/fish_eye1
   rotate: false
-  xy: 772, 79
-  size: 52, 40
-  orig: 53, 40
+  xy: 242, 44
+  size: 11, 8
+  orig: 11, 8
   offset: 0, 0
   index: -1
 fx/fish/fish_vayca
   rotate: false
-  xy: 475, 100
-  size: 101, 102
-  orig: 101, 102
+  xy: 213, 102
+  size: 20, 20
+  orig: 20, 20
   offset: 0, 0
   index: -1
 fx/fish/fish_vayca1
-  rotate: true
-  xy: 891, 872
-  size: 33, 24
-  orig: 33, 24
+  rotate: false
+  xy: 204, 138
+  size: 7, 5
+  orig: 7, 5
   offset: 0, 0
   index: -1
 fx/fish/fish_vayca2
   rotate: true
-  xy: 827, 121
-  size: 47, 39
-  orig: 47, 39
+  xy: 253, 33
+  size: 9, 8
+  orig: 9, 8
   offset: 0, 0
   index: -1
 fx/fish/fish_vayca3
   rotate: false
-  xy: 866, 220
-  size: 49, 48
-  orig: 49, 48
+  xy: 241, 31
+  size: 10, 10
+  orig: 10, 10
   offset: 0, 0
   index: -1
 xatang_lhand_namtay
   rotate: false
-  xy: 810, 527
-  size: 105, 104
-  orig: 105, 104
+  xy: 213, 124
+  size: 21, 21
+  orig: 21, 21
   offset: 0, 0
   index: -1
 xatang_lhand_xoetay
-  rotate: true
-  xy: 609, 229
-  size: 151, 94
-  orig: 157, 94
+  rotate: false
+  xy: 36, 2
+  size: 30, 19
+  orig: 31, 19
   offset: 0, 0
   index: -1
 xatang_mounthscream
-  rotate: false
-  xy: 675, 136
-  size: 95, 49
-  orig: 96, 49
-  offset: 1, 0
+  rotate: true
+  xy: 230, 53
+  size: 19, 10
+  orig: 19, 10
+  offset: 0, 0
   index: -1
 xatang_mounthsmile
   rotate: true
-  xy: 749, 732
-  size: 163, 42
-  orig: 163, 42
+  xy: 190, 98
+  size: 33, 8
+  orig: 33, 8
   offset: 0, 0
   index: -1
