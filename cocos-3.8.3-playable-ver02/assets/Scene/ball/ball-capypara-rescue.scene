@@ -4665,7 +4665,7 @@
     "DirectStore": true,
     "OnDirectStore": "direct-store",
     "DelayDirectStore": 0,
-    "Android": "https://play.google.com/store/apps/details?id=com.platformer.red.ball.capybara",
+    "Android": "https://play.google.com/store/apps/details?id=com.platformer.red.ball.capybara&gl=us",
     "IOS": "",
     "AdsType": 0,
     "DebugStore": false,
