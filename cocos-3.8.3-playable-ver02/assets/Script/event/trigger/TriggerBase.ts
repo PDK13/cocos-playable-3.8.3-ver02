@@ -13,14 +13,14 @@ Enum(EventType);
 @requireComponent(RigidBody2D)
 export class TriggerBase extends Component {
 
-    @property({ group: { name: 'Main' }, type: EventType })
+    @property({ group: { name: 'Event' }, type: EventType })
     Type: EventType = EventType.NONE;
 
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+    @property({ group: { name: 'Event' }, type: CCBoolean })
     Once: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCFloat })
+    @property({ group: { name: 'Event' }, type: CCFloat })
     Delay: number = 0;
-    @property({ group: { name: 'Main' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString })
     EmitEvent: string = '';
 
     @property({ group: { name: 'Tag' }, type: CCInteger })

@@ -6,19 +6,20 @@ const { ccclass, property, requireComponent } = _decorator;
 @requireComponent(RigidBody2D)
 export class TriggerDestroy extends Component {
 
-    @property({ group: { name: 'Main' }, type: Node })
+    @property({ type: [Node] })
     Target: Node[] = [];
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+    @property(CCBoolean)
     TargetSelf: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+    @property(CCBoolean)
     TargetContact: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+
+    @property({ group: { name: 'Event' }, type: CCBoolean })
     OnNode: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+    @property({ group: { name: 'Event' }, type: CCBoolean })
     Once: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCFloat })
+    @property({ group: { name: 'Event' }, type: CCFloat })
     Delay: number = 0;
-    @property({ group: { name: 'Main' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString })
     EmitEvent: string = '';
 
     @property({ group: { name: 'Tag' }, type: CCInteger })
@@ -36,21 +37,7 @@ export class TriggerDestroy extends Component {
             }
         });
         if (this.OnNode)
-            this.node.on(ConstantBase.NODE_EVENT, this.onEvent, this);
-    }
-
-    onEvent() {
-        this.Target = this.Target.filter(t => t != null);
-        this.Target.forEach(target => {
-            this.onEventSingle(target);
-        });
-        this.Target = this.Target.filter(t => t != null);
-    }
-
-    onEventSingle(target: Node) {
-        if (target == null ? true : !target.isValid)
-            return;
-        target.destroy();
+            this.node.on(ConstantBase.NODE_EVENT, this.onEventList, this);
     }
 
     protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
@@ -59,7 +46,7 @@ export class TriggerDestroy extends Component {
             return;
         this.unscheduleAllCallbacks();
         this.scheduleOnce(() => {
-            this.onEvent();
+            this.onEventList();
             if (this.TargetSelf)
                 this.onEventSingle(this.node);
             if (this.TargetContact)
@@ -77,5 +64,19 @@ export class TriggerDestroy extends Component {
                 }
             });
         }
+    }
+
+    onEventList() {
+        this.Target = this.Target.filter(t => t != null);
+        this.Target.forEach(target => {
+            this.onEventSingle(target);
+        });
+        this.Target = this.Target.filter(t => t != null);
+    }
+
+    onEventSingle(target: Node) {
+        if (target == null ? true : !target.isValid)
+            return;
+        target.destroy();
     }
 }

@@ -10,9 +10,9 @@ export class ScalePingPong extends Component {
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
     Start: boolean = false;
-    @property({ group: { name: 'Event' }, type: CCBoolean })
+    @property({ group: { name: 'Event' }, type: CCBoolean, visible(this: ScalePingPong) { return !this.Start; } })
     Once: boolean = false;
-    @property({ group: { name: 'Event' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString, visible(this: ScalePingPong) { return !this.Start; } })
     OnEvent: string = '';
     @property({ group: { name: 'Event' }, type: CCFloat })
     Delay: number = 0;
@@ -46,6 +46,8 @@ export class ScalePingPong extends Component {
     //
 
     protected onLoad(): void {
+        if (this.Start)
+            return;
         if (this.OnEvent != '')
             director.on(this.OnEvent, this.onEvent, this);
     }

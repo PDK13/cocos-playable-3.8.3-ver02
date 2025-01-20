@@ -12,25 +12,21 @@ Enum(EventType);
 @ccclass('EventBase')
 export class EventBase extends Component {
 
-    @property({ group: { name: 'Main' }, type: EventType })
+    @property({ group: { name: 'Event' }, type: EventType })
     Type: EventType = EventType.NONE;
-
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+    @property({ group: { name: 'Event' }, type: CCBoolean })
     Start: boolean = false;
-    //Start == FALSE
-    @property({ group: { name: 'Main' }, type: CCString, visible(this: EventBase) { return !this.Start; } })
-    OnEvent: string = '';
-    @property({ group: { name: 'Main' }, type: CCBoolean, visible(this: EventBase) { return !this.Start; } })
-    Once: boolean = false;
-    //Start == TRUE
-    @property({ group: { name: 'Main' }, type: CCBoolean, visible(this: EventBase) { return this.Start && this.Type > EventType.NONE; } })
-    StartStage: boolean = true;
-    @property({ group: { name: 'Main' }, type: Node, visible(this: EventBase) { return this.Start && this.Type > EventType.BOOLEAN; } })
+    @property({ group: { name: 'Event' }, type: CCBoolean, visible(this: EventBase) { return this.Start && this.Type > EventType.NONE; } })
+    StartState: boolean = true;
+    @property({ group: { name: 'Event' }, type: Node, visible(this: EventBase) { return this.Start && this.Type > EventType.BOOLEAN; } })
     StartTarget: Node = null;
-
-    @property({ group: { name: 'Main' }, type: CCFloat })
+    @property({ group: { name: 'Event' }, type: CCString, visible(this: EventBase) { return !this.Start; } })
+    OnEvent: string = '';
+    @property({ group: { name: 'Event' }, type: CCBoolean, visible(this: EventBase) { return !this.Start; } })
+    Once: boolean = false;
+    @property({ group: { name: 'Event' }, type: CCFloat })
     Delay: number = 0;
-    @property({ group: { name: 'Main' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString })
     EmitEvent: string = '';
 
     protected onLoad(): void {
@@ -58,10 +54,10 @@ export class EventBase extends Component {
                     this.onEventNone();
                     break;
                 case EventType.BOOLEAN:
-                    this.onEventBoolean(this.StartStage);
+                    this.onEventBoolean(this.StartState);
                     break;
                 case EventType.NODE:
-                    this.onEventNode(this.StartStage, this.StartTarget);
+                    this.onEventNode(this.StartState, this.StartTarget);
                     break;
             }
         }

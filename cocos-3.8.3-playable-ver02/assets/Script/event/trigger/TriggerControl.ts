@@ -6,19 +6,20 @@ const { ccclass, property, requireComponent } = _decorator;
 @requireComponent(RigidBody2D)
 export class TriggerControl extends Component {
 
-    @property({ group: { name: 'Main' }, type: Node })
+    @property({ type: [Node] })
     Target: Node[] = [];
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+    @property(CCBoolean)
     TargetSelf: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+    @property(CCBoolean)
     TargetContact: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+
+    @property({ group: { name: 'Event' }, type: CCBoolean })
     OnNode: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCBoolean })
+    @property({ group: { name: 'Event' }, type: CCBoolean })
     Once: boolean = false;
-    @property({ group: { name: 'Main' }, type: CCFloat })
+    @property({ group: { name: 'Event' }, type: CCFloat })
     Delay: number = 0;
-    @property({ group: { name: 'Main' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString })
     EmitEvent: string = '';
 
     @property({ group: { name: 'Option' }, type: CCBoolean })
@@ -63,7 +64,7 @@ export class TriggerControl extends Component {
             }
         });
         if (this.OnNode)
-            this.node.on(ConstantBase.NODE_EVENT, this.onEvent, this);
+            this.node.on(ConstantBase.NODE_EVENT, this.onEventList, this);
     }
 
     protected start(): void {
@@ -71,7 +72,31 @@ export class TriggerControl extends Component {
             this.Target.push(this.node);
     }
 
-    onEvent() {
+    protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
+        let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
+        if (targetIndex < 0)
+            return;
+        this.unscheduleAllCallbacks();
+        this.scheduleOnce(() => {
+            this.onEventList();
+            if (this.TargetSelf)
+                this.onEventSingle(this.node);
+            if (this.TargetContact)
+                this.onEventSingle(otherCollider.node);
+        }, Math.max(this.Delay, 0));
+        if (this.Once) {
+            let colliders = this.getComponents(Collider2D);
+            colliders.forEach(collider => {
+                switch (collider.tag) {
+                    case this.TagBody:
+                        collider.off(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
+                        break;
+                }
+            });
+        }
+    }
+
+    onEventList() {
         this.Target = this.Target.filter(t => t != null);
         this.Target.forEach(target => {
             this.onEventSingle(target);
@@ -135,29 +160,5 @@ export class TriggerControl extends Component {
 
         if (this.ControlFixed)
             target.emit(ConstantBase.CONTROL_FIXED);
-    }
-
-    protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
-        let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
-        if (targetIndex < 0)
-            return;
-        this.unscheduleAllCallbacks();
-        this.scheduleOnce(() => {
-            this.onEvent();
-            if (this.TargetSelf)
-                this.onEventSingle(this.node);
-            if (this.TargetContact)
-                this.onEventSingle(otherCollider.node);
-        }, Math.max(this.Delay, 0));
-        if (this.Once) {
-            let colliders = this.getComponents(Collider2D);
-            colliders.forEach(collider => {
-                switch (collider.tag) {
-                    case this.TagBody:
-                        collider.off(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
-                        break;
-                }
-            });
-        }
     }
 }
