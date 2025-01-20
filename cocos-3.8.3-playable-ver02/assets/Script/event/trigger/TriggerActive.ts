@@ -41,7 +41,7 @@ export class TriggerActive extends Component {
         if (this.OnNode)
             this.node.on(ConstantBase.NODE_EVENT, this.onEventList, this);
     }
-
+//
     protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
         if (targetIndex < 0)
