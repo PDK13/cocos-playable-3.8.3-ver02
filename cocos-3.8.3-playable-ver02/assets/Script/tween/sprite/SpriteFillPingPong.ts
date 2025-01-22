@@ -10,9 +10,9 @@ export class SpriteFillPingPong extends Component {
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
     Start: boolean = false;
-    @property({ group: { name: 'Event' }, type: CCBoolean })
+    @property({ group: { name: 'Event' }, type: CCBoolean, visible(this: SpriteFillPingPong) { return !this.Start; } })
     Once: boolean = false;
-    @property({ group: { name: 'Event' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString, visible(this: SpriteFillPingPong) { return !this.Start; } })
     OnEvent: string = '';
     @property({ group: { name: 'Event' }, type: CCFloat })
     Delay: number = 0;

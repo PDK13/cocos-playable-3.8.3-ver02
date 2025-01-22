@@ -10,9 +10,9 @@ export class SpriteFillOnce extends Component {
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
     Start: boolean = false;
-    @property({ group: { name: 'Event' }, type: CCBoolean })
+    @property({ group: { name: 'Event' }, type: CCBoolean, visible(this: SpriteFillOnce) { return !this.Start; } })
     Once: boolean = false;
-    @property({ group: { name: 'Event' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString, visible(this: SpriteFillOnce) { return !this.Start; } })
     OnEvent: string = '';
     @property({ group: { name: 'Event' }, type: CCFloat })
     Delay: number = 0;
