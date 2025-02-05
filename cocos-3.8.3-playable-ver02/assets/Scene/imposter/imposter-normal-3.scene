@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.SceneAsset",
-    "_name": "rouge-lite-normal-3",
+    "_name": "imposter-normal-3",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_native": "",
@@ -11,7 +11,7 @@
   },
   {
     "__type__": "cc.Scene",
-    "_name": "rouge-lite-normal-3",
+    "_name": "imposter-normal-3",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -59,7 +59,7 @@
     "_globals": {
       "__id__": 585
     },
-    "_id": "f3cd2e12-9c11-4cdc-8526-30abcf4d3cc2"
+    "_id": "5033d5f5-ad4d-4197-a913-9c91fdc3fe21"
   },
   {
     "__type__": "cc.Node",
@@ -8068,21 +8068,21 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 385.6440124511719,
-      "y": 76.98900604248047,
+      "x": 400.6400146484375,
+      "y": 299.8299865722656,
       "z": 0
     },
     "_lrot": {
       "__type__": "cc.Quat",
       "x": 0,
       "y": 0,
-      "z": 0,
-      "w": 1
+      "z": 2.185569414336889e-8,
+      "w": 0.9999999999999996
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": -0.30000001192092896,
-      "y": 0.30000001192092896,
+      "x": 1,
+      "y": 1.0000000000000038,
       "z": 1
     },
     "_mobility": 0,
@@ -8091,7 +8091,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0
+      "z": 0.000002504478065487657
     },
     "_id": "c1v6Uc6LJPqrhkTKHSsjLC"
   },
@@ -8107,13 +8107,13 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 136.2,
-      "height": 211.85
+      "width": 150.69000244140625,
+      "height": 183.25999450683594
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
+      "x": 0.5669918445626705,
+      "y": 0.005402161078313327
     },
     "_id": "deUmBolgRPVZnbsalxnbIY"
   },
@@ -8138,10 +8138,10 @@
       "a": 255
     },
     "_skeletonData": {
-      "__uuid__": "509b82fa-c9e2-42b1-8c55-17ed4e5d3fd4",
+      "__uuid__": "03185f2c-6210-49f8-bc70-3649aed5dab6",
       "__expectedType__": "sp.SkeletonData"
     },
-    "defaultSkin": "s3",
+    "defaultSkin": "1",
     "defaultAnimation": "idle",
     "_premultipliedAlpha": false,
     "_timeScale": 1,
@@ -8162,7 +8162,7 @@
   },
   {
     "__type__": "sp.Skeleton.SpineSocket",
-    "path": "root/attack_aim",
+    "path": "root/crosshair",
     "target": {
       "__id__": 217
     }
@@ -8677,7 +8677,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "Once": true,
+    "Once": false,
     "Delay": 0.02,
     "DelayAttack": 0.02,
     "DelayLoop": 1,
@@ -8694,17 +8694,17 @@
     "RangeBulletSpeed": 100,
     "RangeTargetUpdate": true,
     "RangeTargetReset": true,
-    "AnimAttackMix": false,
-    "AnimAttackHoldActive": true,
+    "AnimAttackMix": true,
+    "AnimAttackHoldActive": false,
     "AnimAttackReady": "attack_archer_1",
     "AnimAttackHold": "attack_archer_2",
-    "AnimAttack": "attack_archer_3",
+    "AnimAttack": "fight_1_mix",
     "AnimAttackIndex": 3,
     "AnimIdle": "idle",
     "Aim": true,
-    "AimAnim": "attack_archer_2_aim",
+    "AimAnim": "aim",
     "AimAnimIndex": 1,
-    "AimBone": "attack_aim",
+    "AimBone": "crosshair",
     "AimFrom": {
       "__id__": 216
     },
@@ -8755,10 +8755,10 @@
     "JumpCount": 1,
     "JumpFall": false,
     "JumpAuto": false,
-    "AttackHold": true,
+    "AttackHold": false,
     "AttackStopMoveAnim": true,
     "AttackStopMovePress": true,
-    "AttackStopFall": true,
+    "AttackStopFall": false,
     "Pick": false,
     "PickHold": false,
     "PickJumpOnce": true,
@@ -8840,10 +8840,10 @@
     "AnimIdleActive": true,
     "AnimIdle": "idle",
     "AnimIdleLoop": true,
-    "AnimMove": "run_up",
+    "AnimMove": "run",
     "AnimPush": "push",
-    "AnimAirOn": "jump2_loop",
-    "AnimAirOff": "jump5_downloop",
+    "AnimAirOn": "air_on",
+    "AnimAirOff": "air_on",
     "AnimDash": "dash",
     "AnimHitActive": true,
     "AnimHit": "hit",
@@ -8883,10 +8883,7 @@
     "Spine": {
       "__id__": 219
     },
-    "Skin": [
-      "s3",
-      "wp3"
-    ],
+    "Skin": [],
     "SpineEvent": false,
     "Skeleton": null,
     "Anim": [],

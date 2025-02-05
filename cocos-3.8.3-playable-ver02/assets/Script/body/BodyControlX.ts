@@ -694,10 +694,12 @@ export class BodyControlX extends Component {
             state = PlayerState.DEAD;
         else if (this.getHit())
             state = PlayerState.HIT;
-        else if (this.m_attack && this.AttackHold)
-            state = PlayerState.ATTACK_HOLD;
-        else if (this.getAttack())
-            state = PlayerState.ATTACK;
+        else if (this.m_attack || this.getAttack()) {
+            if (this.AttackHold)
+                state = PlayerState.ATTACK_HOLD;
+            else
+                state = PlayerState.ATTACK;
+        }
         else if (this.m_dash)
             state = PlayerState.DASH;
         else if (this.m_bodyCheck.m_isBot) {

@@ -45,6 +45,8 @@ export class BodyAttackX extends Component {
     RangeTargetReset: boolean = true;
 
     @property({ group: { name: 'Anim' }, type: CCBoolean })
+    AnimAttackMix: boolean = false;
+    @property({ group: { name: 'Anim' }, type: CCBoolean })
     AnimAttackHoldActive: boolean = true;
     @property({ group: { name: 'Anim' }, type: CCString, visible(this: BodyAttackX) { return this.AnimAttackHoldActive; } })
     AnimAttackReady: string = 'attack_ready';
@@ -52,6 +54,8 @@ export class BodyAttackX extends Component {
     AnimAttackHold: string = 'attack_hold';
     @property({ group: { name: 'Anim' }, type: CCString })
     AnimAttack: string = 'attack';
+    @property({ group: { name: 'Anim' }, type: CCInteger, visible(this: BodyAttackX) { return this.AnimAttackMix; } })
+    AnimAttackIndex: number = 3;
     @property({ group: { name: 'Anim' }, type: CCString })
     AnimIdle: string = 'idle';
 
@@ -223,9 +227,20 @@ export class BodyAttackX extends Component {
         this.m_continue = true;
         this.scheduleOnce(() => {
             this.scheduleOnce(() => this.onAttackProgessInvoke(), this.DelayAttack);
+            //
+            let attackDuration = 0;
+            if (this.AnimAttackMix) {
+                attackDuration = this.m_spine.onAnimationIndex(this.AnimAttackIndex, this.AnimAttack, false);
+                this.m_spine.onAnimationForce(this.AnimIdle, true);
+            }
+            else
+                attackDuration = this.m_spine.onAnimationForce(this.AnimAttack, false);
             this.scheduleOnce(() => {
                 this.m_attack = false;
-                this.m_spine.onAnimationForce(this.AnimIdle, true);
+                if (this.AnimAttackMix)
+                    this.m_spine.onAnimationClear(this.AnimAttackIndex);
+                else
+                    this.m_spine.onAnimationForce(this.AnimIdle, true);
 
                 if (!this.Once) {
                     this.scheduleOnce(() => {
@@ -242,7 +257,8 @@ export class BodyAttackX extends Component {
                     this.m_continue = false;
                     this.m_attack = false;
                 }
-            }, this.m_spine.onAnimationForce(this.AnimAttack, false));
+            }, attackDuration);
+            //
         }, this.Delay);
         return this.Delay + this.DelayAttack;
     }
