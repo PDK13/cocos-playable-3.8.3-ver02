@@ -7299,7 +7299,9 @@
   },
   {
     "__type__": "cc.ClickEvent",
-    "target": null,
+    "target": {
+      "__id__": 2
+    },
     "component": "",
     "_componentId": "e11690nrNdKx6qxPg4H8M4F",
     "handler": "onStore",
@@ -7315,7 +7317,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "DirectStore": false,
+    "DirectStore": true,
     "OnDirectStore": "direct-store",
     "DelayDirectStore": 0,
     "Android": "https://play.google.com/store/apps/details?id=com.shadow.action.hunt.devil.knight.blade",
@@ -7342,7 +7344,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "DirectStore": false,
+    "DirectStore": true,
     "DebugUpdate": null,
     "KeyUp": 38,
     "KeyDown": 40,
