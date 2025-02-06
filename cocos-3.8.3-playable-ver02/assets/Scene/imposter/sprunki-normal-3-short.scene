@@ -6505,7 +6505,7 @@
     "DirectStore": false,
     "OnDirectStore": "direct-store",
     "DelayDirectStore": 0,
-    "Android": "https://play.google.com/store/apps/details?id=com.legacy.platformer.action.rogue.lite",
+    "Android": "https://play.google.com/store/apps/details?id=com.spinky.shooter.metal.fire&hl=en&gl=br",
     "IOS": "",
     "AdsType": 0,
     "DebugStore": false,
