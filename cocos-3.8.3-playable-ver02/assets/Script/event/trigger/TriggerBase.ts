@@ -1,6 +1,6 @@
 import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, director, Enum, IPhysics2DContact, math, Node, RigidBody2D } from 'cc';
 import { ConstantBase } from '../../ConstantBase';
-const { ccclass, property, requireComponent } = _decorator;
+const { ccclass, property } = _decorator;
 
 export enum EventType {
     NONE,
@@ -10,7 +10,6 @@ export enum EventType {
 Enum(EventType);
 
 @ccclass('TriggerBase')
-@requireComponent(RigidBody2D)
 export class TriggerBase extends Component {
 
     @property({ group: { name: 'Event' }, type: EventType })

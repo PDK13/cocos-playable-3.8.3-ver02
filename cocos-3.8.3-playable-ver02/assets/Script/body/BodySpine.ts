@@ -1,11 +1,9 @@
 import { _decorator, AudioSource, CCBoolean, CCInteger, CCString, Component } from 'cc';
 import { BodyBase } from './BodyBase';
 import { SpineBase } from '../renderer/SpineBase';
-const { ccclass, property, requireComponent } = _decorator;
+const { ccclass, property } = _decorator;
 
 @ccclass('BodySpine')
-@requireComponent(BodyBase)
-@requireComponent(SpineBase)
 export class BodySpine extends Component {
 
     @property({ group: { name: 'Main' }, type: CCBoolean })

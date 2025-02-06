@@ -1,16 +1,15 @@
 import { _decorator, CCBoolean, CCFloat, CCInteger, CCString, Collider2D, Component, Contact2DType, director, IPhysics2DContact, Node, RigidBody2D } from 'cc';
 import { ConstantBase } from '../../ConstantBase';
-const { ccclass, property, requireComponent } = _decorator;
+const { ccclass, property } = _decorator;
 
 @ccclass('TriggerControl')
-@requireComponent(RigidBody2D)
 export class TriggerControl extends Component {
 
-    @property({ type: [Node] })
+    @property({ group: { name: 'Target' }, type: [Node] })
     Target: Node[] = [];
-    @property(CCBoolean)
+    @property({ group: { name: 'Target' }, type: CCBoolean })
     TargetSelf: boolean = false;
-    @property(CCBoolean)
+    @property({ group: { name: 'Target' }, type: CCBoolean })
     TargetContact: boolean = false;
 
     @property({ group: { name: 'Event' }, type: CCBoolean })

@@ -1,4 +1,4 @@
-import { _decorator, CCBoolean, CCString, Component, director } from 'cc';
+import { _decorator, CCBoolean, CCFloat, CCString, Component, director } from 'cc';
 import { ConstantBase } from '../ConstantBase';
 const { ccclass, property } = _decorator;
 
@@ -12,17 +12,19 @@ export class StateBase extends Component {
     @property({ group: { name: 'Main' }, type: CCBoolean })
     Lock: boolean = false;
 
-    @property({ group: { name: 'State' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString })
     OnState: string = '';
-    @property({ group: { name: 'State' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString })
     OnStateOn: string = '';
-    @property({ group: { name: 'State' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString })
     OnStateOff: string = '';
-    @property({ group: { name: 'State' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCString })
     OnStateChange: string = '';
-    @property({ group: { name: 'State' }, type: CCBoolean })
-    EventOnce: boolean = false;
-    @property({ group: { name: 'State' }, type: CCString })
+    @property({ group: { name: 'Event' }, type: CCBoolean })
+    Once: boolean = false;
+    @property({ group: { name: 'Event' }, type: CCFloat })
+    Delay: number = 0;
+    @property({ group: { name: 'Event' }, type: CCString })
     EmitState: string = '';
 
     @property({ group: { name: 'Lock' }, type: CCString })
@@ -61,16 +63,15 @@ export class StateBase extends Component {
     onState(state: boolean) {
         if (this.m_stateDelay || this.Lock || this.State == state)
             return;
-
         this.m_stateDelay = true;
-        this.scheduleOnce(() => this.m_stateDelay = false, 0);
-
-        this.State = state;
-        this.node.emit(ConstantBase.NODE_STATE, this.State);
-        if (this.EmitState != '')
-            director.emit(this.EmitState, this.State);
-
-        if (this.EventOnce) {
+        this.scheduleOnce(() => {
+            this.scheduleOnce(() => this.m_stateDelay = false, 0);
+            this.State = state;
+            this.node.emit(ConstantBase.NODE_STATE, this.State);
+            if (this.EmitState != '')
+                director.emit(this.EmitState, this.State);
+        }, Math.max(this.Delay, 0));
+        if (this.Once) {
             if (this.OnState != '')
                 director.off(this.OnStateOn, this.onState, this);
             if (this.OnStateOn != '')

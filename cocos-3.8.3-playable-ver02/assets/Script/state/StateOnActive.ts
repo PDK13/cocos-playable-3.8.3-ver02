@@ -1,4 +1,4 @@
-import { _decorator, CCBoolean, Component, Node } from 'cc';
+import { _decorator, CCBoolean, CCFloat, Component, Node } from 'cc';
 import { StateBase } from './StateBase';
 import { ConstantBase } from '../ConstantBase';
 const { ccclass, property, requireComponent } = _decorator;
@@ -7,14 +7,16 @@ const { ccclass, property, requireComponent } = _decorator;
 @requireComponent(StateBase)
 export class StateOnActive extends Component {
 
-    //@property({ type: CCBoolean, visible(this: StateOnActive) { return this.getComponent(StateBase) == null; } })
+    @property({ type: CCBoolean, visible(this: StateOnActive) { return this.getComponent(StateBase) == null; } })
     State: boolean = true;
 
-    @property([Node])
-    NodeStateOn: Node[] = [];
+    @property({ group: { name: 'Event' }, type: CCFloat })
+    Delay: number = 0;
 
-    @property([Node])
-    NodeStateOff: Node[] = [];
+    @property({ group: { name: 'Target' }, type: [Node] })
+    TargetOn: Node[] = [];
+    @property({ group: { name: 'Target' }, type: [Node] })
+    TargetOff: Node[] = [];
 
     protected onLoad(): void {
         this.node.on(ConstantBase.NODE_STATE, this.onStateActive, this);
@@ -26,10 +28,10 @@ export class StateOnActive extends Component {
     }
 
     private onStateActive(state: boolean) {
-        this.NodeStateOn.forEach(node => {
+        this.TargetOn.forEach(node => {
             node.active = state;
         });
-        this.NodeStateOff.forEach(node => {
+        this.TargetOff.forEach(node => {
             node.active = !state;
         });
     }

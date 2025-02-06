@@ -6,12 +6,6 @@ const { ccclass, property } = _decorator;
 @ccclass('TriggerCamera')
 export class TriggerCamera extends Component {
 
-    // @property({ group: { name: 'Main' }, type: SpineBase })
-    // Target: SpineBase[] = [];
-    // @property({ group: { name: 'Main' }, type: CCBoolean })
-    // TargetSelf: boolean = false;
-    // @property({ group: { name: 'Main' }, type: CCBoolean })
-    // TargetContact: boolean = false;
     @property({ group: { name: 'Event' }, type: CCBoolean })
     OnNode: boolean = false;
     @property({ group: { name: 'Event' }, type: CCBoolean })

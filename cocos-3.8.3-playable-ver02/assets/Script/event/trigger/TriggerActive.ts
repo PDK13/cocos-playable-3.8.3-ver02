@@ -5,24 +5,23 @@ const { ccclass, property } = _decorator;
 @ccclass('TriggerActive')
 export class TriggerActive extends Component {
 
-    @property({ type: [Node] })
+    @property({ group: { name: 'Target' }, type: [Node] })
     Target: Node[] = [];
-    @property(CCBoolean)
+    @property({ group: { name: 'Target' }, type: CCBoolean })
     TargetSelf: boolean = false;
-    @property(CCBoolean)
+    @property({ group: { name: 'Target' }, type: CCBoolean })
     TargetContact: boolean = false;
 
     @property({ group: { name: 'Event' }, type: CCBoolean })
     OnNode: boolean = false;
+    @property({ group: { name: 'Event' }, type: CCBoolean })
+    OnEventState: boolean = true;
     @property({ group: { name: 'Event' }, type: CCBoolean })
     Once: boolean = false;
     @property({ group: { name: 'Event' }, type: CCFloat })
     Delay: number = 0;
     @property({ group: { name: 'Event' }, type: CCString })
     EmitEvent: string = '';
-
-    @property({ group: { name: 'Main' }, type: CCBoolean })
-    StateActive: boolean = true;
 
     @property({ group: { name: 'Tag' }, type: CCInteger })
     TagBody: number = 0;
@@ -41,7 +40,7 @@ export class TriggerActive extends Component {
         if (this.OnNode)
             this.node.on(ConstantBase.NODE_EVENT, this.onEventList, this);
     }
-//
+    //
     protected onBeginContact(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null) {
         let targetIndex = this.TagTarget.findIndex((t) => t == otherCollider.tag);
         if (targetIndex < 0)
@@ -79,6 +78,6 @@ export class TriggerActive extends Component {
     onEventSingle(target: Node) {
         if (target == null ? true : !target.isValid)
             return;
-        target.active = this.StateActive;
+        target.active = this.OnEventState;
     }
 }

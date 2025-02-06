@@ -6,7 +6,7 @@ import { BodySpine } from './BodySpine';
 import { BodyAttackX } from './hit/BodyAttackX';
 import { BodyCheckX } from './physic/BodyCheckX';
 import { BodyKnockX } from './physic/BodyKnockX';
-const { ccclass, property, requireComponent } = _decorator;
+const { ccclass, property } = _decorator;
 
 export enum PlayerState {
     IDLE,
@@ -31,7 +31,6 @@ export enum BodyType {
 Enum(BodyType)
 
 @ccclass('BodyControlX')
-@requireComponent([BodyCheckX, BodySpine, RigidBody2D])
 export class BodyControlX extends Component {
 
     @property({ type: BodyType })

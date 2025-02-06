@@ -1,18 +1,19 @@
-import { _decorator, CCInteger, Collider2D, Component, RigidBody2D } from 'cc';
+import { _decorator, CCBoolean, CCFloat, CCInteger, Collider2D, Component, RigidBody2D } from 'cc';
 import { StateBase } from './StateBase';
 import { ConstantBase } from '../ConstantBase';
-const { ccclass, property, requireComponent } = _decorator;
+const { ccclass, property } = _decorator;
 
 @ccclass('StateOnCollider')
-@requireComponent(StateBase)
-@requireComponent(RigidBody2D)
 export class StateOnCollider extends Component {
 
-    //@property({ type: CCBoolean, visible(this: StateOnCollider) { return this.getComponent(StateBase) == null; } })
+    @property({ type: CCBoolean, visible(this: StateOnCollider) { return this.getComponent(StateBase) == null; } })
     State: boolean = true;
 
-    @property(CCInteger)
-    TagBody: number = 0;
+    @property({ group: { name: 'Event' }, type: CCFloat })
+    Delay: number = 0;
+
+    @property({ group: { name: 'Tag' }, type: [CCInteger] })
+    TagBody: number[] = [];
 
     m_collider: Collider2D[] = [];
 
@@ -21,7 +22,7 @@ export class StateOnCollider extends Component {
 
         let colliders = this.getComponents(Collider2D);
         colliders.forEach(collider => {
-            if (collider.tag == this.TagBody)
+            if (this.TagBody.findIndex(t => t == collider.tag) >= 0)
                 this.m_collider.push(collider);
         });
     }
@@ -32,8 +33,10 @@ export class StateOnCollider extends Component {
     }
 
     private onStateCollider(state: boolean) {
-        this.m_collider.forEach(collider => {
-            collider.enabled = state;
-        });
+        this.scheduleOnce(() => {
+            this.m_collider.forEach(collider => {
+                collider.enabled = state;
+            });
+        }, Math.max(this.Delay, 0));
     }
 }

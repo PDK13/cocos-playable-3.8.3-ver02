@@ -6,11 +6,11 @@ const { ccclass, property } = _decorator;
 @ccclass('TriggerSpine')
 export class TriggerSpine extends Component {
 
-    @property({ type: [SpineBase] })
+    @property({ group: { name: 'Target' }, type: [SpineBase] })
     Target: SpineBase[] = [];
-    @property(CCBoolean)
+    @property({ group: { name: 'Target' }, type: CCBoolean })
     TargetSelf: boolean = false;
-    @property(CCBoolean)
+    @property({ group: { name: 'Target' }, type: CCBoolean })
     TargetContact: boolean = false;
 
     @property({ group: { name: 'Event' }, type: CCBoolean })

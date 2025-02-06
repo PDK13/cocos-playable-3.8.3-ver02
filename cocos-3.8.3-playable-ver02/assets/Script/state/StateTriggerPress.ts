@@ -1,7 +1,7 @@
 import { _decorator, Node, CCBoolean, CCFloat, CCInteger, Collider2D, Component, Contact2DType, Enum, IPhysics2DContact, RigidBody2D, tween, Vec3 } from 'cc';
 import { StateBase } from './StateBase';
 import { ConstantBase } from '../ConstantBase';
-const { ccclass, property, requireComponent } = _decorator;
+const { ccclass, property } = _decorator;
 
 export enum PressType {
     Hold,
@@ -10,8 +10,6 @@ export enum PressType {
 Enum(PressType);
 
 @ccclass('StateTriggerPress')
-@requireComponent(StateBase)
-@requireComponent(RigidBody2D)
 export class StateTriggerPress extends Component {
 
     @property({ group: { name: 'Main' }, type: PressType })
@@ -20,6 +18,8 @@ export class StateTriggerPress extends Component {
     Fall: boolean = false;
     @property({ group: { name: 'Main' }, type: CCBoolean })
     Once: boolean = false;
+    // @property({ group: { name: 'Event' }, type: CCFloat })
+    // Delay: number = 0;
 
     @property({ group: { name: 'Object' }, type: Node })
     Node: Node = null;
@@ -122,7 +122,6 @@ export class StateTriggerPress extends Component {
                 this.m_state.onState(true);
                 break;
         }
-
         if (this.Once) {
             let colliders = this.getComponents(Collider2D);
             colliders.forEach(collider => {
