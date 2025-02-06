@@ -14172,7 +14172,7 @@
     "DirectStore": false,
     "OnDirectStore": "direct-store",
     "DelayDirectStore": 0,
-    "Android": "https://play.google.com/store/apps/details?id=com.arcade.puzzle.tricky.cat.catsle",
+    "Android": "https://play.google.com/store/apps/details?id=com.arcade.puzzle.tricky.cat.catsle&hl=en",
     "IOS": "",
     "AdsType": 0,
     "DebugStore": false,
