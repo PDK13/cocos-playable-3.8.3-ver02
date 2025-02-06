@@ -1,0 +1,55 @@
+
+chest_2.png
+size: 1870,969
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: true
+  xy: 643, 643
+  size: 324, 1120
+  orig: 561, 1164
+  offset: 118, 25
+  index: -1
+body
+  rotate: false
+  xy: 1021, 11
+  size: 705, 294
+  orig: 709, 299
+  offset: 2, 2
+  index: -1
+dot
+  rotate: true
+  xy: 1765, 897
+  size: 70, 71
+  orig: 74, 73
+  offset: 2, 1
+  index: -1
+glow
+  rotate: false
+  xy: 1732, 196
+  size: 136, 445
+  orig: 145, 489
+  offset: 5, 0
+  index: -1
+glow_inside
+  rotate: true
+  xy: 2, 22
+  size: 945, 639
+  orig: 981, 661
+  offset: 18, 12
+  index: -1
+nap_dong
+  rotate: false
+  xy: 1021, 307
+  size: 709, 334
+  orig: 709, 334
+  offset: 0, 0
+  index: -1
+nap_mo
+  rotate: true
+  xy: 643, 2
+  size: 639, 376
+  orig: 639, 376
+  offset: 0, 0
+  index: -1
